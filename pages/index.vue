@@ -1,49 +1,27 @@
 <template>
   <div class="sacramento">
-    <header>
-      <div class="container">
-        <div id="nav">
-          <nav id="nav-text" class="dt mw8">
-            <div class="flex pb3">
-              <div class="dtc w2-d v-mid f2 tc pr3">
-                <strong>
-                  <em>December 27, 2019</em>
-                </strong>
-              </div>
-              <div>
-                <i class="fas fa-heart f2 heart"></i>
-              </div>
-              <div class="dtc w2-d v-mid tc pl3 f2">
-                <strong>
-                  <em>#PickingUpTheBill</em>
-                </strong>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div>
-          <div class="relative z-1">
-            <div id="headerBackground" class="cover bg-left bg-center-l z-2"></div>
-            <div id="title" class="tc bg-navy pt3 pb3">
-              <div>
-                <dot
-                  v-for="(dot, index) in dots"
-                  :key="index"
-                  :size="dot.size"
-                  :top="dot.top"
-                  :left="dot.left"
-                  :dot-id="index"
-                />
-                <h1 class="titleMargin f1">
-                  <em>Bill & Kelly are Getting Married!</em>
-                </h1>
-              </div>
-            </div>
+    <navbar></navbar>
+    <section>
+      <div class="relative z-1">
+        <div id="headerBackground" class="cover bg-left bg-center-l z-2"></div>
+        <div id="title" class="tc bg-navy pt3 pb3">
+          <div>
+            <dot
+              v-for="(dot, index) in dots"
+              :key="index"
+              :size="dot.size"
+              :top="dot.top"
+              :left="dot.left"
+              :dot-id="index"
+            />
+            <h1 class="titleMargin f1">
+              <em>Bill & Kelly are Getting Married!</em>
+            </h1>
           </div>
         </div>
       </div>
-    </header>
-    <div class="tc">
+    </section>
+    <section class="tc">
       <div id="purpleBorder" class="section2 pv3 borderBottom">
         <h1 class="f2 sectionTitle">
           <em>Schedule</em>
@@ -73,120 +51,122 @@
           </div>
         </div>
       </div>
-      <div class="section1 pv3 borderBottom">
-        <h1 class="f2 sectionTitle">
-          <em>Wedding Party</em>
-        </h1>
-        <div class="flex justify-around bg-white pv5 ph4 navy">
-          <div class="pb2">
+    </section>
+    <section class="section1 pv3 borderBottom">
+      <h1 class="f2 sectionTitle">
+        <em>Wedding Party</em>
+      </h1>
+      <div class="flex justify-around bg-white pv5 ph4 navy">
+        <div class="pb2">
+          <i class="fas fa-female person"></i>
+          <h2 class="georgia">Maid of Honor</h2>
+          <h3>Maureen 'Mo' Milford</h3>
+          <div class="pt3">
             <i class="fas fa-female person"></i>
-            <h2 class="georgia">Maid of Honor</h2>
-            <h3>Maureen 'Mo' Milford</h3>
-            <div class="pt3">
-              <i class="fas fa-female person"></i>
-              <i class="fas fa-female person"></i>
-              <i class="fas fa-female person"></i>
-            </div>
-            <h2 class="pt3 georgia">Bridesmaids</h2>
-            <h3>Busy Philipps</h3>
-            <h3>Angelique Cabral</h3>
-            <h3>Zoey DeChanel</h3>
+            <i class="fas fa-female person"></i>
+            <i class="fas fa-female person"></i>
           </div>
-          <div class="pb2">
+          <h2 class="pt3 georgia">Bridesmaids</h2>
+          <h3>Busy Philipps</h3>
+          <h3>Angelique Cabral</h3>
+          <h3>Zoey DeChanel</h3>
+        </div>
+        <div class="pb2">
+          <i class="fas fa-male person"></i>
+          <h2 class="georgia">Best Man</h2>
+          <h3>Charlie Harris Jr.</h3>
+          <div class="pt3">
             <i class="fas fa-male person"></i>
-            <h2 class="georgia">Best Man</h2>
-            <h3>Charlie Harris Jr.</h3>
-            <div class="pt3">
-              <i class="fas fa-male person"></i>
-              <i class="fas fa-male person"></i>
-              <i class="fas fa-male person"></i>
-            </div>
-            <h2 class="pt3 georgia">Groomsmen</h2>
-            <h3>Mark Silverstein</h3>
-            <h3>Oliver Hudson</h3>
-            <h3>Christian Siriano</h3>
+            <i class="fas fa-male person"></i>
+            <i class="fas fa-male person"></i>
           </div>
+          <h2 class="pt3 georgia">Groomsmen</h2>
+          <h3>Mark Silverstein</h3>
+          <h3>Oliver Hudson</h3>
+          <h3>Christian Siriano</h3>
         </div>
       </div>
+    </section>
 
-      <div class="section2 pv3 borderBottom">
-        <h1 class="f2 sectionTitle">
-          <em>Travel & Accomodations</em>
-        </h1>
-        <div class="flex justify-around bg-white pv4">
-          <div>
-            <img id="hotel" src="../assets/hotel.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="section1 pv3 borderBottom">
-        <h1 class="f2 sectionTitle">
-          <em>Registry</em>
-        </h1>
-        <div class="flex justify-around bg-white pv2">
-          <div>
-            <img class="logos" src="../assets/bbb.jpg">
-          </div>
-          <div>
-            <img class="logos" src="../assets/macys.jpg">
-          </div>
-          <div>
-            <img class="logos" src="../assets/crateandbarrel.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="section2 pv3 borderBottom">
-        <h1 class="f2 sectionTitle">
-          <em>Photos</em>
-        </h1>
-        <div class="flex justify-around bg-white pv4 ph4">
-          <div>
-            <img class="photos" src="../assets/photo1.jpg">
-          </div>
-          <div>
-            <img class="photos" src="../assets/photo2.jpg">
-          </div>
-          <div>
-            <img class="photos" src="../assets/photo3.jpg">
-          </div>
-          <div>
-            <img class="photos" src="../assets/photo4.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="section1 pv1 borderBottom justify-around">
+    <section class="section2 pv3 borderBottom">
+      <h1 class="f2 sectionTitle">
+        <em>Travel & Accomodations</em>
+      </h1>
+      <div class="flex justify-around bg-white pv4">
         <div>
-          <div>
-            <h1 class="f2 sectionTitle">
-              <em>What to Do in The Lou</em>
-            </h1>
-            <div class="flex justify-around bg-white navy pv4 ph4">
-              <div>
-                <h3 class="pt3 pb2">Wild Lights at the Zoo</h3>
-                <a href="https://www.stlzoo.org/events/calendarofevents">
-                  <img class="photos" src="../assets/zoo.jpg">
-                </a>
-              </div>
-              <div>
-                <h3 class="pt3 pb2">Ice Skating at Steinberg Skating Rink</h3>
-                <a href="http://www.steinbergskatingrink.com/iceskating/">
-                  <img class="photos" src="../assets/steinberg.jpg">
-                </a>
-              </div>
+          <img id="hotel" src="../assets/hotel.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="section1 pv3 borderBottom">
+      <h1 class="f2 sectionTitle">
+        <em>Registry</em>
+      </h1>
+      <div class="flex justify-around bg-white pv2">
+        <div>
+          <img class="logos" src="../assets/bbb.jpg">
+        </div>
+        <div>
+          <img class="logos" src="../assets/macys.jpg">
+        </div>
+        <div>
+          <img class="logos" src="../assets/crateandbarrel.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="section2 pv3 borderBottom">
+      <h1 class="f2 sectionTitle">
+        <em>Photos</em>
+      </h1>
+      <div class="flex justify-around bg-white pv4 ph4">
+        <div>
+          <img class="photos" src="../assets/photo1.jpg">
+        </div>
+        <div>
+          <img class="photos" src="../assets/photo2.jpg">
+        </div>
+        <div>
+          <img class="photos" src="../assets/photo3.jpg">
+        </div>
+        <div>
+          <img class="photos" src="../assets/photo4.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="section1 pv1 borderBottom justify-around">
+      <div>
+        <div>
+          <h1 class="f2 sectionTitle">
+            <em>What to Do in The Lou</em>
+          </h1>
+          <div class="flex justify-around bg-white navy pv4 ph4">
+            <div>
+              <h3 class="pt3 pb2">Wild Lights at the Zoo</h3>
+              <a href="https://www.stlzoo.org/events/calendarofevents">
+                <img class="photos" src="../assets/zoo.jpg">
+              </a>
+            </div>
+            <div>
+              <h3 class="pt3 pb2">Ice Skating at Steinberg Skating Rink</h3>
+              <a href="http://www.steinbergskatingrink.com/iceskating/">
+                <img class="photos" src="../assets/steinberg.jpg">
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
 import Dot from '../components/Dot.vue'
 import dots from '../assets/data/dots.json'
+import Navbar from '../components/Navbar'
 export default {
   components: {
-    Dot
+    Dot,
+    Navbar
   },
   data: function() {
     return {
@@ -197,7 +177,13 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
+@import '~assets/styles/variables';
+
+.container {
+  max-width: 34rem;
+  margin: 0 auto;
+}
 .sectionTitle {
   font-size: 2.75rem;
 }
@@ -214,31 +200,30 @@ export default {
   font-size: 50px;
 }
 .heart {
-  color: #d6158a;
+  color: $red-violet;
 }
 .w2-d {
   width: 30rem;
 }
 #nav {
-  background-color: #432650;
   display: flex;
   justify-content: center;
-  border-top: 8px solid #001b44;
-  border-bottom: 3px solid #ead39c;
+  border-top: 8px solid $midnight;
+  border-bottom: 3px solid $putty;
   padding-top: 15px;
 }
 #nav-text {
-  color: #ead39c;
+  color: $putty;
   font-size: 24px;
 }
 .menu-text {
-  color: #ead39c;
+  color: $putty;
 }
 #headerBackground {
   background-image: url(~assets/crop.jpg);
   padding-top: 1px;
   height: 672px;
-  border-bottom: 4px solid #ead39c;
+  border-bottom: 4px solid $putty;
 }
 .border-box {
   box-sizing: border-box;
@@ -247,39 +232,39 @@ export default {
   background-size: cover !important;
 }
 #title {
-  color: #ead39c;
+  color: $putty;
 }
 .titleMargin {
   margin: 31px;
 }
 .section1 {
-  background-color: #432650;
-  color: #ead39c;
+  background-color: $bossanova;
+  color: $putty;
 }
 .section2 {
-  background-color: #ead39c;
-  color: #001b44;
+  background-color: $putty;
+  color: $midnight;
 }
 .borderBottom {
-  border-bottom: 5px solid #001b44;
+  border-bottom: 5px solid $midnight;
 }
 #purpleBorder {
-  border-top: 6px solid #432650;
+  border-top: 6px solid $bossanova;
 }
 .churchPic {
   height: 220px;
   width: 260px;
-  border: 2px solid #001b44;
+  border: 2px solid $midnight;
 }
 .receptionPic {
   height: 220px;
   width: 325px;
-  border: 2px solid #001b44;
+  border: 2px solid $midnight;
 }
 .photos {
   height: 340px;
   width: 350px;
-  border: 2px solid #001b44;
+  border: 2px solid $midnight;
   /* padding-left: 30px;
   padding-right: 30px; */
 }
