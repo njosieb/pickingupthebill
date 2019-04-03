@@ -124,8 +124,9 @@
           </a>
         </div>
         <div>
-          <a href="https://www.crateandbarrel.com/" target="_blank"></a>
-          <img class="logos" src="../assets/crateandbarrel.jpg">
+          <a href="https://www.crateandbarrel.com/" target="_blank">
+            <img class="logos" src="../assets/crateandbarrel.jpg">
+          </a>
         </div>
       </div>
     </section>
