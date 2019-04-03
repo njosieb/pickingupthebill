@@ -1,124 +1,139 @@
 <template>
   <div class="sacramento">
-    <navbar></navbar>
-    <section>
-      <div class="relative z-1">
-        <div id="headerBackground" class="cover bg-left bg-center-l z-2"></div>
-        <div id="title" class="tc bg-navy pt3 pb3">
-          <div>
-            <dot
+    <!-- <dot
               v-for="(dot, index) in dots"
               :key="index"
               :size="dot.size"
               :top="dot.top"
               :left="dot.left"
               :dot-id="index"
-            />
-            <h1 class="titleMargin f1">
-              <em>Bill & Kelly are Getting Married!</em>
-            </h1>
+    />-->
+    <navbar></navbar>
+    <section id="behind-polaroid" class="pv4">
+      <div class="container relative z-1">
+        <div class="polaroid-frame">
+          <div id="header-picture" class="cover bg-left bg-center-l z-2">
+            <img src="~assets/header.jpg">
+          </div>
+          <div id="title-box" class="tc">
+            <h1 class="polaroid-title f1 mv0">Bill & Kelly are Getting Married!</h1>
           </div>
         </div>
       </div>
     </section>
-    <section class="tc">
-      <div id="purpleBorder" class="section2 pv3 borderBottom">
-        <h1 class="f2 sectionTitle">
-          <em>Schedule</em>
-        </h1>
-        <div class="flex justify-around bg-white pv4">
-          <div>
-            <h2 class="pb3">
-              <em>Ceremony</em>
-            </h2>
-            <img class="churchPic" src="../assets/church.jpg">
-            <h2 class="pt4 pb2">Our Lady of the Pillar</h2>
-            <h4>
-              401 South Lindbergh Blvd.
-              <br>St. Louis, MO 63131
-            </h4>
-          </div>
-          <div>
-            <h2 class="pb3">
-              <em>Reception</em>
-            </h2>
-            <img class="receptionPic" src="../assets/reception.jpg">
-            <h2 class="pt4 pb2">Moolah Shrine Center</h2>
-            <h4>
-              12545 Fee Fee Road
-              <br>St. Louis, MO 63146
-            </h4>
+    <section id="purpleBorder" class="tc section2 borderBottom">
+      <div class="container">
+        <div class="pv3">
+          <h1 class="f2 sectionTitle">
+            <em>Schedule</em>
+          </h1>
+          <div class="flex justify-around bg-white pv4 ph4 border-shadow">
+            <div>
+              <h2 class="pb3 f2">Ceremony</h2>
+              <a href="https://www.olpillar.com/" target="_blank">
+                <img class="churchPic" src="../assets/church.jpg">
+              </a>
+              <h2 class="pt4 pb2">Our Lady of the Pillar</h2>
+              <h4 class="georgia">
+                401 South Lindbergh Blvd.
+                <br>St. Louis, MO 63131
+                <br>(314) 993-2280
+              </h4>
+            </div>
+            <div>
+              <h2 class="pb3 f2">Reception</h2>
+              <a href="https://www.moolah.org/" target="_blank">
+                <img class="receptionPic" src="../assets/reception.jpg">
+              </a>
+              <h2 class="pt4 pb2">Moolah Shrine Center</h2>
+              <h4 class="georgia">
+                12545 Fee Fee Road
+                <br>St. Louis, MO 63146
+                <br>(314) 878-6301
+              </h4>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section1 pv3 borderBottom">
+    <section class="section1 tc pv3 borderBottom">
       <h1 class="f2 sectionTitle">
         <em>Wedding Party</em>
       </h1>
-      <div class="flex justify-around bg-white pv5 ph4 navy">
+      <div class="flex justify-around bg-white pv5 ph4 navy container border-shadow">
         <div class="pb2">
-          <i class="fas fa-female person"></i>
-          <h2 class="georgia">Maid of Honor</h2>
-          <h3>Maureen 'Mo' Milford</h3>
-          <div class="pt3">
+          <i class="fas fa-female person pb3"></i>
+          <h2>Maid of Honor</h2>
+          <h3 class="georgia">Maureen 'Mo' Milford</h3>
+          <div class="pt4">
             <i class="fas fa-female person"></i>
             <i class="fas fa-female person"></i>
             <i class="fas fa-female person"></i>
           </div>
-          <h2 class="pt3 georgia">Bridesmaids</h2>
-          <h3>Busy Philipps</h3>
-          <h3>Angelique Cabral</h3>
-          <h3>Zoey DeChanel</h3>
+          <h2 class="pt3">Bridesmaids</h2>
+          <h3 class="georgia">Busy Philipps</h3>
+          <h3 class="georgia">Angelique Cabral</h3>
+          <h3 class="georgia">Zoey DeChanel</h3>
         </div>
         <div class="pb2">
-          <i class="fas fa-male person"></i>
-          <h2 class="georgia">Best Man</h2>
-          <h3>Charlie Harris Jr.</h3>
-          <div class="pt3">
+          <i class="fas fa-male person pb3"></i>
+          <h2>Best Man</h2>
+          <h3 class="georgia">Charlie Harris Jr.</h3>
+          <div class="pt4">
             <i class="fas fa-male person"></i>
             <i class="fas fa-male person"></i>
             <i class="fas fa-male person"></i>
           </div>
-          <h2 class="pt3 georgia">Groomsmen</h2>
-          <h3>Mark Silverstein</h3>
-          <h3>Oliver Hudson</h3>
-          <h3>Christian Siriano</h3>
+          <h2 class="pt3">Groomsmen</h2>
+          <h3 class="georgia">Mark Silverstein</h3>
+          <h3 class="georgia">Oliver Hudson</h3>
+          <h3 class="georgia">Christian Siriano</h3>
         </div>
       </div>
     </section>
 
-    <section class="section2 pv3 borderBottom">
+    <section class="section2 pv3 tc borderBottom">
       <h1 class="f2 sectionTitle">
         <em>Travel & Accomodations</em>
       </h1>
-      <div class="flex justify-around bg-white pv4">
+      <div class="flex justify-around bg-white pv4 container border-shadow">
         <div>
+          <h1>Hotel St. Louis</h1>
           <img id="hotel" src="../assets/hotel.jpg">
+          <h3 class="georgia pt2">
+            12345 Not Sure Lane
+            <br>St. Louis, MO 63110
+            <br>(314) 555-2255
+          </h3>
         </div>
       </div>
     </section>
-    <section class="section1 pv3 borderBottom">
+    <section class="section1 tc pv3 borderBottom">
       <h1 class="f2 sectionTitle">
         <em>Registry</em>
       </h1>
-      <div class="flex justify-around bg-white pv2">
+      <div class="flex justify-around bg-white pv2 container border-shadow">
         <div>
-          <img class="logos" src="../assets/bbb.jpg">
+          <a href="https://www.macys.com" target="_blank">
+            <img class="logos" src="../assets/macys.jpg">
+          </a>
         </div>
         <div>
-          <img class="logos" src="../assets/macys.jpg">
+          <a href="https://www.bedbathandbeyond.com/" target="_blank">
+            <img class="logos" src="../assets/bbb.jpg">
+          </a>
         </div>
         <div>
+          <a href="https://www.crateandbarrel.com/" target="_blank"></a>
           <img class="logos" src="../assets/crateandbarrel.jpg">
         </div>
       </div>
     </section>
-    <section class="section2 pv3 borderBottom">
+    <section class="section2 pv3 tc borderBottom">
       <h1 class="f2 sectionTitle">
         <em>Photos</em>
       </h1>
-      <div class="flex justify-around bg-white pv4 ph4">
+      <div class="flex justify-around bg-white pv4 ph4 container flex-wrap border-shadow">
         <div>
           <img class="photos" src="../assets/photo1.jpg">
         </div>
@@ -133,24 +148,69 @@
         </div>
       </div>
     </section>
-    <section class="section1 pv1 borderBottom justify-around">
+    <section class="section1 pv1 tc borderBottom justify-around">
       <div>
         <div>
           <h1 class="f2 sectionTitle">
             <em>What to Do in The Lou</em>
           </h1>
-          <div class="flex justify-around bg-white navy pv4 ph4">
+          <div
+            class="flex justify-around bg-white navy pv4 ph4 container flex-wrap georgia border-shadow"
+          >
             <div>
-              <h3 class="pt3 pb2">Wild Lights at the Zoo</h3>
-              <a href="https://www.stlzoo.org/events/calendarofevents">
+              <h2 class="pt3 pb2">Wild Lights at the Zoo</h2>
+              <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
                 <img class="photos" src="../assets/zoo.jpg">
               </a>
+              <div>
+                <h3 class="pb4">
+                  Government Drive
+                  <br>St. Louis, MO 63110
+                  <br>(314) 781-0900
+                </h3>
+              </div>
             </div>
+            <hr>
             <div>
-              <h3 class="pt3 pb2">Ice Skating at Steinberg Skating Rink</h3>
-              <a href="http://www.steinbergskatingrink.com/iceskating/">
+              <h2 class="pt3 pb2">Steinberg Skating Rink</h2>
+              <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
                 <img class="photos" src="../assets/steinberg.jpg">
               </a>
+              <div>
+                <h3 class="pb4">
+                  400 Jefferson Drive
+                  <br>St. Louis, MO 63110
+                  <br>(314) 367-7465
+                </h3>
+              </div>
+            </div>
+            <hr>
+            <div>
+              <h2 class="pt3 pb2">St. Louis Art Museum</h2>
+              <a href="https://www.slam.org/" target="_blank">
+                <img class="photos" src="../assets/slam.jpg">
+              </a>
+              <div>
+                <h3 class="pb4">
+                  1 Fine Arts Drive
+                  <br>St. Louis, MO 63110
+                  <br>(314) 721-0072
+                </h3>
+              </div>
+            </div>
+            <hr>
+            <div>
+              <h2 class="pt3 pb2">City Museum St. Louis</h2>
+              <a href="https://www.citymuseum.org/" target="_blank">
+                <img class="photos" src="../assets/city.jpg">
+              </a>
+              <div>
+                <h3 class="pb4">
+                  750 North 16th
+                  <br>St. Louis, MO 63103
+                  <br>(314) 231-2489
+                </h3>
+              </div>
             </div>
           </div>
         </div>
@@ -180,6 +240,41 @@ export default {
 <style lang="scss">
 @import '~assets/styles/variables';
 
+.border-shadow {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.polaroid-frame {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+  padding: 22px;
+  width: 400px;
+  margin: 4rem auto;
+  background-color: white;
+}
+#behind-polaroid {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(~assets/lights.jpg);
+    background-size: cover;
+    filter: blur(2px);
+  }
+}
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
   max-width: 34rem;
   margin: 0 auto;
@@ -191,7 +286,7 @@ export default {
   font-family: 'Sacramento';
 }
 #hotel {
-  max-width: 40%;
+  max-width: 70%;
 }
 .arrow {
   font-size: 15px;
@@ -219,11 +314,15 @@ export default {
 .menu-text {
   color: $putty;
 }
-#headerBackground {
-  background-image: url(~assets/crop.jpg);
-  padding-top: 1px;
-  height: 672px;
-  border-bottom: 4px solid $putty;
+#header-picture {
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 .border-box {
   box-sizing: border-box;
@@ -231,11 +330,16 @@ export default {
 .cover {
   background-size: cover !important;
 }
-#title {
-  color: $putty;
+#title-box {
+  color: $midnight;
+  margin: 0 auto;
+  padding-top: 22px;
+  font-size: 28px;
+  line-height: 1.5;
 }
-.titleMargin {
-  margin: 31px;
+.polaroid-title {
+  font-size: 28px;
+  line-height: 1.5;
 }
 .section1 {
   background-color: $bossanova;
@@ -255,16 +359,20 @@ export default {
   height: 220px;
   width: 260px;
   border: 2px solid $midnight;
+  margin-right: 40px;
 }
 .receptionPic {
   height: 220px;
   width: 325px;
   border: 2px solid $midnight;
+  margin-left: 15px;
 }
 .photos {
-  height: 340px;
-  width: 350px;
-  border: 2px solid $midnight;
+  height: 400px;
+  width: 400px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  object-fit: cover;
   /* padding-left: 30px;
   padding-right: 30px; */
 }
