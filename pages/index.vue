@@ -25,7 +25,9 @@
       <div class="container">
         <div class="pv3">
           <h1 class="f2 sectionTitle">
-            <em>Schedule</em>
+            <i class="fas fa-clipboard-list"></i>
+            &nbsp;Schedule&nbsp;
+            <i class="fas fa-clipboard-list"></i>
           </h1>
           <div class="flex justify-around bg-white pv4 ph4 border-shadow">
             <div>
@@ -58,43 +60,49 @@
     </section>
     <section class="section1 tc pv3 borderBottom">
       <h1 class="f2 sectionTitle">
-        <em>Wedding Party</em>
+        <i class="fas fa-users"></i>
+        &nbsp; Wedding Party &nbsp;
+        <i class="fas fa-users"></i>
       </h1>
-      <div class="flex justify-around bg-white pv5 ph4 navy container border-shadow">
-        <div class="pb2">
-          <i class="fas fa-female person pb3"></i>
-          <h2>Maid of Honor</h2>
-          <h3 class="georgia">Maureen 'Mo' Milford</h3>
-          <div class="pt4">
-            <i class="fas fa-female person"></i>
-            <i class="fas fa-female person"></i>
-            <i class="fas fa-female person"></i>
+      <div class="container border-shadow">
+        <div class="flex justify-around wedding-party pv5 ph4 navy">
+          <div class="pa3 bg-white z-2">
+            <i class="fas fa-female person pb3"></i>
+            <h2>Maid of Honor</h2>
+            <h3 class="georgia">Maureen 'Mo' Milford</h3>
+            <div class="pt4">
+              <i class="fas fa-female person"></i>
+              <i class="fas fa-female person"></i>
+              <i class="fas fa-female person"></i>
+            </div>
+            <h2 class="pt3">Bridesmaids</h2>
+            <h3 class="georgia">Busy Philipps</h3>
+            <h3 class="georgia">Angelique Cabral</h3>
+            <h3 class="georgia">Zoey DeChanel</h3>
           </div>
-          <h2 class="pt3">Bridesmaids</h2>
-          <h3 class="georgia">Busy Philipps</h3>
-          <h3 class="georgia">Angelique Cabral</h3>
-          <h3 class="georgia">Zoey DeChanel</h3>
-        </div>
-        <div class="pb2">
-          <i class="fas fa-male person pb3"></i>
-          <h2>Best Man</h2>
-          <h3 class="georgia">Charlie Harris Jr.</h3>
-          <div class="pt4">
-            <i class="fas fa-male person"></i>
-            <i class="fas fa-male person"></i>
-            <i class="fas fa-male person"></i>
+          <div class="pa3 ml1 mr1 bg-white z-2">
+            <i class="fas fa-male person pb3"></i>
+            <h2>Best Man</h2>
+            <h3 class="georgia">Charlie Harris Jr.</h3>
+            <div class="pt4">
+              <i class="fas fa-male person"></i>
+              <i class="fas fa-male person"></i>
+              <i class="fas fa-male person"></i>
+            </div>
+            <h2 class="pt3">Groomsmen</h2>
+            <h3 class="georgia">Mark Silverstein</h3>
+            <h3 class="georgia">Oliver Hudson</h3>
+            <h3 class="georgia">Christian Siriano</h3>
           </div>
-          <h2 class="pt3">Groomsmen</h2>
-          <h3 class="georgia">Mark Silverstein</h3>
-          <h3 class="georgia">Oliver Hudson</h3>
-          <h3 class="georgia">Christian Siriano</h3>
         </div>
       </div>
     </section>
 
     <section class="section2 pv3 tc borderBottom">
       <h1 class="f2 sectionTitle">
-        <em>Travel & Accomodations</em>
+        <i class="fas fa-hotel"></i>
+        &nbsp;Travel & Accomodations&nbsp;
+        <i class="fas fa-hotel"></i>
       </h1>
       <div class="flex justify-around bg-white pv4 container border-shadow">
         <div>
@@ -110,7 +118,9 @@
     </section>
     <section class="section1 tc pv3 borderBottom">
       <h1 class="f2 sectionTitle">
-        <em>Registry</em>
+        <i class="fas fa-gift"></i>
+        &nbsp;Registry&nbsp;
+        <i class="fas fa-gift"></i>
       </h1>
       <div class="flex justify-around bg-white pv2 container border-shadow">
         <div>
@@ -132,7 +142,9 @@
     </section>
     <section class="section2 pv3 tc borderBottom">
       <h1 class="f2 sectionTitle">
-        <em>Photos</em>
+        <i class="far fa-images"></i>
+        &nbsp;Photos&nbsp;
+        <i class="far fa-images"></i>
       </h1>
       <div class="flex justify-around bg-white pv4 ph4 container flex-wrap border-shadow">
         <div>
@@ -153,7 +165,9 @@
       <div>
         <div>
           <h1 class="f2 sectionTitle">
-            <em>What to Do in The Lou</em>
+            <i class="far fa-calendar-check"></i>
+            &nbsp; What to Do in The Lou&nbsp;
+            <i class="far fa-calendar-check"></i>
           </h1>
           <div
             class="flex justify-around bg-white navy pv4 ph4 container flex-wrap georgia border-shadow"
@@ -263,6 +277,34 @@ export default {
     height: 100%;
     width: 100%;
     background-image: url(~assets/lights.jpg);
+    background-size: cover;
+    filter: blur(2px);
+  }
+}
+.wedding-party {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(~assets/bridesmaids.jpg);
+    background-size: cover;
+    filter: blur(2px);
+  }
+}
+.activity {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(~assets/activity.jpg);
     background-size: cover;
     filter: blur(2px);
   }
