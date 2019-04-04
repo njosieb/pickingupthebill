@@ -19,6 +19,22 @@
             <h1 class="polaroid-title f1 mv0">Bill & Kelly are Getting Married!</h1>
           </div>
         </div>
+        <div id="button-div" class="flex justify-center georgia">
+          <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
+            <button class="pa3 hover-bg-gold hover-white">
+              How We Met!
+              <br>
+              <i class="far fa-laugh-beam"></i>
+            </button>
+          </a>
+          <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
+            <button class="pa3 hover-bg-gold hover-white">
+              The Proposal!
+              <br>
+              <i class="far fa-grin-hearts"></i>
+            </button>
+          </a>
+        </div>
       </div>
     </section>
     <section id="purpleBorder" class="tc section2 borderBottom">
@@ -26,10 +42,10 @@
         <div class="pv3">
           <h1 class="f2 sectionTitle">
             <i class="fas fa-clipboard-list"></i>
-            &nbsp;Schedule&nbsp;
+            &nbsp;&nbsp;Schedule&nbsp;&nbsp;
             <i class="fas fa-clipboard-list"></i>
           </h1>
-          <div class="flex justify-around bg-white pv4 ph4 border-shadow">
+          <div class="flex justify-around seashell pv4 ph4 border-shadow">
             <div>
               <h2 class="pb3 f2">Ceremony</h2>
               <a href="https://www.olpillar.com/" target="_blank">
@@ -61,12 +77,12 @@
     <section class="section1 tc pv3 borderBottom">
       <h1 class="f2 sectionTitle">
         <i class="fas fa-users"></i>
-        &nbsp; Wedding Party &nbsp;
+        &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
         <i class="fas fa-users"></i>
       </h1>
       <div class="container border-shadow">
         <div class="flex justify-around wedding-party pv5 ph4 navy">
-          <div class="pa3 bg-white z-2">
+          <div class="pa3 seashell z-2">
             <i class="fas fa-female person pb3"></i>
             <h2>Maid of Honor</h2>
             <h3 class="georgia">Maureen 'Mo' Milford</h3>
@@ -80,7 +96,7 @@
             <h3 class="georgia">Angelique Cabral</h3>
             <h3 class="georgia">Zoey DeChanel</h3>
           </div>
-          <div class="pa3 ml1 mr1 bg-white z-2">
+          <div class="pa3 ml1 mr1 seashell z-2">
             <i class="fas fa-male person pb3"></i>
             <h2>Best Man</h2>
             <h3 class="georgia">Charlie Harris Jr.</h3>
@@ -101,10 +117,10 @@
     <section class="section2 pv3 tc borderBottom">
       <h1 class="f2 sectionTitle">
         <i class="fas fa-hotel"></i>
-        &nbsp;Travel & Accomodations&nbsp;
+        &nbsp;&nbsp;&nbsp;Travel & Accomodations&nbsp;&nbsp;&nbsp;
         <i class="fas fa-hotel"></i>
       </h1>
-      <div class="flex justify-around bg-white pv4 container border-shadow">
+      <div class="flex justify-around seashell pv4 container border-shadow">
         <div>
           <h1>Hotel St. Louis</h1>
           <img id="hotel" src="../assets/hotel.jpg">
@@ -122,7 +138,7 @@
         &nbsp;Registry&nbsp;
         <i class="fas fa-gift"></i>
       </h1>
-      <div class="flex justify-around bg-white pv2 container border-shadow">
+      <div class="flex justify-around seashell pv2 container border-shadow">
         <div>
           <a href="https://www.macys.com" target="_blank">
             <img class="logos" src="../assets/macys.jpg">
@@ -143,10 +159,10 @@
     <section class="section2 pv3 tc borderBottom">
       <h1 class="f2 sectionTitle">
         <i class="far fa-images"></i>
-        &nbsp;Photos&nbsp;
+        &nbsp;&nbsp;Photos&nbsp;&nbsp;
         <i class="far fa-images"></i>
       </h1>
-      <div class="flex justify-around bg-white pv4 ph4 container flex-wrap border-shadow">
+      <div class="flex justify-around seashell pv4 ph4 container flex-wrap border-shadow">
         <div>
           <img class="photos" src="../assets/photo1.jpg">
         </div>
@@ -166,65 +182,67 @@
         <div>
           <h1 class="f2 sectionTitle">
             <i class="far fa-calendar-check"></i>
-            &nbsp; What to Do in The Lou&nbsp;
-            <i class="far fa-calendar-check"></i>
+            &nbsp;&nbsp;&nbsp; What to Do in The Lou&nbsp;&nbsp;&nbsp;
+            <i
+              class="far fa-calendar-check"
+            ></i>
           </h1>
-          <div
-            class="flex justify-around bg-white navy pv4 ph4 container flex-wrap georgia border-shadow"
-          >
+          <div class="flex justify-around seashell navy container flex-wrap georgia border-shadow">
             <div>
-              <h2 class="pt3 pb2">Wild Lights at the Zoo</h2>
-              <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                <img class="photos" src="../assets/zoo.jpg">
-              </a>
               <div>
-                <h3 class="pb4">
-                  Government Drive
-                  <br>St. Louis, MO 63110
-                  <br>(314) 781-0900
-                </h3>
+                <h2 class="pt3 pb2">Wild Lights at the Zoo</h2>
+                <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
+                  <img class="photos" src="../assets/zoo.jpg">
+                </a>
+                <div>
+                  <h3 class="pb4">
+                    Government Drive
+                    <br>St. Louis, MO 63110
+                    <br>(314) 781-0900
+                  </h3>
+                </div>
               </div>
-            </div>
-            <hr>
-            <div>
-              <h2 class="pt3 pb2">Steinberg Skating Rink</h2>
-              <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                <img class="photos" src="../assets/steinberg.jpg">
-              </a>
+              <hr>
               <div>
-                <h3 class="pb4">
-                  400 Jefferson Drive
-                  <br>St. Louis, MO 63110
-                  <br>(314) 367-7465
-                </h3>
+                <h2 class="pt3 pb2">Steinberg Skating Rink</h2>
+                <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
+                  <img class="photos" src="../assets/steinberg.jpg">
+                </a>
+                <div>
+                  <h3 class="pb4">
+                    400 Jefferson Drive
+                    <br>St. Louis, MO 63110
+                    <br>(314) 367-7465
+                  </h3>
+                </div>
               </div>
-            </div>
-            <hr>
-            <div>
-              <h2 class="pt3 pb2">St. Louis Art Museum</h2>
-              <a href="https://www.slam.org/" target="_blank">
-                <img class="photos" src="../assets/slam.jpg">
-              </a>
+              <hr>
               <div>
-                <h3 class="pb4">
-                  1 Fine Arts Drive
-                  <br>St. Louis, MO 63110
-                  <br>(314) 721-0072
-                </h3>
+                <h2 class="pt3 pb2">St. Louis Art Museum</h2>
+                <a href="https://www.slam.org/" target="_blank">
+                  <img class="photos" src="../assets/slam.jpg">
+                </a>
+                <div>
+                  <h3 class="pb4">
+                    1 Fine Arts Drive
+                    <br>St. Louis, MO 63110
+                    <br>(314) 721-0072
+                  </h3>
+                </div>
               </div>
-            </div>
-            <hr>
-            <div>
-              <h2 class="pt3 pb2">City Museum St. Louis</h2>
-              <a href="https://www.citymuseum.org/" target="_blank">
-                <img class="photos" src="../assets/city.jpg">
-              </a>
+              <hr>
               <div>
-                <h3 class="pb4">
-                  750 North 16th
-                  <br>St. Louis, MO 63103
-                  <br>(314) 231-2489
-                </h3>
+                <h2 class="pt3 pb2">City Museum St. Louis</h2>
+                <a href="https://www.citymuseum.org/" target="_blank">
+                  <img class="photos" src="../assets/city.jpg">
+                </a>
+                <div>
+                  <h3 class="pb4">
+                    750 North 16th
+                    <br>St. Louis, MO 63103
+                    <br>(314) 231-2489
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
@@ -304,7 +322,7 @@ export default {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(~assets/activity.jpg);
+    background-image: url(~assets/bricks.jpg);
     background-size: cover;
     filter: blur(2px);
   }
@@ -313,7 +331,15 @@ hr {
   width: 90%;
   margin: 0 auto;
 }
-
+button {
+  // background-color: $putty;
+  color: $midnight;
+  background-color: $seashell;
+  font-size: x-large;
+}
+#button-div {
+  justify-content: space-between;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -327,6 +353,9 @@ img {
 }
 .sacramento {
   font-family: 'Sacramento';
+}
+.seashell {
+  background-color: $seashell;
 }
 #hotel {
   max-width: 70%;
