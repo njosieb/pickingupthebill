@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <div class="flex justify-between items-center white">
+      <div class="flex justify-between items-center white pt1 georgia">
         <div class="nav-title">December 27, 2019</div>
         <div>
           <i class="fas fa-heart f2 heart"></i>
