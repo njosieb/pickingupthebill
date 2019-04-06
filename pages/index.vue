@@ -21,17 +21,15 @@
         </div>
         <div id="button-div" class="flex justify-center georgia">
           <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa3 hover-bg-gold hover-white">
-              How We Met!
-              <br>
+            <button class="pa3 hover-bg-navy hover-white">
               <i class="far fa-laugh-beam"></i>
+              &nbsp;How We Met!
             </button>
           </a>
           <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa3 hover-bg-gold hover-white">
-              The Proposal!
-              <br>
+            <button class="pa3 hover-bg-navy hover-white">
               <i class="far fa-grin-hearts"></i>
+              &nbsp;The Proposal!
             </button>
           </a>
         </div>
@@ -45,25 +43,28 @@
             &nbsp;&nbsp;Schedule&nbsp;&nbsp;
             <i class="fas fa-clipboard-list"></i>
           </h1>
-          <div class="flex justify-around seashell pv4 ph4 border-shadow">
+          <div class="seashell pv4 border-shadow">
             <div>
               <h2 class="pb3 f2">Ceremony</h2>
               <a href="https://www.olpillar.com/" target="_blank">
                 <img class="churchPic" src="../assets/church.jpg">
               </a>
-              <h2 class="pt4 pb2">Our Lady of the Pillar</h2>
-              <h4 class="georgia">
+              <h2 class="pt4 pb2 f2">Our Lady of the Pillar</h2>
+              <h4 class="georgia pb3">
                 401 South Lindbergh Blvd.
                 <br>St. Louis, MO 63131
                 <br>(314) 993-2280
               </h4>
             </div>
             <div>
-              <h2 class="pb3 f2">Reception</h2>
+              <i class="pt4 f1 fas fa-heart"></i>
+            </div>
+            <div>
+              <h2 class="pt4 pb3 f2">Reception</h2>
               <a href="https://www.moolah.org/" target="_blank">
                 <img class="receptionPic" src="../assets/reception.jpg">
               </a>
-              <h2 class="pt4 pb2">Moolah Shrine Center</h2>
+              <h2 class="pt4 pb2 f2">Moolah Shrine Center</h2>
               <h4 class="georgia">
                 12545 Fee Fee Road
                 <br>St. Louis, MO 63146
@@ -84,28 +85,28 @@
         <div class="flex justify-around wedding-party pv5 ph4 navy">
           <div class="pa3 seashell z-2">
             <i class="fas fa-female person pb3"></i>
-            <h2>Maid of Honor</h2>
+            <h2 class="f2">Maid of Honor</h2>
             <h3 class="georgia">Maureen 'Mo' Milford</h3>
             <div class="pt4">
               <i class="fas fa-female person"></i>
               <i class="fas fa-female person"></i>
               <i class="fas fa-female person"></i>
             </div>
-            <h2 class="pt3">Bridesmaids</h2>
+            <h2 class="pt3 f2">Bridesmaids</h2>
             <h3 class="georgia">Busy Philipps</h3>
             <h3 class="georgia">Angelique Cabral</h3>
             <h3 class="georgia">Zoey DeChanel</h3>
           </div>
           <div class="pa3 ml1 mr1 seashell z-2">
             <i class="fas fa-male person pb3"></i>
-            <h2>Best Man</h2>
+            <h2 class="f2">Best Man</h2>
             <h3 class="georgia">Charlie Harris Jr.</h3>
             <div class="pt4">
               <i class="fas fa-male person"></i>
               <i class="fas fa-male person"></i>
               <i class="fas fa-male person"></i>
             </div>
-            <h2 class="pt3">Groomsmen</h2>
+            <h2 class="pt3 f2">Groomsmen</h2>
             <h3 class="georgia">Mark Silverstein</h3>
             <h3 class="georgia">Oliver Hudson</h3>
             <h3 class="georgia">Christian Siriano</h3>
@@ -190,7 +191,7 @@
           <div class="flex justify-around seashell navy container flex-wrap georgia border-shadow">
             <div>
               <div>
-                <h2 class="pt3 pb2">Wild Lights at the Zoo</h2>
+                <h2 class="pt4 pb2">Wild Lights at The St. Louis Zoo</h2>
                 <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
                   <img class="photos" src="../assets/zoo.jpg">
                 </a>
@@ -204,7 +205,7 @@
               </div>
               <hr>
               <div>
-                <h2 class="pt3 pb2">Steinberg Skating Rink</h2>
+                <h2 class="pt4 pb2">Steinberg Skating Rink</h2>
                 <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
                   <img class="photos" src="../assets/steinberg.jpg">
                 </a>
@@ -218,7 +219,7 @@
               </div>
               <hr>
               <div>
-                <h2 class="pt3 pb2">St. Louis Art Museum</h2>
+                <h2 class="pt4 pb2">St. Louis Art Museum</h2>
                 <a href="https://www.slam.org/" target="_blank">
                   <img class="photos" src="../assets/slam.jpg">
                 </a>
@@ -232,7 +233,7 @@
               </div>
               <hr>
               <div>
-                <h2 class="pt3 pb2">City Museum St. Louis</h2>
+                <h2 class="pt4 pb2">City Museum St. Louis</h2>
                 <a href="https://www.citymuseum.org/" target="_blank">
                   <img class="photos" src="../assets/city.jpg">
                 </a>
@@ -328,7 +329,7 @@ export default {
   }
 }
 hr {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 button {
@@ -428,16 +429,14 @@ img {
   border-top: 6px solid $bossanova;
 }
 .churchPic {
-  height: 220px;
-  width: 260px;
-  border: 2px solid $midnight;
-  margin-right: 40px;
-}
-.receptionPic {
-  height: 220px;
+  height: 330px;
   width: 325px;
   border: 2px solid $midnight;
-  margin-left: 15px;
+}
+.receptionPic {
+  height: 275px;
+  width: 380px;
+  border: 2px solid $midnight;
 }
 .photos {
   height: 400px;
@@ -451,6 +450,7 @@ img {
 .logos {
   height: 240px;
   width: 330px;
+  padding: 20%;
   /* border: 2px solid #001b44; */
   /* margin-bottom: 3rem; */
   /* padding-left: 30px;
