@@ -21,13 +21,13 @@
         </div>
         <div id="button-div" class="flex justify-center georgia">
           <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa3 hover-bg-navy hover-white">
+            <button class="pa3 hover-bg-navy hover-white border-showcase">
               <i class="far fa-laugh-beam"></i>
               &nbsp;How We Met!
             </button>
           </a>
           <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa3 hover-bg-navy hover-white">
+            <button class="pa3 hover-bg-navy hover-white border-showcase">
               <i class="far fa-grin-hearts"></i>
               &nbsp;The Proposal!
             </button>
@@ -83,7 +83,7 @@
       </h1>
       <div class="container border-shadow">
         <div class="flex justify-around wedding-party pv5 ph4 navy">
-          <div class="pa3 seashell z-2">
+          <div class="pa3 seashell z-2 border-showcase">
             <i class="fas fa-female person pb3"></i>
             <h2 class="f2">Maid of Honor</h2>
             <h3 class="georgia">Maureen 'Mo' Milford</h3>
@@ -97,7 +97,7 @@
             <h3 class="georgia">Angelique Cabral</h3>
             <h3 class="georgia">Zoey DeChanel</h3>
           </div>
-          <div class="pa3 ml1 mr1 seashell z-2">
+          <div class="pa3 ml1 mr1 seashell z-2 border-showcase">
             <i class="fas fa-male person pb3"></i>
             <h2 class="f2">Best Man</h2>
             <h3 class="georgia">Charlie Harris Jr.</h3>
@@ -124,7 +124,7 @@
       <div class="flex justify-around seashell pv4 container border-shadow">
         <div>
           <h1>Hotel St. Louis</h1>
-          <img id="hotel" src="../assets/hotel.jpg">
+          <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
           <h3 class="georgia pt2">
             12345 Not Sure Lane
             <br>St. Louis, MO 63110
@@ -361,6 +361,9 @@ img {
 #hotel {
   max-width: 70%;
 }
+.border-showcase {
+  border: 2px solid $midnight;
+}
 .arrow {
   font-size: 15px;
 }
@@ -450,7 +453,6 @@ img {
 .logos {
   height: 240px;
   width: 330px;
-  padding: 20%;
   /* border: 2px solid #001b44; */
   /* margin-bottom: 3rem; */
   /* padding-left: 30px;
