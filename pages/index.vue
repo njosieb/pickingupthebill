@@ -38,7 +38,7 @@
     <section id="purpleBorder" class="tc section2 borderBottom">
       <div class="container">
         <div class="pv3">
-          <h1 class="f2 sectionTitle">
+          <h1 class="f2 sectionTitle1">
             <i class="fas fa-clipboard-list"></i>
             &nbsp;&nbsp;Schedule&nbsp;&nbsp;
             <i class="fas fa-clipboard-list"></i>
@@ -56,7 +56,11 @@
                 <br>(314) 993-2280
               </h4>
             </div>
-            <div>
+            <div class="flex justify-around items-center">
+              <i class="pt4 f1 fas fa-heart"></i>
+              <i class="pt4 f3 fas fa-heart purple"></i>
+              <i class="pt4 f1 fas fa-heart"></i>
+              <i class="pt4 f3 fas fa-heart purple"></i>
               <i class="pt4 f1 fas fa-heart"></i>
             </div>
             <div>
@@ -76,7 +80,7 @@
       </div>
     </section>
     <section class="section1 tc pv3 borderBottom">
-      <h1 class="f2 sectionTitle">
+      <h1 class="f2 sectionTitle2">
         <i class="fas fa-users"></i>
         &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
         <i class="fas fa-users"></i>
@@ -84,13 +88,13 @@
       <div class="container border-shadow">
         <div class="flex justify-around wedding-party pv5 ph4 navy">
           <div class="pa3 seashell z-2 border-showcase">
-            <i class="fas fa-female person pb3"></i>
+            <i class="fas fa-female person pb3 purple"></i>
             <h2 class="f2">Maid of Honor</h2>
             <h3 class="georgia">Maureen 'Mo' Milford</h3>
             <div class="pt4">
-              <i class="fas fa-female person"></i>
-              <i class="fas fa-female person"></i>
-              <i class="fas fa-female person"></i>
+              <i class="fas fa-female person purple"></i>
+              <i class="fas fa-female person purple"></i>
+              <i class="fas fa-female person purple"></i>
             </div>
             <h2 class="pt3 f2">Bridesmaids</h2>
             <h3 class="georgia">Busy Philipps</h3>
@@ -116,7 +120,7 @@
     </section>
 
     <section class="section2 pv3 tc borderBottom">
-      <h1 class="f2 sectionTitle">
+      <h1 class="f2 sectionTitle1">
         <i class="fas fa-hotel"></i>
         &nbsp;&nbsp;&nbsp;Travel & Accomodations&nbsp;&nbsp;&nbsp;
         <i class="fas fa-hotel"></i>
@@ -134,7 +138,7 @@
       </div>
     </section>
     <section class="section1 tc pv3 borderBottom">
-      <h1 class="f2 sectionTitle">
+      <h1 class="f2 sectionTitle2">
         <i class="fas fa-gift"></i>
         &nbsp;Registry&nbsp;
         <i class="fas fa-gift"></i>
@@ -158,7 +162,7 @@
       </div>
     </section>
     <section class="section2 pv3 tc borderBottom">
-      <h1 class="f2 sectionTitle">
+      <h1 class="f2 sectionTitle1">
         <i class="far fa-images"></i>
         &nbsp;&nbsp;Photos&nbsp;&nbsp;
         <i class="far fa-images"></i>
@@ -181,7 +185,7 @@
     <section class="section1 pv1 tc borderBottom justify-around">
       <div>
         <div>
-          <h1 class="f2 sectionTitle">
+          <h1 class="f2 sectionTitle2">
             <i class="far fa-calendar-check"></i>
             &nbsp;&nbsp;&nbsp; What to Do in The Lou&nbsp;&nbsp;&nbsp;
             <i
@@ -349,8 +353,13 @@ img {
   max-width: 34rem;
   margin: 0 auto;
 }
-.sectionTitle {
+.sectionTitle1 {
   font-size: 2.75rem;
+  color: $bossanova;
+}
+.sectionTitle2 {
+  font-size: 2.75rem;
+  color: $putty;
 }
 .sacramento {
   font-family: 'Sacramento';
