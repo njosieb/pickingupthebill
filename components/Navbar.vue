@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container">
+    <container>
       <div class="flex justify-between items-center white pt1 georgia">
         <div class="nav-title">December 27, 2019</div>
         <div>
@@ -8,9 +8,24 @@
         </div>
         <div class="nav-title">#PickingUpTheBill</div>
       </div>
-    </div>
+    </container>
   </header>
 </template>
+
+<script>
+import Container from '../components/Container'
+
+export default {
+  components: {
+    Container
+  }
+  // data: function() {
+  //   return {
+
+  //   }
+  //   }
+}
+</script>
 
 <style lang='scss'>
 @import '~assets/styles/variables';

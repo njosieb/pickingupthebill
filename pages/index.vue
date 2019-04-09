@@ -10,7 +10,7 @@
     />-->
     <navbar></navbar>
     <section id="behind-polaroid" class="pv4">
-      <div class="container relative z-1">
+      <container class="relative z-1">
         <div class="polaroid-frame">
           <div id="header-picture" class="cover bg-left bg-center-l z-2">
             <img src="~assets/header.jpg">
@@ -33,10 +33,10 @@
             </button>
           </a>
         </div>
-      </div>
+      </container>
     </section>
     <section id="purpleBorder" class="tc section2 borderBottom">
-      <div class="container">
+      <container>
         <div class="pv3">
           <h1 class="f2 sectionTitle1">
             <i class="fas fa-clipboard-list"></i>
@@ -77,113 +77,123 @@
             </div>
           </div>
         </div>
-      </div>
+      </container>
     </section>
     <section class="section1 tc pv3 borderBottom">
-      <h1 class="f2 sectionTitle2">
-        <i class="fas fa-users"></i>
-        &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
-        <i class="fas fa-users"></i>
-      </h1>
-      <div class="container border-shadow">
-        <div class="flex justify-around wedding-party pv5 ph4 navy">
-          <div class="pa3 seashell z-2 border-showcase">
-            <i class="fas fa-female person pb3 purple"></i>
-            <h2 class="f2">Maid of Honor</h2>
-            <h3 class="georgia">Maureen 'Mo' Milford</h3>
-            <div class="pt4">
-              <i class="fas fa-female person purple"></i>
-              <i class="fas fa-female person purple"></i>
-              <i class="fas fa-female person purple"></i>
+      <container>
+        <h1 class="f2 sectionTitle2">
+          <i class="fas fa-users"></i>
+          &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
+          <i class="fas fa-users"></i>
+        </h1>
+        <div class="border-shadow">
+          <div class="flex justify-around wedding-party pv5 ph4 navy">
+            <div class="pa3 seashell z-2 border-showcase">
+              <i class="fas fa-female person pb3 purple"></i>
+              <h2 class="f2">Maid of Honor</h2>
+              <h3 class="georgia">Maureen 'Mo' Milford</h3>
+              <div class="pt4">
+                <i class="fas fa-female person purple"></i>
+                <i class="fas fa-female person purple"></i>
+                <i class="fas fa-female person purple"></i>
+              </div>
+              <h2 class="pt3 f2">Bridesmaids</h2>
+              <h3 class="georgia">Busy Philipps</h3>
+              <h3 class="georgia">Angelique Cabral</h3>
+              <h3 class="georgia">Zoey DeChanel</h3>
             </div>
-            <h2 class="pt3 f2">Bridesmaids</h2>
-            <h3 class="georgia">Busy Philipps</h3>
-            <h3 class="georgia">Angelique Cabral</h3>
-            <h3 class="georgia">Zoey DeChanel</h3>
-          </div>
-          <div class="pa3 ml1 mr1 seashell z-2 border-showcase">
-            <i class="fas fa-male person pb3"></i>
-            <h2 class="f2">Best Man</h2>
-            <h3 class="georgia">Charlie Harris Jr.</h3>
-            <div class="pt4">
-              <i class="fas fa-male person"></i>
-              <i class="fas fa-male person"></i>
-              <i class="fas fa-male person"></i>
+            <div class="pa3 ml1 mr1 seashell z-2 border-showcase">
+              <i class="fas fa-male person pb3"></i>
+              <h2 class="f2">Best Man</h2>
+              <h3 class="georgia">Charlie Harris Jr.</h3>
+              <div class="pt4">
+                <i class="fas fa-male person"></i>
+                <i class="fas fa-male person"></i>
+                <i class="fas fa-male person"></i>
+              </div>
+              <h2 class="pt3 f2">Groomsmen</h2>
+              <h3 class="georgia">Mark Silverstein</h3>
+              <h3 class="georgia">Oliver Hudson</h3>
+              <h3 class="georgia">Christian Siriano</h3>
             </div>
-            <h2 class="pt3 f2">Groomsmen</h2>
-            <h3 class="georgia">Mark Silverstein</h3>
-            <h3 class="georgia">Oliver Hudson</h3>
-            <h3 class="georgia">Christian Siriano</h3>
           </div>
         </div>
-      </div>
+      </container>
     </section>
 
     <section class="section2 pv3 tc borderBottom">
-      <h1 class="f2 sectionTitle1">
-        <i class="fas fa-hotel"></i>
-        &nbsp;&nbsp;&nbsp;Travel & Accomodations&nbsp;&nbsp;&nbsp;
-        <i class="fas fa-hotel"></i>
-      </h1>
-      <div class="flex justify-around seashell pv4 container border-shadow">
-        <div>
-          <h1>Hotel St. Louis</h1>
-          <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
-          <h3 class="georgia pt2">
-            12345 Not Sure Lane
-            <br>St. Louis, MO 63110
-            <br>(314) 555-2255
-          </h3>
+      <container>
+        <h1 class="f2 sectionTitle1">
+          <i class="fas fa-hotel"></i>
+          &nbsp;&nbsp;&nbsp;Travel & Accomodations&nbsp;&nbsp;&nbsp;
+          <i
+            class="fas fa-hotel"
+          ></i>
+        </h1>
+        <div class="flex justify-around seashell pv4 border-shadow">
+          <div>
+            <h1>Hotel St. Louis</h1>
+            <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
+            <h3 class="georgia pt2">
+              12345 Not Sure Lane
+              <br>St. Louis, MO 63110
+              <br>(314) 555-2255
+            </h3>
+          </div>
         </div>
-      </div>
+      </container>
     </section>
     <section class="section1 tc pv3 borderBottom">
-      <h1 class="f2 sectionTitle2">
-        <i class="fas fa-gift"></i>
-        &nbsp;Registry&nbsp;
-        <i class="fas fa-gift"></i>
-      </h1>
-      <div class="flex justify-around seashell pv2 container border-shadow">
-        <div>
-          <a href="https://www.macys.com" target="_blank">
-            <img class="logos" src="../assets/macys.jpg">
-          </a>
+      <container>
+        <h1 class="f2 sectionTitle2">
+          <i class="fas fa-gift"></i>
+          &nbsp;Registry&nbsp;
+          <i class="fas fa-gift"></i>
+        </h1>
+        <div class="flex justify-around seashell pv2 border-shadow">
+          <div>
+            <a href="https://www.macys.com" target="_blank">
+              <img class="logos" src="../assets/macys.jpg">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.bedbathandbeyond.com/" target="_blank">
+              <img class="logos" src="../assets/bbb.jpg">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.crateandbarrel.com/" target="_blank">
+              <img class="logos" src="../assets/crateandbarrel.jpg">
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="https://www.bedbathandbeyond.com/" target="_blank">
-            <img class="logos" src="../assets/bbb.jpg">
-          </a>
-        </div>
-        <div>
-          <a href="https://www.crateandbarrel.com/" target="_blank">
-            <img class="logos" src="../assets/crateandbarrel.jpg">
-          </a>
-        </div>
-      </div>
+      </container>
     </section>
     <section class="section2 pv3 tc borderBottom">
-      <h1 class="f2 sectionTitle1">
-        <i class="far fa-images"></i>
-        &nbsp;&nbsp;Photos&nbsp;&nbsp;
-        <i class="far fa-images"></i>
-      </h1>
-      <div class="flex justify-around seashell pv4 ph4 container flex-wrap border-shadow">
-        <div>
-          <img class="photos" src="../assets/photo1.jpg">
+      <container>
+        <h1 class="f2 sectionTitle1">
+          <i class="far fa-images"></i>
+          &nbsp;&nbsp;Photos&nbsp;&nbsp;
+          <i class="far fa-images"></i>
+        </h1>
+        <div class="flex justify-around seashell pv4 ph4 flex-wrap border-shadow">
+          <div>
+            <img class="photos" src="../assets/photo1.jpg">
+          </div>
+          <div>
+            <img class="photos" src="../assets/photo2.jpg">
+          </div>
+          <div>
+            <img class="photos" src="../assets/photo3.jpg">
+          </div>
+          <div>
+            <img class="photos" src="../assets/photo4.jpg">
+          </div>
         </div>
-        <div>
-          <img class="photos" src="../assets/photo2.jpg">
-        </div>
-        <div>
-          <img class="photos" src="../assets/photo3.jpg">
-        </div>
-        <div>
-          <img class="photos" src="../assets/photo4.jpg">
-        </div>
-      </div>
+      </container>
     </section>
     <section class="section1 pv1 tc borderBottom justify-around">
-      <div>
+      <container>
         <div>
           <h1 class="f2 sectionTitle2">
             <i class="far fa-calendar-check"></i>
@@ -252,7 +262,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </container>
     </section>
   </div>
 </template>
@@ -261,10 +271,12 @@
 import Dot from '../components/Dot.vue'
 import dots from '../assets/data/dots.json'
 import Navbar from '../components/Navbar'
+import Container from '../components/Container'
 export default {
   components: {
     Dot,
-    Navbar
+    Navbar,
+    Container
   },
   data: function() {
     return {
