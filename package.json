@@ -13,10 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
     "express": "^4.16.4",
-    "@nuxtjs/axios": "^5.3.6"
+    "hover.css": "^2.3.2",
+    "nuxt": "^2.4.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
