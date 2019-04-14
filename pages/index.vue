@@ -21,16 +21,20 @@
         </div>
         <div id="button-div" class="flex justify-center georgia">
           <a class="hvr-grow" href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa3 border-showcase shadow-hover">
-              <i class="far fa-laugh-beam"></i>
-              &nbsp;How We Met!
+            <button class="pa2 border-showcase shadow-hover">
+              <div class="bg-white navy pa2 border-showcase">
+                <i class="far fa-laugh-beam"></i>
+                &nbsp;How We Met!
+              </div>
             </button>
           </a>
 
           <a class="hvr-grow" href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa3 border-showcase shadow-hover">
-              <i class="far fa-grin-hearts"></i>
-              &nbsp;The Proposal!
+            <button class="pa2 border-showcase shadow-hover">
+              <div class="bg-white navy pa2 border-showcase">
+                <i class="far fa-grin-hearts"></i>
+                &nbsp;The Proposal!
+              </div>
             </button>
           </a>
         </div>
@@ -47,18 +51,18 @@
             ></i>
           </h1>
           <div class="seashell pv2 border-shadow">
-            <div class="polaroid-frame hvr-grow shadow-hover">
+            <div class="polaroid-frame shadow-hover">
+              <img class="churchPic" src="../assets/church.jpg">
+              <h2 class="f2 pb2">Ceremony</h2>
+
+              <h2 class="pt2 pb2 f2">Our Lady of the Pillar</h2>
+              <h4 class="georgia pb3">
+                401 South Lindbergh Blvd.
+                <br>St. Louis, MO 63131
+                <br>(314) 993-2280
+              </h4>
               <a href="https://www.olpillar.com/" target="_blank">
-                <h2 class="f2 pb2">Ceremony</h2>
-
-                <img class="churchPic" src="../assets/church.jpg">
-
-                <h2 class="pt4 pb2 f2">Our Lady of the Pillar</h2>
-                <h4 class="georgia pb3">
-                  401 South Lindbergh Blvd.
-                  <br>St. Louis, MO 63131
-                  <br>(314) 993-2280
-                </h4>
+                <button class="pv1 w-80 bg-navy white hvr-grow">Take Me to Church!</button>
               </a>
             </div>
             <div class="flex justify-around items-center">
@@ -69,17 +73,18 @@
               <i class="pt4 f1 fas fa-heart mid-fa-heart"></i>
             </div>
             <div>
-              <div class="polaroid-frame hvr-grow shadow-hover">
-                <a href="https://www.moolah.org/" target="_blank">
-                  <h2 class="pt2 pb3 f2">Reception</h2>
+              <div class="polaroid-frame shadow-hover">
+                <img class="receptionPic" src="../assets/reception.jpg">
+                <h2 class="pt2 pb3 f2">Reception</h2>
 
-                  <img class="receptionPic" src="../assets/reception.jpg">
-                  <h2 class="pt4 pb2 f2">Moolah Shrine Center</h2>
-                  <h4 class="georgia">
-                    12545 Fee Fee Road
-                    <br>St. Louis, MO 63146
-                    <br>(314) 878-6301
-                  </h4>
+                <h2 class="pb2 f2">Moolah Shrine Center</h2>
+                <h4 class="georgia pb3">
+                  12545 Fee Fee Road
+                  <br>St. Louis, MO 63146
+                  <br>(314) 878-6301
+                </h4>
+                <a href="https://www.moolah.org/" target="_blank">
+                  <button class="hvr-grow bg-navy white pv1 w-80">More Info!</button>
                 </a>
               </div>
             </div>
@@ -140,17 +145,18 @@
         </h1>
         <div class="seashell pv4 border-shadow">
           <div class="polaroid-frame">
-            <h1>Hotel St. Louis</h1>
             <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
-            <h3 class="georgia pt2">
+            <h1>Hotel St. Louis</h1>
+
+            <h3 class="georgia pt0 pb4">
               12345 Not Sure Lane
               <br>St. Louis, MO 63110
               <br>(314) 555-2255
             </h3>
+            <a href="https://www.hotels.com" target="_blank">
+              <button class="bg-navy white hvr-grow shadow-hover pv2 w-90">Book Your Room!</button>
+            </a>
           </div>
-          <a href="https://www.hotels.com" target="_blank">
-            <button class="bg-white navy p10 hvr-grow shadow-hover pa3">Book Your Room!</button>
-          </a>
         </div>
       </container>
     </section>
@@ -186,19 +192,19 @@
           <i class="far fa-images sectionIcon1"></i>
         </h1>
         <div class="flex justify-around seashell pv4 ph3 flex-wrap border-shadow">
-          <div class="polaroid-frame">
+          <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo1.jpg">
             <h2>Being cute at some fun event!</h2>
           </div>
-          <div class="polaroid-frame">
+          <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo2.jpg">
             <h2>Being cute at the Blues Festival!</h2>
           </div>
-          <div class="polaroid-frame">
+          <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo3.jpg">
             <h2>Being cute in the cold!</h2>
           </div>
-          <div class="polaroid-frame">
+          <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo4.jpg">
             <h2>Being cute in nature!</h2>
           </div>
@@ -217,50 +223,54 @@
           </h1>
           <div class="flex justify-around seashell navy flex-nowrap georgia border-shadow">
             <div>
-              <div class="polaroid-frame hvr-grow shadow-hover">
+              <div class="polaroid-frame">
+                <img class="photos" src="../assets/zoo.jpg">
+                <h2 class="pt2 pb2">Wild Lights at The St. Louis Zoo</h2>
+                <h3 class="pb4 pt2">
+                  Government Drive
+                  <br>St. Louis, MO 63110
+                  <br>(314) 781-0900
+                </h3>
                 <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                  <img class="photos" src="../assets/zoo.jpg">
-                  <h2 class="pt4 pb2">Wild Lights at The St. Louis Zoo</h2>
-                  <h3 class="pb4">
-                    Government Drive
-                    <br>St. Louis, MO 63110
-                    <br>(314) 781-0900
-                  </h3>
+                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
                 </a>
               </div>
-              <div class="polaroid-frame hvr-grow shadow-hover">
+              <div class="polaroid-frame">
+                <img class="photos" src="../assets/steinberg.jpg">
+                <h2 class="pt4 pb2">Steinberg Skating Rink</h2>
+                <h3 class="pb4 pt2">
+                  400 Jefferson Drive
+                  <br>St. Louis, MO 63110
+                  <br>(314) 367-7465
+                </h3>
                 <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                  <img class="photos" src="../assets/steinberg.jpg">
-                  <h2 class="pt4 pb2">Steinberg Skating Rink</h2>
-                  <h3 class="pb4">
-                    400 Jefferson Drive
-                    <br>St. Louis, MO 63110
-                    <br>(314) 367-7465
-                  </h3>
+                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More info!</button>
                 </a>
               </div>
-              <div class="polaroid-frame hvr-grow shadow-hover">
-                <a href="https://www.slam.org/" target="_blank">
-                  <img class="photos" src="../assets/slam.jpg">
-                  <h2 class="pt4 pb2">St. Louis Art Museum</h2>
+              <div class="polaroid-frame">
+                <img class="photos" src="../assets/slam.jpg">
+                <h2 class="pt4 pb2">St. Louis Art Museum</h2>
 
-                  <h3 class="pb4">
-                    1 Fine Arts Drive
-                    <br>St. Louis, MO 63110
-                    <br>(314) 721-0072
-                  </h3>
+                <h3 class="pb4 pt2">
+                  1 Fine Arts Drive
+                  <br>St. Louis, MO 63110
+                  <br>(314) 721-0072
+                </h3>
+                <a href="https://www.slam.org/" target="_blank">
+                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
                 </a>
               </div>
-              <div class="polaroid-frame hvr-grow shadow-hover">
+              <div class="polaroid-frame">
+                <img class="photos" src="../assets/city.jpg">
+                <!-- <div> -->
+                <h2 class="pt4 pb2">City Museum St. Louis</h2>
+                <h3 class="pb4 pt2">
+                  750 North 16th
+                  <br>St. Louis, MO 63103
+                  <br>(314) 231-2489
+                </h3>
                 <a href="https://www.citymuseum.org/" target="_blank">
-                  <img class="photos" src="../assets/city.jpg">
-                  <!-- <div> -->
-                  <h2 class="pt4 pb2">City Museum St. Louis</h2>
-                  <h3 class="pb4">
-                    750 North 16th
-                    <br>St. Louis, MO 63103
-                    <br>(314) 231-2489
-                  </h3>
+                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
                 </a>
               </div>
             </div>
@@ -307,6 +317,7 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
+
 .mid-fa-heart {
   color: $red-violet;
 }
