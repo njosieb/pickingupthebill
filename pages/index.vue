@@ -51,7 +51,7 @@
             ></i>
           </h1>
           <div class="seashell pv2 border-shadow">
-            <div class="polaroid-frame shadow-hover">
+            <div class="polaroid-frame">
               <img class="churchPic" src="../assets/church.jpg">
               <h2 class="f2 pb2">Ceremony</h2>
 
@@ -62,7 +62,7 @@
                 <br>(314) 993-2280
               </h4>
               <a href="https://www.olpillar.com/" target="_blank">
-                <button class="pv1 w-80 bg-navy white hvr-grow">Take Me to Church!</button>
+                <button class="shadow-hover pt2 pb1 w-80 bg-navy white hvr-grow">Take Me to Church!</button>
               </a>
             </div>
             <div class="flex justify-around items-center">
@@ -73,7 +73,7 @@
               <i class="pt4 f1 fas fa-heart mid-fa-heart"></i>
             </div>
             <div>
-              <div class="polaroid-frame shadow-hover">
+              <div class="polaroid-frame">
                 <img class="receptionPic" src="../assets/reception.jpg">
                 <h2 class="pt2 pb3 f2">Reception</h2>
 
@@ -84,7 +84,7 @@
                   <br>(314) 878-6301
                 </h4>
                 <a href="https://www.moolah.org/" target="_blank">
-                  <button class="hvr-grow bg-navy white pv1 w-80">More Info!</button>
+                  <button class="shadow-hover hvr-grow bg-navy white pt2 pb1 w-80">More Info!</button>
                 </a>
               </div>
             </div>
@@ -143,7 +143,7 @@
             class="fas fa-hotel sectionIcon1"
           ></i>
         </h1>
-        <div class="seashell pv4 border-shadow">
+        <div class="seashell pv2 border-shadow">
           <div class="polaroid-frame">
             <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
             <h1>Hotel St. Louis</h1>
@@ -191,22 +191,22 @@
           &nbsp;&nbsp;Photos&nbsp;&nbsp;
           <i class="far fa-images sectionIcon1"></i>
         </h1>
-        <div class="flex justify-around seashell pv4 ph3 flex-wrap border-shadow">
+        <div class="flex justify-around seashell pv4 ph3 flex-column border-shadow">
           <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo1.jpg">
-            <h2>Being cute at some fun event!</h2>
+            <h2 class="caption">Being cute at some fun event!</h2>
           </div>
           <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo2.jpg">
-            <h2>Being cute at the Blues Festival!</h2>
+            <h2 class="caption">Being cute at the Blues Festival!</h2>
           </div>
           <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo3.jpg">
-            <h2>Being cute in the cold!</h2>
+            <h2 class="caption">Being cute in the cold!</h2>
           </div>
           <div class="polaroid-frame hvr-grow">
             <img class="photos" src="../assets/photo4.jpg">
-            <h2>Being cute in nature!</h2>
+            <h2 class="caption">Being cute in nature!</h2>
           </div>
         </div>
       </container>
@@ -285,7 +285,11 @@
             Made with
             <i class="fas fa-heart f2 heart"></i>
             by
-            <a href="https://sahmtothedom.com" target="_blank">NJH Designs&nbsp;</a>
+            <a
+              class="hvr-grow"
+              href="https://sahmtothedom.com"
+              target="_blank"
+            >&nbsp;NJH Designs&nbsp;</a>
           </div>
         </div>
       </container>
@@ -317,6 +321,11 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
+.caption {
+  color: $midnight;
+  padding: 0 auto;
+  font-size: 30px;
+}
 
 .mid-fa-heart {
   color: $red-violet;
