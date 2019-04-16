@@ -41,6 +41,11 @@
       </container>
     </section>
     <section id="purpleBorder" class="tc section2 borderBottom">
+      <div class="bg-navy arrow">
+        <h2>
+          <i class="fas fa-angle-down f1 pv2"></i>
+        </h2>
+      </div>
       <container>
         <div class="pv3">
           <h1 class="f2 sectionTitle1">
@@ -321,6 +326,9 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
+.arrow {
+  color: $seashell;
+}
 .caption {
   color: $midnight;
   padding: 0 auto;
@@ -366,7 +374,7 @@ footer {
     0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
   padding: 22px;
   width: 450px;
-  margin: 4rem auto;
+  margin: 3rem auto;
   background-color: white;
 }
 .registry-frame {
