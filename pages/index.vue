@@ -43,7 +43,7 @@
     <section id="purpleBorder" class="tc section2 borderBottom">
       <div class="bg-navy arrow">
         <h2>
-          <i class="fas fa-angle-down f1 pv2"></i>
+          <i class="fas fa-angle-down f1 pv2 hvr-grow"></i>
         </h2>
       </div>
       <container>
@@ -58,9 +58,9 @@
           <div class="seashell pv2 border-shadow">
             <div class="polaroid-frame">
               <img class="churchPic" src="../assets/church.jpg">
-              <h2 class="f2 pb2">Ceremony</h2>
+              <!-- <h2 class="f2 pb2">Ceremony</h2> -->
 
-              <h2 class="pt2 pb2 f2">Our Lady of the Pillar</h2>
+              <h2 class="pt2 pb3 f1">Our Lady of the Pillar</h2>
               <h4 class="georgia pb3">
                 401 South Lindbergh Blvd.
                 <br>St. Louis, MO 63131
@@ -80,9 +80,9 @@
             <div>
               <div class="polaroid-frame">
                 <img class="receptionPic" src="../assets/reception.jpg">
-                <h2 class="pt2 pb3 f2">Reception</h2>
+                <!-- <h2 class="pt2 pb3 f2">Reception</h2> -->
 
-                <h2 class="pb2 f2">Moolah Shrine Center</h2>
+                <h2 class="pt2 pb2 f1">Moolah Shrine Center</h2>
                 <h4 class="georgia pb3">
                   12545 Fee Fee Road
                   <br>St. Louis, MO 63146
@@ -169,7 +169,7 @@
       <container>
         <h1 class="f2 sectionTitle2">
           <i class="fas fa-gift sectionIcon2"></i>
-          &nbsp;Registry&nbsp;
+          &nbsp;&nbsp;Registry&nbsp;&nbsp;
           <i class="fas fa-gift sectionIcon2"></i>
         </h1>
         <div class="flex justify-around seashell pv2 border-shadow flex-wrap">
@@ -444,7 +444,7 @@ img {
 }
 .sectionTitle1 {
   font-size: 3rem;
-  color: $bossanova;
+  color: $red-violet;
 }
 .sectionTitle2 {
   font-size: 3rem;
@@ -468,7 +468,7 @@ img {
   max-width: 70%;
 }
 .border-showcase {
-  border: 2px solid $midnight;
+  border: 1px solid $midnight;
 }
 .arrow {
   font-size: 15px;
