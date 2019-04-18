@@ -48,19 +48,25 @@
       </div>
       <container>
         <div class="pv3">
-          <h1 class="f2 sectionTitle1">
-            <i class="fas fa-clipboard-list sectionIcon1"></i>
-            &nbsp;&nbsp;Schedule&nbsp;&nbsp;
-            <i
-              class="fas fa-clipboard-list sectionIcon1"
-            ></i>
-          </h1>
-          <div class="seashell pv2 border-shadow">
+          <div class="seashell pv1 border-shadow">
+            <h1 class="f2 sectionTitle1">
+              <i class="fas fa-clipboard-list sectionIcon1"></i>
+              &nbsp;&nbsp;Schedule&nbsp;&nbsp;
+              <i
+                class="fas fa-clipboard-list sectionIcon1"
+              ></i>
+            </h1>
             <div class="polaroid-frame">
+              <h2 class="georgia f3 pb3 pt3">
+                Wedding Mass
+                <br>at 6:30 PM
+              </h2>
+
               <img class="churchPic" src="../assets/church.jpg">
-              <!-- <h2 class="f2 pb2">Ceremony</h2> -->
+              <!-- <h2 class="f2">Ceremony</h2> -->
 
               <h2 class="pt2 pb3 f1">Our Lady of the Pillar</h2>
+
               <h4 class="georgia pb3">
                 401 South Lindbergh Blvd.
                 <br>St. Louis, MO 63131
@@ -79,8 +85,12 @@
             </div>
             <div>
               <div class="polaroid-frame">
+                <h2 class="georgia t2 pb3 f3">
+                  Wine & Dessert Reception
+                  <br>at 8pm
+                </h2>
+
                 <img class="receptionPic" src="../assets/reception.jpg">
-                <!-- <h2 class="pt2 pb3 f2">Reception</h2> -->
 
                 <h2 class="pt2 pb2 f1">Moolah Shrine Center</h2>
                 <h4 class="georgia pb3">
@@ -99,40 +109,50 @@
     </section>
     <section class="section1 tc pv3 borderBottom">
       <container>
-        <h1 class="f2 sectionTitle2">
-          <i class="fas fa-users sectionIcon2"></i>
-          &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
-          <i class="fas fa-users sectionIcon2"></i>
-        </h1>
-        <div class="border-shadow">
-          <div class="flex justify-around wedding-party pv5 ph4 navy bg-white">
+        <div class="border-shadow wedding-party pt2">
+          <h1 class="f2 sectionTitle2">
+            <i class="fas fa-users sectionIcon2"></i>
+            &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
+            <i
+              class="fas fa-users sectionIcon2"
+            ></i>
+          </h1>
+          <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
             <div class="pa3 z-2 border-shadow wedding-party-box">
               <i class="fas fa-female person pb3"></i>
               <h2 class="f2">Maid of Honor</h2>
-              <h3 class="georgia">Maureen 'Mo' Milford</h3>
+              <h3 class="georgia pt2">Mo Milford</h3>
+              <h4 class="georgia">Sister of the Bride</h4>
               <div class="pt4">
                 <i class="fas fa-female person"></i>
                 <i class="fas fa-female person"></i>
                 <i class="fas fa-female person"></i>
               </div>
               <h2 class="pt3 f2">Bridesmaids</h2>
-              <h3 class="georgia">Busy Philipps</h3>
-              <h3 class="georgia">Angelique Cabral</h3>
-              <h3 class="georgia">Zoey DeChanel</h3>
+              <h3 class="georgia">Julie Milford</h3>
+              <h4 class="georgia pb3">Sister-In-Law of the Bride</h4>
+              <h3 class="georgia">Mary Kate Milford</h3>
+              <h4 class="georgia pb3">Sister of the Bride</h4>
+              <h3 class="georgia">Eileen Milford</h3>
+              <h4 class="georgia">Sister of the Bride</h4>
             </div>
             <div class="pa3 z-2 border-shadow wedding-party-box">
               <i class="fas fa-male person pb3"></i>
               <h2 class="f2">Best Man</h2>
-              <h3 class="georgia">Charlie Harris Jr.</h3>
+              <h3 class="georgia pt2">Charlie Harris Jr.</h3>
+              <h4 class="georgia">Cousin of the Groom</h4>
               <div class="pt4">
                 <i class="fas fa-male person"></i>
                 <i class="fas fa-male person"></i>
                 <i class="fas fa-male person"></i>
               </div>
               <h2 class="pt3 f2">Groomsmen</h2>
-              <h3 class="georgia">Mark Silverstein</h3>
-              <h3 class="georgia">Oliver Hudson</h3>
-              <h3 class="georgia">Christian Siriano</h3>
+              <h3 class="georgia">Franko Vatterott</h3>
+              <h4 class="georgia pb3">Brother of the Groom</h4>
+              <h3 class="georgia">David Michael Jackson</h3>
+              <h4 class="georgia pb3">Brother-In-Law of the Groom</h4>
+              <h3 class="georgia">Eric Crnkovich</h3>
+              <h4 class="georgia">Brother-In-Law of the Groom</h4>
             </div>
           </div>
         </div>
@@ -141,14 +161,14 @@
 
     <section class="section2 pv3 tc borderBottom">
       <container>
-        <h1 class="f2 sectionTitle1">
-          <i class="fas fa-hotel sectionIcon1"></i>
-          &nbsp;&nbsp;&nbsp;Travel & Accomodations&nbsp;&nbsp;&nbsp;
-          <i
-            class="fas fa-hotel sectionIcon1"
-          ></i>
-        </h1>
         <div class="seashell pv2 border-shadow">
+          <h1 class="f2 sectionTitle1">
+            <i class="fas fa-hotel sectionIcon1"></i>
+            &nbsp;&nbsp;&nbsp;Travel & Accomodations&nbsp;&nbsp;&nbsp;
+            <i
+              class="fas fa-hotel sectionIcon1"
+            ></i>
+          </h1>
           <div class="polaroid-frame">
             <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
             <h1>Hotel St. Louis</h1>
@@ -167,117 +187,109 @@
     </section>
     <section class="section1 tc pv3 borderBottom">
       <container>
-        <h1 class="f2 sectionTitle2">
-          <i class="fas fa-gift sectionIcon2"></i>
-          &nbsp;&nbsp;Registry&nbsp;&nbsp;
-          <i class="fas fa-gift sectionIcon2"></i>
-        </h1>
-        <div class="flex justify-around seashell pv2 border-shadow flex-wrap">
-          <a class="registry-frame hvr-grow" href="https://www.macys.com" target="_blank">
-            <img class="logos" src="../assets/macys.jpg">
-          </a>
+        <div class="seashell pv2 border-shadow flex-wrap">
+          <h1 class="f2 sectionTitle2">
+            <i class="fas fa-gift sectionIcon2"></i>
+            &nbsp;&nbsp;Registry&nbsp;&nbsp;
+            <i class="fas fa-gift sectionIcon2"></i>
+          </h1>
           <a
-            class="registry-frame hvr-grow"
-            href="https://www.bedbathandbeyond.com/"
+            class="flex justify-around registry-frame hvr-grow"
+            href="https://www.zola.com/registry/pickingupthebill"
             target="_blank"
           >
-            <img class="logos" src="../assets/bbb.jpg">
-          </a>
-          <a class="registry-frame hvr-grow" href="https://www.crateandbarrel.com/" target="_blank">
-            <img class="logos" src="../assets/crateandbarrel.jpg">
+            <img class="logos" src="../assets/registry.jpg">
           </a>
         </div>
       </container>
     </section>
     <section class="section2 pv3 tc borderBottom">
       <container>
-        <h1 class="f2 sectionTitle1">
-          <i class="far fa-images sectionIcon1"></i>
-          &nbsp;&nbsp;Photos&nbsp;&nbsp;
-          <i class="far fa-images sectionIcon1"></i>
-        </h1>
         <div class="flex justify-around seashell pv4 ph3 flex-column border-shadow">
-          <div class="polaroid-frame hvr-grow">
-            <img class="photos" src="../assets/photo1.jpg">
+          <h1 class="f2 sectionTitle1">
+            <i class="far fa-images sectionIcon1"></i>
+            &nbsp;&nbsp;Photos&nbsp;&nbsp;
+            <i class="far fa-images sectionIcon1"></i>
+          </h1>
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border" src="../assets/photo1.jpg">
             <h2 class="caption">Being cute at some fun event!</h2>
           </div>
-          <div class="polaroid-frame hvr-grow">
-            <img class="photos" src="../assets/photo2.jpg">
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border" src="../assets/photo2.jpg">
             <h2 class="caption">Being cute at the Blues Festival!</h2>
           </div>
-          <div class="polaroid-frame hvr-grow">
-            <img class="photos" src="../assets/photo3.jpg">
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border" src="../assets/photo3.jpg">
             <h2 class="caption">Being cute in the cold!</h2>
           </div>
-          <div class="polaroid-frame hvr-grow">
-            <img class="photos" src="../assets/photo4.jpg">
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border" src="../assets/photo4.jpg">
             <h2 class="caption">Being cute in nature!</h2>
           </div>
         </div>
       </container>
     </section>
-    <section class="section1 pv5 tc borderBottom justify-around">
+    <section class="section1 pv3 tc borderBottom justify-around">
       <container>
         <div>
-          <h1 class="f2 sectionTitle2">
-            <i class="far fa-calendar-check sectionIcon2"></i>
-            &nbsp;&nbsp;&nbsp; What to Do in The Lou&nbsp;&nbsp;&nbsp;
-            <i
-              class="far fa-calendar-check sectionIcon2"
-            ></i>
-          </h1>
-          <div class="flex justify-around seashell navy flex-nowrap georgia border-shadow">
-            <div>
-              <div class="polaroid-frame">
-                <img class="photos" src="../assets/zoo.jpg">
-                <h2 class="pt2 pb2">Wild Lights at The St. Louis Zoo</h2>
-                <h3 class="pb4 pt2">
-                  Government Drive
-                  <br>St. Louis, MO 63110
-                  <br>(314) 781-0900
-                </h3>
-                <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
-                </a>
-              </div>
-              <div class="polaroid-frame">
-                <img class="photos" src="../assets/steinberg.jpg">
-                <h2 class="pt4 pb2">Steinberg Skating Rink</h2>
-                <h3 class="pb4 pt2">
-                  400 Jefferson Drive
-                  <br>St. Louis, MO 63110
-                  <br>(314) 367-7465
-                </h3>
-                <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More info!</button>
-                </a>
-              </div>
-              <div class="polaroid-frame">
-                <img class="photos" src="../assets/slam.jpg">
-                <h2 class="pt4 pb2">St. Louis Art Museum</h2>
+          <div class="flex justify-around seashell navy flex-column georgia border-shadow">
+            <h1 class="f2 sectionTitle2 sacramento">
+              <i class="far fa-calendar-check sectionIcon2"></i>
+              &nbsp;&nbsp;&nbsp; What to Do in The Lou&nbsp;&nbsp;&nbsp;
+              <i
+                class="far fa-calendar-check sectionIcon2"
+              ></i>
+            </h1>
+            <div class="polaroid-frame">
+              <img class="photos" src="../assets/zoo.jpg">
+              <h2 class="pt2 pb2">Wild Lights at The St. Louis Zoo</h2>
+              <h3 class="pb4 pt2">
+                Government Drive
+                <br>St. Louis, MO 63110
+                <br>(314) 781-0900
+              </h3>
+              <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
+              </a>
+            </div>
+            <div class="polaroid-frame">
+              <img class="photos" src="../assets/steinberg.jpg">
+              <h2 class="pt4 pb2">Steinberg Skating Rink</h2>
+              <h3 class="pb4 pt2">
+                400 Jefferson Drive
+                <br>St. Louis, MO 63110
+                <br>(314) 367-7465
+              </h3>
+              <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More info!</button>
+              </a>
+            </div>
+            <div class="polaroid-frame">
+              <img class="photos" src="../assets/slam.jpg">
+              <h2 class="pt4 pb2">St. Louis Art Museum</h2>
 
-                <h3 class="pb4 pt2">
-                  1 Fine Arts Drive
-                  <br>St. Louis, MO 63110
-                  <br>(314) 721-0072
-                </h3>
-                <a href="https://www.slam.org/" target="_blank">
-                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
-                </a>
-              </div>
-              <div class="polaroid-frame">
-                <img class="photos" src="../assets/city.jpg">
-                <!-- <div> -->
-                <h2 class="pt4 pb2">City Museum St. Louis</h2>
-                <h3 class="pb4 pt2">
-                  750 North 16th
-                  <br>St. Louis, MO 63103
-                  <br>(314) 231-2489
-                </h3>
-                <a href="https://www.citymuseum.org/" target="_blank">
-                  <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
-                </a>
-              </div>
+              <h3 class="pb4 pt2">
+                1 Fine Arts Drive
+                <br>St. Louis, MO 63110
+                <br>(314) 721-0072
+              </h3>
+              <a href="https://www.slam.org/" target="_blank">
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
+              </a>
+            </div>
+            <div class="polaroid-frame">
+              <img class="photos" src="../assets/city.jpg">
+              <!-- <div> -->
+              <h2 class="pt4 pb2">City Museum St. Louis</h2>
+              <h3 class="pb4 pt2">
+                750 North 16th
+                <br>St. Louis, MO 63103
+                <br>(314) 231-2489
+              </h3>
+              <a href="https://www.citymuseum.org/" target="_blank">
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
+              </a>
             </div>
           </div>
         </div>
@@ -326,6 +338,10 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
+
+.photo-border {
+  border: 2px solid $light-red-violet;
+}
 .arrow {
   color: $seashell;
 }
@@ -382,8 +398,8 @@ footer {
     0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
   padding: 22px;
   width: 280px;
-  height: 215px;
-  margin: 4rem auto;
+  height: 245px;
+  margin: 3rem auto;
   background-color: white;
 }
 #behind-polaroid {
@@ -404,7 +420,7 @@ footer {
   background-color: $seashell;
 }
 .wedding-party-box {
-  width: 30%;
+  width: 36%;
   background-color: white;
 }
 .activity {
@@ -444,11 +460,13 @@ img {
 }
 .sectionTitle1 {
   font-size: 3rem;
-  color: $red-violet;
+  color: $light-red-violet;
+  margin-bottom: 0;
 }
 .sectionTitle2 {
   font-size: 3rem;
-  color: $putty;
+  color: $midnight;
+  margin-bottom: 0px;
 }
 .sectionIcon1 {
   font-size: 2.75rem;
@@ -456,7 +474,7 @@ img {
 }
 .sectionIcon2 {
   font-size: 2.75rem;
-  color: $red-violet;
+  color: $light-red-violet;
 }
 .sacramento {
   font-family: 'Sacramento';
@@ -550,8 +568,8 @@ img {
 .photos {
   height: 400px;
   width: 400px;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  // padding-top: 15px;
+  // padding-bottom: 10px;
   object-fit: cover;
   /* padding-left: 30px;
   padding-right: 30px; */
@@ -565,7 +583,7 @@ img {
   padding-right: 30px; */
 }
 .pv3 {
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
