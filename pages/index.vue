@@ -22,18 +22,18 @@
         <div id="button-div" class="flex justify-center georgia">
           <a class="hvr-grow" href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
             <button class="pa2 border-showcase shadow-hover">
-              <div class="bg-white navy pa2 border-showcase">
+              <div class="navy pa2">
                 <i class="far fa-laugh-beam"></i>
-                &nbsp;How We Met!
+                &nbsp;How We Met
               </div>
             </button>
           </a>
 
           <a class="hvr-grow" href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
             <button class="pa2 border-showcase shadow-hover">
-              <div class="bg-white navy pa2 border-showcase">
+              <div class="navy pa2">
                 <i class="far fa-grin-hearts"></i>
-                &nbsp;The Proposal!
+                &nbsp;The Proposal
               </div>
             </button>
           </a>
@@ -73,10 +73,10 @@
                 <br>(314) 993-2280
               </h4>
               <a href="https://www.olpillar.com/" target="_blank">
-                <button class="shadow-hover pt2 pb1 w-80 bg-navy white hvr-grow">Take Me to Church!</button>
+                <button class="shadow-hover pt2 pb1 w-80 bg-navy white hvr-grow">Take Me to Church</button>
               </a>
             </div>
-            <div class="flex justify-around items-center">
+            <div class="flex justify-around items-center pb3">
               <i class="pt4 f1 fas fa-heart mid-fa-heart"></i>
               <i class="pt4 f3 fas fa-heart purple"></i>
               <i class="pt4 f1 fas fa-heart"></i>
@@ -99,8 +99,23 @@
                   <br>(314) 878-6301
                 </h4>
                 <a href="https://www.moolah.org/" target="_blank">
-                  <button class="shadow-hover hvr-grow bg-navy white pt2 pb1 w-80">More Info!</button>
+                  <button
+                    class="shadow-hover hvr-grow bg-navy white pt2 pb1 w-80 mb3"
+                  >More Information</button>
                 </a>
+                <div class="flex justify-around flex-wrap">
+                  <a class="bg-navy white pt2 pb1 w-80 f3 ttc">&nbsp;&nbsp;&nbsp;Suggest a song</a>
+                  <form class="bg-navy white w-80 pa3">
+                    <i class="fas fa-music music-icons f3"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input
+                      class="helvetica"
+                      type="text"
+                    >&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-music music-icons f3"></i>
+                    <button class="hvr-grow pointer bg-white pv1 mt3">Submit</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -179,7 +194,7 @@
               <br>(314) 555-2255
             </h3>
             <a href="https://www.hotels.com" target="_blank">
-              <button class="bg-navy white hvr-grow shadow-hover pv2 w-90">Book Your Room!</button>
+              <button class="bg-navy white hvr-grow shadow-hover pv2 w-90">Book Your Room</button>
             </a>
           </div>
         </div>
@@ -250,7 +265,7 @@
                 <br>(314) 781-0900
               </h3>
               <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button>
               </a>
             </div>
             <div class="polaroid-frame">
@@ -262,7 +277,7 @@
                 <br>(314) 367-7465
               </h3>
               <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                <button class="w-90 bg-navy white shadow-hover hvr-grow">More info!</button>
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button>
               </a>
             </div>
             <div class="polaroid-frame">
@@ -275,7 +290,7 @@
                 <br>(314) 721-0072
               </h3>
               <a href="https://www.slam.org/" target="_blank">
-                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button>
               </a>
             </div>
             <div class="polaroid-frame">
@@ -288,7 +303,7 @@
                 <br>(314) 231-2489
               </h3>
               <a href="https://www.citymuseum.org/" target="_blank">
-                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Info!</button>
+                <button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button>
               </a>
             </div>
           </div>
@@ -338,12 +353,14 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
-
+.music-icons {
+  color: $light-red-violet;
+}
 .photo-border {
   border: 2px solid $light-red-violet;
 }
 .arrow {
-  color: $seashell;
+  color: $putty;
 }
 .caption {
   color: $midnight;
@@ -446,6 +463,12 @@ button {
   color: $midnight;
   background-color: $seashell;
   font-size: x-large;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1rem;
+  letter-spacing: 1.3px;
 }
 #button-div {
   justify-content: space-between;
