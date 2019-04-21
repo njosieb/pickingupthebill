@@ -242,6 +242,22 @@
             <img class="photos photo-border" src="../assets/photo4.jpg">
             <h2 class="caption">Being cute in nature!</h2>
           </div>
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border rotate-90" src="../assets/photo5.jpg">
+            <h2 class="caption">Being cute !</h2>
+          </div>
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border" src="../assets/photo6.jpg">
+            <h2 class="caption">Being cute !</h2>
+          </div>
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border" src="../assets/photo7.jpg">
+            <h2 class="caption">Being cute !</h2>
+          </div>
+          <div class="polaroid-frame hvr-grow shadow-hover">
+            <img class="photos photo-border rotate-90" src="../assets/photo8.jpg">
+            <h2 class="caption">Being cute & holding hands!</h2>
+          </div>
         </div>
       </container>
     </section>
