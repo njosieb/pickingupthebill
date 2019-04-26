@@ -40,6 +40,7 @@
         </div>
       </container>
     </section>
+
     <section id="purpleBorder" class="tc section2 borderBottom">
       <div class="bg-navy arrow">
         <h2>
@@ -65,7 +66,7 @@
               <img class="churchPic" src="../assets/church.jpg">
               <!-- <h2 class="f2">Ceremony</h2> -->
 
-              <h2 class="pt2 pb3 f1">Our Lady of the Pillar</h2>
+              <h2 class="pt3 pb3 f1 purple">Our Lady of the Pillar</h2>
 
               <h4 class="georgia pb3">
                 401 South Lindbergh Blvd.
@@ -92,7 +93,7 @@
 
                 <img class="receptionPic" src="../assets/reception.jpg">
 
-                <h2 class="pt2 pb2 f1">Moolah Shrine Center</h2>
+                <h2 class="pt3 pb2 f1 purple">Moolah Shrine Center</h2>
                 <h4 class="georgia pb3">
                   12545 Fee Fee Road
                   <br>St. Louis, MO 63146
@@ -135,7 +136,7 @@
           <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
             <div class="pa3 z-2 border-shadow wedding-party-box">
               <i class="fas fa-female person pb3"></i>
-              <h2 class="f2">Maid of Honor</h2>
+              <h2 class="f2 purple">Maid of Honor</h2>
               <h3 class="georgia pt2">Mo Milford</h3>
               <h4 class="georgia">Sister of the Bride</h4>
               <div class="pt4">
@@ -143,7 +144,7 @@
                 <i class="fas fa-female person"></i>
                 <i class="fas fa-female person"></i>
               </div>
-              <h2 class="pt3 f2">Bridesmaids</h2>
+              <h2 class="pt3 f2 purple">Bridesmaids</h2>
               <h3 class="georgia">Julie Milford</h3>
               <h4 class="georgia pb3">Sister-In-Law of the Bride</h4>
               <h3 class="georgia">Mary Kate Milford</h3>
@@ -153,7 +154,7 @@
             </div>
             <div class="pa3 z-2 border-shadow wedding-party-box">
               <i class="fas fa-male person pb3"></i>
-              <h2 class="f2">Best Man</h2>
+              <h2 class="f2 purple">Best Man</h2>
               <h3 class="georgia pt2">Charlie Harris Jr.</h3>
               <h4 class="georgia">Cousin of the Groom</h4>
               <div class="pt4">
@@ -161,7 +162,7 @@
                 <i class="fas fa-male person"></i>
                 <i class="fas fa-male person"></i>
               </div>
-              <h2 class="pt3 f2">Groomsmen</h2>
+              <h2 class="pt3 f2 purple">Groomsmen</h2>
               <h3 class="georgia">Franko Vatterott</h3>
               <h4 class="georgia pb3">Brother of the Groom</h4>
               <h3 class="georgia">David Michael Jackson</h3>
@@ -186,7 +187,7 @@
           </h1>
           <div class="polaroid-frame">
             <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
-            <h1>Hotel St. Louis</h1>
+            <h1 class="purple">Hotel St. Louis</h1>
 
             <h3 class="georgia pt0 pb4">
               12345 Not Sure Lane
@@ -205,8 +206,10 @@
         <div class="seashell pv2 border-shadow flex-wrap">
           <h1 class="f2 sectionTitle2">
             <i class="fas fa-gift sectionIcon2"></i>
-            &nbsp;&nbsp;Registry&nbsp;&nbsp;
-            <i class="fas fa-gift sectionIcon2"></i>
+            &nbsp;&nbsp;&nbsp;Registry&nbsp;&nbsp;&nbsp;
+            <i
+              class="fas fa-gift sectionIcon2"
+            ></i>
           </h1>
           <a
             class="flex justify-around registry-frame hvr-grow"
@@ -223,8 +226,10 @@
         <div class="flex justify-around seashell pv4 ph3 flex-column border-shadow">
           <h1 class="f2 sectionTitle1">
             <i class="far fa-images sectionIcon1"></i>
-            &nbsp;&nbsp;Photos&nbsp;&nbsp;
-            <i class="far fa-images sectionIcon1"></i>
+            &nbsp;&nbsp;&nbsp;Photos&nbsp;&nbsp;&nbsp;
+            <i
+              class="far fa-images sectionIcon1"
+            ></i>
           </h1>
           <div class="polaroid-frame hvr-grow shadow-hover">
             <img class="photos photo-border" src="../assets/photo1.jpg">
@@ -274,7 +279,7 @@
             </h1>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/zoo.jpg">
-              <h2 class="pt2 pb2">Wild Lights at The St. Louis Zoo</h2>
+              <h2 class="pt4 pb2 purple sacramento f2">Wild Lights at The Zoo</h2>
               <h3 class="pb4 pt2">
                 Government Drive
                 <br>St. Louis, MO 63110
@@ -286,7 +291,7 @@
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/steinberg.jpg">
-              <h2 class="pt4 pb2">Steinberg Skating Rink</h2>
+              <h2 class="pt4 pb2 purple sacramento f2">Steinberg Skating Rink</h2>
               <h3 class="pb4 pt2">
                 400 Jefferson Drive
                 <br>St. Louis, MO 63110
@@ -298,7 +303,7 @@
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/slam.jpg">
-              <h2 class="pt4 pb2">St. Louis Art Museum</h2>
+              <h2 class="pt4 pb2 purple sacramento f2">St. Louis Art Museum</h2>
 
               <h3 class="pb4 pt2">
                 1 Fine Arts Drive
@@ -312,9 +317,9 @@
             <div class="polaroid-frame">
               <img class="photos" src="../assets/city.jpg">
               <!-- <div> -->
-              <h2 class="pt4 pb2">City Museum St. Louis</h2>
+              <h2 class="pt4 pb2 purple sacramento f2">City Museum St. Louis</h2>
               <h3 class="pb4 pt2">
-                750 North 16th
+                750 North 16th Street
                 <br>St. Louis, MO 63103
                 <br>(314) 231-2489
               </h3>
@@ -329,10 +334,10 @@
     <footer class="flex items-center">
       <container>
         <div class="footer">
-          <div class="f3">
+          <div class="f3 flex items-center">
             Made with
             <i class="fas fa-heart f2 heart"></i>
-            by
+            &nbsp;by&nbsp;
             <a
               class="hvr-grow"
               href="https://sahmtothedom.com"
@@ -373,15 +378,16 @@ export default {
   color: $light-red-violet;
 }
 .photo-border {
-  border: 2px solid $light-red-violet;
+  border: 2px solid $bossanova;
 }
 .arrow {
   color: $putty;
 }
 .caption {
   color: $midnight;
-  padding: 0 auto;
-  font-size: 30px;
+  // padding: 0 auto;
+  font-size: 35px;
+  padding-top: 1rem;
 }
 
 .mid-fa-heart {
@@ -425,7 +431,9 @@ footer {
   width: 450px;
   margin: 3rem auto;
   background-color: white;
+  margin-top: 1.75rem;
 }
+
 .registry-frame {
   box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
     0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
@@ -484,7 +492,7 @@ button {
   font-size: 20px;
   font-weight: 700;
   padding: 1rem;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.5px;
 }
 #button-div {
   justify-content: space-between;
