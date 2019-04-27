@@ -9,6 +9,7 @@
               :dot-id="index"
     />-->
     <navbar></navbar>
+
     <section id="behind-polaroid" class="pv4">
       <container class="relative z-1">
         <div class="polaroid-frame">
@@ -41,7 +42,7 @@
       </container>
     </section>
 
-    <section id="purpleBorder" class="tc section2 borderBottom">
+    <section id="schedule" class="tc section2 borderBottom">
       <div class="bg-navy arrow">
         <h2>
           <i class="fas fa-angle-down f1 pv2 hvr-grow"></i>
@@ -123,7 +124,7 @@
         </div>
       </container>
     </section>
-    <section class="section1 tc pv3 borderBottom">
+    <section id="wedding-party" class="section1 tc pv3 borderBottom">
       <container>
         <div class="border-shadow wedding-party pt2">
           <h1 class="f2 sectionTitle2">
@@ -175,7 +176,7 @@
       </container>
     </section>
 
-    <section class="section2 pv3 tc borderBottom">
+    <section id="hotels" class="section2 pv3 tc borderBottom">
       <container>
         <div class="seashell pv2 border-shadow">
           <h1 class="f2 sectionTitle1">
@@ -201,7 +202,7 @@
         </div>
       </container>
     </section>
-    <section class="section1 tc pv3 borderBottom">
+    <section id="registry" class="section1 tc pv3 borderBottom">
       <container>
         <div class="seashell pv2 border-shadow flex-wrap">
           <h1 class="f2 sectionTitle2">
@@ -221,7 +222,7 @@
         </div>
       </container>
     </section>
-    <section class="section2 pv3 tc borderBottom">
+    <section id="photos" class="section2 pv3 tc borderBottom">
       <container>
         <div class="flex justify-around seashell pv4 ph3 flex-column border-shadow">
           <h1 class="f2 sectionTitle1">
@@ -266,7 +267,7 @@
         </div>
       </container>
     </section>
-    <section class="section1 pv3 tc borderBottom justify-around">
+    <section id="things-to-do" class="section1 pv3 tc borderBottom justify-around">
       <container>
         <div>
           <div class="flex justify-around seashell navy flex-column georgia border-shadow">
@@ -445,6 +446,8 @@ footer {
 }
 #behind-polaroid {
   position: relative;
+  margin-top: -53px;
+  padding-top: 53px;
   &:after {
     content: '';
     position: absolute;
@@ -599,7 +602,7 @@ img {
 .borderBottom {
   border-bottom: 5px solid $midnight;
 }
-#purpleBorder {
+#schedule {
   border-top: 6px solid $bossanova;
 }
 .churchPic {
