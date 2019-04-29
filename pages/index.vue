@@ -135,7 +135,7 @@
             ></i>
           </h1>
           <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
-            <div class="pa3 z-2 border-shadow wedding-party-box">
+            <div class="pa3 border-shadow wedding-party-box">
               <i class="fas fa-female person pb3"></i>
               <h2 class="f2 purple">Maid of Honor</h2>
               <h3 class="georgia pt2">Mo Milford</h3>
@@ -153,7 +153,7 @@
               <h3 class="georgia">Eileen Milford</h3>
               <h4 class="georgia">Sister of the Bride</h4>
             </div>
-            <div class="pa3 z-2 border-shadow wedding-party-box">
+            <div class="pa3 border-shadow wedding-party-box">
               <i class="fas fa-male person pb3"></i>
               <h2 class="f2 purple">Best Man</h2>
               <h3 class="georgia pt2">Charlie Harris Jr.</h3>
@@ -273,7 +273,7 @@
           <div class="flex justify-around seashell navy flex-column georgia border-shadow">
             <h1 class="f2 sectionTitle2 sacramento">
               <i class="far fa-calendar-check sectionIcon2"></i>
-              &nbsp;&nbsp;&nbsp; What to Do in The Lou&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Things to Do in the Lou&nbsp;&nbsp;&nbsp;
               <i
                 class="far fa-calendar-check sectionIcon2"
               ></i>
