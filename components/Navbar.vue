@@ -2,20 +2,38 @@
   <header :style="{backgroundColor: showBackground?'white':'transparent'}">
     <container>
       <div class="flex justify-around items-center white pt1 georgia">
-        <nuxt-link class="nav-link" :to="{path: '/', hash: 'schedule'}">Schedule</nuxt-link>
-        <nuxt-link class="nav-link" :to="{path: '/', hash: 'wedding-party'}">Wedding Party</nuxt-link>
-        <nuxt-link class="nav-link" :to="{path: '/', hash: 'hotels'}">Hotels</nuxt-link>
+        <nuxt-link
+          class="nav-link hvr-grow"
+          :to="{path: '/', hash: 'schedule'}"
+        >&nbsp;&nbsp;Schedule&nbsp;&nbsp;</nuxt-link>
+        <nuxt-link
+          class="nav-link hvr-grow"
+          :to="{path: '/', hash: 'wedding-party'}"
+        >&nbsp;&nbsp;Wedding Party&nbsp;&nbsp;</nuxt-link>
+        <nuxt-link
+          class="nav-link hvr-grow"
+          :to="{path: '/', hash: 'hotels'}"
+        >&nbsp;&nbsp;Hotels&nbsp;&nbsp;</nuxt-link>
         <!-- <div class="nav-title">December 27, 2019</div> -->
         <!-- <div>
           <i class="fas fa-heart f2 heart hvr-grow"></i>
         </div>-->
         <nuxt-link
-          class="flex-grow-1 tc nav-title"
+          class="flex-grow-1 tc nav-title hvr-grow"
           :to="{path: '/', hash: 'behind-polaroid'}"
-        >#PickingUpTheBill</nuxt-link>
-        <nuxt-link class="nav-link" :to="{path: '/', hash: 'registry'}">Registry</nuxt-link>
-        <nuxt-link class="nav-link" :to="{path: '/', hash: 'photos'}">Photos</nuxt-link>
-        <nuxt-link class="nav-link" :to="{path: '/', hash: 'things-to-do'}">Things to Do</nuxt-link>
+        >&nbsp;&nbsp;#PickingUpTheBill&nbsp;&nbsp;</nuxt-link>
+        <nuxt-link
+          class="nav-link hvr-grow"
+          :to="{path: '/', hash: 'registry'}"
+        >&nbsp;&nbsp;Registry&nbsp;&nbsp;</nuxt-link>
+        <nuxt-link
+          class="nav-link hvr-grow"
+          :to="{path: '/', hash: 'photos'}"
+        >&nbsp;&nbsp;Photos&nbsp;&nbsp;</nuxt-link>
+        <nuxt-link
+          class="nav-link hvr-grow"
+          :to="{path: '/', hash: 'things-to-do'}"
+        >&nbsp;&nbsp;Things to Do&nbsp;&nbsp;</nuxt-link>
       </div>
     </container>
   </header>
@@ -63,7 +81,7 @@ export default {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
-  color: $putty;
+  color: $dark-putty;
 }
 header {
   background-color: transparent;
