@@ -67,10 +67,10 @@
               <br>at 6:30 PM
             </h2>
             <div class="polaroid-frame">
-              <img class="churchPic" src="../assets/church.jpg">
+              <img class="photos" src="../assets/pillar.jpg">
               <!-- <h2 class="f2">Ceremony</h2> -->
 
-              <h2 class="pt1 pb2 f1 purple">Our Lady of the Pillar</h2>
+              <h2 class="pt1 pb2 f2 purple">Our Lady of the Pillar</h2>
               <h5 class="georgia pb1">
                 401 S. Lindbergh Blvd. | St. Louis, MO 63131
                 <br>(314) 993-2280
@@ -95,9 +95,9 @@
                 <br>at 8pm
               </h2>
               <div class="polaroid-frame">
-                <img class="receptionPic" src="../assets/reception.jpg">
+                <img class="photos" src="../assets/reception.jpg">
 
-                <h2 class="pt1 f1 purple">Moolah Shrine Center</h2>
+                <h2 class="pt1 f2 purple">Moolah Shrine Center</h2>
                 <h5 class="georgia pb1">
                   12545 Fee Fee Road | St. Louis, MO 63146
                   <br>(314) 878-6301
@@ -111,7 +111,9 @@
                 </a>
               </div>
               <div class="flex justify-around flex-wrap center w-50 pt0 ma4">
-                <a class="bg-navy white pv2 pb1 w-80 f3 ttc">&nbsp;&nbsp;&nbsp;Suggest a song</a>
+                <a
+                  class="bg-navy white pv2 pb1 w-80 f3 pr3 georgia ttc"
+                >&nbsp;&nbsp;&nbsp;Suggest a song!</a>
                 <form class="bg-navy white w-80 pa3">
                   <i class="fas fa-music music-icons f3"></i>
                   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -136,7 +138,7 @@
             ></i>
           </h1>
           <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
-            <div class="pa3 border-shadow wedding-party-box">
+            <div>
               <i class="fas fa-female person pb3"></i>
               <h2 class="f2 purple">Maid of Honor</h2>
               <h3 class="georgia pt2">Mo Milford</h3>
@@ -154,7 +156,7 @@
               <h3 class="georgia">Eileen Milford</h3>
               <h4 class="georgia">Sister of the Bride</h4>
             </div>
-            <div class="pa3 border-shadow wedding-party-box">
+            <div>
               <i class="fas fa-male person pb3"></i>
               <h2 class="f2 purple">Best Man</h2>
               <h3 class="georgia pt2">Charlie Harris Jr.</h3>
@@ -188,15 +190,17 @@
             ></i>
           </h1>
           <div class="polaroid-frame">
-            <img id="hotel" src="../assets/hotel.jpg" class="border-showcase">
-            <h1 class="purple">Hotel St. Louis</h1>
+            <img id="hotel" src="../assets/hotel.jpg" class="photos">
+            <h1 class="purple pv0 mv2">Hotel St. Louis</h1>
 
-            <h5 class="georgia pb4">
+            <h5 class="georgia pb1">
               12345 Not Sure Lane | St. Louis, MO 63110
               <br>(314) 555-2255
             </h5>
+          </div>
+          <div>
             <a href="https://www.hotels.com" target="_blank">
-              <button class="bg-navy white hvr-grow shadow-hover pv2 w-90">Book Your Room</button>
+              <button class="bg-navy white hvr-grow shadow-hover pv2 w-40 mb4">Book Your Room</button>
             </a>
           </div>
         </div>
@@ -233,35 +237,35 @@
             ></i>
           </h1>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border" src="../assets/photo1.jpg">
+            <img class="photos" src="../assets/photo1.jpg">
             <h2 class="caption">Being cute at some fun event!</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border" src="../assets/photo2.jpg">
+            <img class="photos" src="../assets/photo2.jpg">
             <h2 class="caption">Being cute at the Blues Festival!</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border" src="../assets/photo3.jpg">
+            <img class="photos" src="../assets/photo3.jpg">
             <h2 class="caption">Being cute in the cold!</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border" src="../assets/photo4.jpg">
+            <img class="photos" src="../assets/photo4.jpg">
             <h2 class="caption">Being cute in nature!</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border rotate-90" src="../assets/photo5.jpg">
+            <img class="photos rotate-90" src="../assets/photo5.jpg">
             <h2 class="caption">Being cute !</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border" src="../assets/photo6.jpg">
+            <img class="photos" src="../assets/photo6.jpg">
             <h2 class="caption">Being cute !</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border" src="../assets/photo7.jpg">
+            <img class="photos" src="../assets/photo7.jpg">
             <h2 class="caption">Being cute !</h2>
           </div>
           <div class="polaroid-frame hvr-grow shadow-hover">
-            <img class="photos photo-border rotate-90" src="../assets/photo8.jpg">
+            <img class="photos rotate-90" src="../assets/photo8.jpg">
             <h2 class="caption">Being cute & holding hands!</h2>
           </div>
         </div>
@@ -289,9 +293,12 @@
             <div>
               <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
                 <button
-                  class="bg-navy white shadow-hover w-70 hvr-grow pv2"
+                  class="bg-navy white shadow-hover w-70 hvr-grow pv2 mb4"
                 >More Information on Wild Lights</button>
               </a>
+            </div>
+            <div>
+              <i class="fas fa-heart f2 heart hvr-grow"></i>
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/steinberg.jpg">
@@ -304,9 +311,12 @@
             <div>
               <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
                 <button
-                  class="w-70 bg-navy white shadow-hover hvr-grow pv2"
+                  class="w-70 bg-navy white shadow-hover hvr-grow pv2 mb4"
                 >More Information on Steinberg</button>
               </a>
+            </div>
+            <div>
+              <i class="fas fa-heart f2 heart hvr-grow"></i>
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/slam.jpg">
@@ -320,9 +330,12 @@
             <div>
               <a href="https://www.slam.org/" target="_blank">
                 <button
-                  class="w-70 bg-navy white shadow-hover hvr-grow pv2"
+                  class="w-70 bg-navy white shadow-hover hvr-grow pv2 mb4"
                 >More Information on Art Museum</button>
               </a>
+            </div>
+            <div>
+              <i class="fas fa-heart f2 heart hvr-grow"></i>
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/city.jpg">
@@ -348,9 +361,9 @@
       <container>
         <div class="footer">
           <div class="f3 flex items-center">
-            Made with
+            Made with &nbsp;
             <i class="fas fa-heart f2 heart"></i>
-            &nbsp;by&nbsp;
+            &nbsp;&nbsp;by&nbsp;
             <a
               class="hvr-grow"
               href="https://sahmtothedom.com"
@@ -544,9 +557,9 @@ img {
 .seashell {
   background-color: $seashell;
 }
-#hotel {
-  max-width: 70%;
-}
+// #hotel {
+//   max-width: 70%;
+// }
 .border-showcase {
   border: 1px solid $midnight;
 }
@@ -617,16 +630,16 @@ img {
 #schedule {
   border-top: 6px solid $bossanova;
 }
-.churchPic {
-  height: 330px;
-  width: 325px;
-  border: 2px solid $midnight;
-}
-.receptionPic {
-  height: 275px;
-  width: 380px;
-  border: 2px solid $midnight;
-}
+// .churchPic {
+//   height: 330px;
+//   width: 325px;
+//   border: 2px solid $midnight;
+// }
+// .receptionPic {
+//   height: 275px;
+//   width: 380px;
+//   border: 2px solid $midnight;
+// }
 .photos {
   height: 400px;
   width: 400px;
