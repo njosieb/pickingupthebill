@@ -1,5 +1,9 @@
 <template>
-  <header :style="{backgroundColor: showBackground?'seashell':'transparent'}">
+  <header
+    class="pv2"
+    :class="{'header-show-border': showBorder}"
+    :style="{backgroundColor: showBackground?'seashell':'transparent'}"
+  >
     <container>
       <div class="flex justify-around items-center pt1 georgia">
         <nuxt-link class="nav-link hvr-grow-nav" :to="{path: '/', hash: 'schedule'}">Schedule</nuxt-link>
@@ -43,15 +47,18 @@ export default {
       if (this.$el.offsetTop === 0) {
         //Navbar is at the top
         this.showBackground = false
+        this.showBorder = false
       } else {
         //Navbar is not at the top & user has scrolled
         this.showBackground = true
+        this.showBorder = true
       }
     }
   },
   data: function() {
     return {
-      showBackground: false
+      showBackground: false,
+      showBorder: false
     }
   }
 }
@@ -91,17 +98,20 @@ export default {
 }
 header {
   background-color: transparent;
-  padding: 0.75rem 0;
+  // padding: 0.75rem 0;
   position: sticky;
   top: 0px;
   z-index: 2;
   transition: background-color 0.5s ease-in-out;
-  border-bottom: 7px solid $midnight;
+  // border-bottom: 7px solid $midnight;
 }
 .seashell {
   background-color: $seashell;
 }
 .lightest-red-violet {
   background-color: $lightest-red-violet;
+}
+.header-show-border {
+  border-bottom: 5px solid $midnight;
 }
 </style>
