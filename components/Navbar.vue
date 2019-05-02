@@ -76,7 +76,7 @@ export default {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
-  color: $dark-putty;
+  color: $dark-red-violet;
 }
 /* Grow */
 .hvr-grow-nav {

@@ -78,7 +78,7 @@
             </div>
             <div>
               <a href="https://www.olpillar.com/" target="_blank">
-                <button class="shadow-hover pv2 w-70 bg-navy white hvr-grow">Take Me to Church</button>
+                <button class="shadow-hover pv2 w-40 bg-navy white hvr-grow">Take Me to Church</button>
               </a>
             </div>
             <div class="flex justify-around items-center pb3">
@@ -105,9 +105,7 @@
               </div>
               <div>
                 <a href="https://www.moolah.org/" target="_blank">
-                  <button
-                    class="shadow-hover hvr-grow bg-navy white pt2 pb2 w-70"
-                  >More Information on Moolah Schrine</button>
+                  <button class="shadow-hover hvr-grow bg-navy white pt2 pb2 w-40">More Information</button>
                 </a>
               </div>
               <div class="flex justify-around flex-wrap center w-50 pt0 ma4">
@@ -293,8 +291,8 @@
             <div>
               <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
                 <button
-                  class="bg-navy white shadow-hover w-70 hvr-grow pv2 mb4"
-                >More Information on Wild Lights</button>
+                  class="bg-navy white shadow-hover w-40 hvr-grow pv2 mb4"
+                >More Info on Wild Lights</button>
               </a>
             </div>
             <div>
@@ -311,8 +309,8 @@
             <div>
               <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
                 <button
-                  class="w-70 bg-navy white shadow-hover hvr-grow pv2 mb4"
-                >More Information on Steinberg</button>
+                  class="w-40 bg-navy white shadow-hover hvr-grow pv2 mb4"
+                >More Info on Steinberg</button>
               </a>
             </div>
             <div>
@@ -330,8 +328,8 @@
             <div>
               <a href="https://www.slam.org/" target="_blank">
                 <button
-                  class="w-70 bg-navy white shadow-hover hvr-grow pv2 mb4"
-                >More Information on Art Museum</button>
+                  class="w-40 bg-navy white shadow-hover hvr-grow pv2 mb4"
+                >More Info on Art Museum</button>
               </a>
             </div>
             <div>
@@ -349,8 +347,8 @@
             <div>
               <a href="https://www.citymuseum.org/" target="_blank">
                 <button
-                  class="w-70 bg-navy white shadow-hover hvr-grow pv2 mb5"
-                >More Information on City Museum</button>
+                  class="w-40 bg-navy white shadow-hover hvr-grow pv2 mb5"
+                >More Info on City Museum</button>
               </a>
             </div>
           </div>
