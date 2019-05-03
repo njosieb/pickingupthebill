@@ -68,7 +68,7 @@ export default {
 @import '~assets/styles/variables';
 
 .nav-link {
-  color: $light-red-violet;
+  color: $dark-red-violet;
   padding: 0 8px;
 }
 
@@ -76,7 +76,7 @@ export default {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
-  color: $dark-red-violet;
+  color: $midnight;
 }
 /* Grow */
 .hvr-grow-nav {

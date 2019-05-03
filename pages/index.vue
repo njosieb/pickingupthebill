@@ -478,7 +478,7 @@ footer {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(~assets/lights.jpg);
+    background-image: url(~assets/lights1.jpg);
     background-size: cover;
     filter: blur(2px);
   }
