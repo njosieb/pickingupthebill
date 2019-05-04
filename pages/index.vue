@@ -22,7 +22,7 @@
         </div>
         <div id="button-div" class="flex justify-center georgia">
           <a class="hvr-grow" href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa2 border-showcase shadow-hover">
+            <button class="pa2 shadow-hover">
               <div class="navy pa2">
                 <i class="far fa-laugh-beam"></i>
                 &nbsp;How We Met
@@ -31,7 +31,7 @@
           </a>
 
           <a class="hvr-grow" href="https://www.zola.com/wedding/pickingupthebill" target="_blank">
-            <button class="pa2 border-showcase shadow-hover">
+            <button class="pa2 shadow-hover">
               <div class="navy pa2">
                 <i class="far fa-grin-hearts"></i>
                 &nbsp;The Proposal
@@ -55,11 +55,13 @@
         <div class="pv3">
           <div class="seashell pv1 border-shadow">
             <h1 class="f2 sectionTitle1">
-              <i class="fas fa-clipboard-list sectionIcon1"></i>
+              <!-- <i class="fas fa-clipboard-list sectionIcon1"></i> -->
+              <i class="fas fa-place-of-worship sectionIcon1"></i>
               &nbsp;&nbsp;Schedule&nbsp;&nbsp;
-              <i
+              <!-- <i
                 class="fas fa-clipboard-list sectionIcon1"
-              ></i>
+              ></i>-->
+              <i class="fas fa-place-of-worship sectionIcon1"></i>
             </h1>
             <h2 class="georgia f3 pb3 pt3">
               Wedding Mass
@@ -70,7 +72,7 @@
               <img class="photos" src="../assets/pillar.jpg">
               <!-- <h2 class="f2">Ceremony</h2> -->
 
-              <h2 class="pt1 pb2 f2 purple">Our Lady of the Pillar</h2>
+              <h2 class="pt1 pb2 f2">Our Lady of the Pillar</h2>
               <h5 class="georgia pb1">
                 401 S. Lindbergh Blvd. | St. Louis, MO 63131
                 <br>(314) 993-2280
@@ -97,7 +99,7 @@
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/reception.jpg">
 
-                <h2 class="pt1 f2 purple">Moolah Shrine Center</h2>
+                <h2 class="pt1 f2">Moolah Shrine Center</h2>
                 <h5 class="georgia pb1">
                   12545 Fee Fee Road | St. Louis, MO 63146
                   <br>(314) 878-6301
@@ -138,7 +140,7 @@
           <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
             <div>
               <i class="fas fa-female person pb3"></i>
-              <h2 class="f2 purple">Maid of Honor</h2>
+              <h2 class="f2">Maid of Honor</h2>
               <h3 class="georgia pt2">Mo Milford</h3>
               <h4 class="georgia">Sister of the Bride</h4>
               <div class="pt4">
@@ -146,7 +148,7 @@
                 <i class="fas fa-female person"></i>
                 <i class="fas fa-female person"></i>
               </div>
-              <h2 class="pt3 f2 purple">Bridesmaids</h2>
+              <h2 class="pt3 f2">Bridesmaids</h2>
               <h3 class="georgia">Julie Milford</h3>
               <h4 class="georgia pb3">Sister-In-Law of the Bride</h4>
               <h3 class="georgia">Mary Kate Milford</h3>
@@ -156,7 +158,7 @@
             </div>
             <div>
               <i class="fas fa-male person pb3"></i>
-              <h2 class="f2 purple">Best Man</h2>
+              <h2 class="f2">Best Man</h2>
               <h3 class="georgia pt2">Charlie Harris Jr.</h3>
               <h4 class="georgia">Cousin of the Groom</h4>
               <div class="pt4">
@@ -164,7 +166,7 @@
                 <i class="fas fa-male person"></i>
                 <i class="fas fa-male person"></i>
               </div>
-              <h2 class="pt3 f2 purple">Groomsmen</h2>
+              <h2 class="pt3 f2">Groomsmen</h2>
               <h3 class="georgia">Franko Vatterott</h3>
               <h4 class="georgia pb3">Brother of the Groom</h4>
               <h3 class="georgia">David Michael Jackson</h3>
@@ -189,7 +191,7 @@
           </h1>
           <div class="polaroid-frame">
             <img id="hotel" src="../assets/hotel.jpg" class="photos">
-            <h1 class="purple pv0 mv2">Hotel St. Louis</h1>
+            <h1 class="pv0 mv2">Hotel St. Louis</h1>
 
             <h5 class="georgia pb1">
               12345 Not Sure Lane | St. Louis, MO 63110
@@ -282,7 +284,7 @@
             </h1>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/zoo.jpg">
-              <h2 class="pt2 pb2 purple sacramento f2">Wild Lights at The Zoo</h2>
+              <h2 class="pt2 pb2 sacramento f2">Wild Lights at The Zoo</h2>
               <h5>
                 Government Drive | St. Louis, MO 63110
                 <br>(314) 781-0900
@@ -290,9 +292,7 @@
             </div>
             <div>
               <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                <button
-                  class="bg-navy white shadow-hover w-40 hvr-grow pv2 mb4"
-                >More Info on Wild Lights</button>
+                <button class="bg-navy white shadow-hover w-30 hvr-grow pv2 mb4">More Information</button>
               </a>
             </div>
             <div>
@@ -300,7 +300,7 @@
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/steinberg.jpg">
-              <h2 class="pt2 pb2 purple sacramento f2">Steinberg Skating Rink</h2>
+              <h2 class="pt2 pb2 sacramento f2">Steinberg Skating Rink</h2>
               <h5>
                 400 Jefferson Drive | St. Louis, MO 63110
                 <br>(314) 367-7465
@@ -308,9 +308,7 @@
             </div>
             <div>
               <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                <button
-                  class="w-40 bg-navy white shadow-hover hvr-grow pv2 mb4"
-                >More Info on Steinberg</button>
+                <button class="w-30 bg-navy white shadow-hover hvr-grow pv2 mb4">More Information</button>
               </a>
             </div>
             <div>
@@ -318,7 +316,7 @@
             </div>
             <div class="polaroid-frame">
               <img class="photos" src="../assets/slam.jpg">
-              <h2 class="pt2 purple sacramento f2">St. Louis Art Museum</h2>
+              <h2 class="pt2 sacramento f2">St. Louis Art Museum</h2>
 
               <h5>
                 1 Fine Arts Drive | St. Louis, MO 63110
@@ -327,9 +325,7 @@
             </div>
             <div>
               <a href="https://www.slam.org/" target="_blank">
-                <button
-                  class="w-40 bg-navy white shadow-hover hvr-grow pv2 mb4"
-                >More Info on Art Museum</button>
+                <button class="w-30 bg-navy white shadow-hover hvr-grow pv2 mb4">More Information</button>
               </a>
             </div>
             <div>
@@ -338,7 +334,7 @@
             <div class="polaroid-frame">
               <img class="photos" src="../assets/city.jpg">
               <!-- <div> -->
-              <h2 class="pt2 pb1 purple sacramento f2">City Museum St. Louis</h2>
+              <h2 class="pt2 pb1 sacramento f2">City Museum St. Louis</h2>
               <h5>
                 750 North 16th Street | St. Louis, MO 63103
                 <br>(314) 231-2489
@@ -346,9 +342,7 @@
             </div>
             <div>
               <a href="https://www.citymuseum.org/" target="_blank">
-                <button
-                  class="w-40 bg-navy white shadow-hover hvr-grow pv2 mb5"
-                >More Info on City Museum</button>
+                <button class="w-30 bg-navy white shadow-hover hvr-grow pv2 mb5">More Information</button>
               </a>
             </div>
           </div>
@@ -615,11 +609,11 @@ img {
   line-height: 1.5;
 }
 .section1 {
-  background-color: $bossanova;
+  background-color: $testing1;
   color: $putty;
 }
 .section2 {
-  background-color: $putty;
+  background-color: $light-putty;
   color: $midnight;
 }
 .borderBottom {
