@@ -4,6 +4,30 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      title: '#PickingUpTheBill'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: '#PickingUpTheBill',
+          content: 'Bill and Kelly are Getting Married!'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
