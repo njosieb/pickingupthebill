@@ -84,11 +84,11 @@
               </a>
             </div>
             <div class="flex justify-around items-center pb3">
-              <i class="pt4 f1 fas fa-heart mid-fa-heart"></i>
+              <i class="pt4 f1 fas fa-heart mid-fa-heart heart"></i>
               <i class="pt4 f3 fas fa-heart purple"></i>
               <i class="pt4 f1 fas fa-heart"></i>
               <i class="pt4 f3 fas fa-heart purple"></i>
-              <i class="pt4 f1 fas fa-heart mid-fa-heart"></i>
+              <i class="pt4 f1 fas fa-heart mid-fa-heart heart"></i>
             </div>
             <div>
               <h2 class="georgia t2 pt3 pb1 f3">
@@ -109,6 +109,9 @@
                 <a href="https://www.moolah.org/" target="_blank">
                   <button class="shadow-hover hvr-grow bg-navy white pt2 pb2 w-40">More Information</button>
                 </a>
+              </div>
+              <div>
+                <i class="fas fa-heart f2 heart pt4"></i>
               </div>
               <div class="flex justify-around flex-wrap center w-50 pt0 ma4">
                 <a
@@ -562,7 +565,7 @@ img {
   font-size: 50px;
 }
 .heart {
-  color: $red-violet;
+  color: $light-red-violet;
 }
 .w2-d {
   width: 30rem;
