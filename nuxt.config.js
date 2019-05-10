@@ -3,7 +3,9 @@ const path = require('path')
 
 module.exports = {
   mode: 'universal',
-
+  env: {
+    openSesame: 'BillAndKellyAreAwesome'
+  },
   /*
   ** Headers of the page
   */

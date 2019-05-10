@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
   data() {
     return {
@@ -23,6 +25,13 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    const isLoggedIn = JSON.parse(localStorage.getItem('loggedIn'))
+    this.setLoggedIn(isLoggedIn)
+  },
+  methods: {
+    ...mapMutations(['setLoggedIn'])
   }
 }
 </script>
