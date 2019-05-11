@@ -13,7 +13,8 @@
           id="password"
           aria-describedby="password-desc"
           v-model="openSesame"
-          @keyup.enter="submit"
+          @keyup.enter="tryToLogin"
+          v-bind:class="{ error: isWrong }"
         >
         <!-- <input type="text" v-model="openSesame"> -->
         <button
@@ -33,7 +34,8 @@ import { mapActions } from 'vuex'
 export default {
   data() {
     return {
-      openSesame: ''
+      openSesame: '',
+      isWrong: false
     }
   },
   methods: {
@@ -45,7 +47,9 @@ export default {
         this.enteredCorrectPassword()
       } else {
         // TODO: display an error message
-        alert('Looks like you entered the wrong password! Please try again!')
+        this.isWrong = true
+        // this.hasError = true
+        // alert('Looks like you entered the wrong password! Please try again!')
       }
     }
   }
@@ -147,5 +151,8 @@ export default {
   color: $dark-red-violet;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
+}
+.error {
+  border: 2px solid #b00020;
 }
 </style>
