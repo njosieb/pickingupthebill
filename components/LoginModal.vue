@@ -8,13 +8,14 @@
         </h1>
         <label for="password" class="f4 db mb2 tc pb3">Please Enter Password from the Save the Date!</label>
         <input
-          class="input-reset ba b--black-20 pa2 mb2 db w-100"
+          class="input-reset ba b--black-20 pa2 mb2 db w-100 outline-none tc"
           type="text"
           id="password"
           aria-describedby="password-desc"
           v-model="openSesame"
           @keyup.enter="tryToLogin"
           v-bind:class="{ error: isWrong }"
+          placeholder="Enter Password Here!"
         >
         <!-- <input type="text" v-model="openSesame"> -->
         <button
@@ -59,8 +60,12 @@ export default {
 <style lang="scss">
 @import '~assets/styles/variables';
 /* Password styles */
+.outline-none {
+  outline: none;
+}
 #password-desc {
   color: $bossanova;
+  line-height: 1.5;
 }
 .ba {
   border-style: solid;

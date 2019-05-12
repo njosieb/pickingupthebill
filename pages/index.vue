@@ -52,17 +52,17 @@
         </container>
       </section>
 
-      <section id="schedule" class="tc section2 borderBottom">
-        <div class="bg-navy arrow">
+      <section class="tc section2 borderBottom">
+        <div class="bg-navy">
           <h2>
-            <i
-              class="fas fa-angle-down f1 pv2 hvr-grow shadow-hover"
+            <nuxt-link
+              class="fas fa-angle-down pv2 hvr-grow shadow-hover arrow"
               :to="{path: '/', hash: 'schedule'}"
-            ></i>
+            ></nuxt-link>
           </h2>
         </div>
         <container>
-          <div class="pv3">
+          <div id="schedule" class="pv3">
             <div class="seashell pv1 border-shadow">
               <h1 class="f2 sectionTitle1">
                 <!-- <i class="fas fa-clipboard-list sectionIcon1"></i> -->
@@ -73,7 +73,7 @@
                 ></i>-->
                 <i class="fas fa-place-of-worship sectionIcon1"></i>
               </h1>
-              <h2 class="georgia f3 pb3 pt3">
+              <h2 class="georgia f3 pt3">
                 Wedding Mass
                 <br>Friday, December 27, 2019
                 <br>at 6:30 PM
@@ -295,7 +295,7 @@
             <div class="flex justify-around seashell navy flex-column georgia border-shadow">
               <h1 class="f2 sectionTitle2 sacramento">
                 <i class="far fa-calendar-check sectionIcon2"></i>
-                &nbsp;&nbsp;&nbsp;Things to Do in the Lou&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;Things to Do&nbsp;&nbsp;&nbsp;
                 <i
                   class="far fa-calendar-check sectionIcon2"
                 ></i>
@@ -425,8 +425,10 @@ export default {
   border: 2px solid $bossanova;
 }
 .arrow {
-  color: $putty;
+  color: $light-red-violet;
+  font-size: 45px;
 }
+
 .caption {
   color: $midnight;
   // padding: 0 auto;
@@ -581,9 +583,7 @@ img {
 .border-showcase {
   border: 1px solid $midnight;
 }
-.arrow {
-  font-size: 15px;
-}
+
 .person {
   font-size: 50px;
 }
@@ -645,9 +645,9 @@ img {
 .borderBottom {
   border-bottom: 5px solid $midnight;
 }
-#schedule {
-  border-top: 6px solid $bossanova;
-}
+// #schedule {
+//   border-top: 6px solid $bossanova;
+// }
 // .churchPic {
 //   height: 330px;
 //   width: 325px;
