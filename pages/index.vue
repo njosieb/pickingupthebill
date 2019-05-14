@@ -28,7 +28,7 @@
               href="https://www.zola.com/wedding/pickingupthebill"
               target="_blank"
             >
-              <button class="pa2 shadow-hover">
+              <button class="pa2 shadow-hover dim">
                 <div class="navy pa2">
                   <i class="far fa-laugh-beam"></i>
                   &nbsp;How We Met
@@ -41,7 +41,7 @@
               href="https://www.zola.com/wedding/pickingupthebill"
               target="_blank"
             >
-              <button class="pa2 shadow-hover">
+              <button class="pa2 shadow-hover dim">
                 <div class="navy pa2">
                   <i class="far fa-grin-hearts"></i>
                   &nbsp;The Proposal
