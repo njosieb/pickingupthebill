@@ -6,12 +6,12 @@
   >
     <container>
       <div class="flex justify-around items-center pt1 georgia">
-        <nuxt-link class="nav-link hvr-grow-nav" :to="{path: '/', hash: 'schedule'}">Schedule</nuxt-link>
+        <nuxt-link class="nav-link hvr-grow-nav avenir" :to="{path: '/', hash: 'schedule'}">Schedule</nuxt-link>
         <nuxt-link
-          class="nav-link hvr-grow-nav"
+          class="nav-link hvr-grow-nav avenir"
           :to="{path: '/', hash: 'wedding-party'}"
         >Wedding Party</nuxt-link>
-        <nuxt-link class="nav-link hvr-grow-nav" :to="{path: '/', hash: 'hotels'}">Hotels</nuxt-link>
+        <nuxt-link class="nav-link hvr-grow-nav avenir" :to="{path: '/', hash: 'hotels'}">Hotels</nuxt-link>
         <!-- <div class="nav-title">December 27, 2019</div> -->
         <!-- <div>
           <i class="fas fa-heart f2 heart hvr-grow"></i>
@@ -20,10 +20,10 @@
           class="flex-grow-1 tc nav-title hvr-grow"
           :to="{path: '/', hash: 'behind-polaroid'}"
         >#PickingUpTheBill</nuxt-link>
-        <nuxt-link class="nav-link hvr-grow-nav" :to="{path: '/', hash: 'registry'}">Registry</nuxt-link>
-        <nuxt-link class="nav-link hvr-grow-nav" :to="{path: '/', hash: 'photos'}">Photos</nuxt-link>
+        <nuxt-link class="nav-link hvr-grow-nav avenir" :to="{path: '/', hash: 'registry'}">Registry</nuxt-link>
+        <nuxt-link class="nav-link hvr-grow-nav avenir" :to="{path: '/', hash: 'photos'}">Photos</nuxt-link>
         <nuxt-link
-          class="nav-link hvr-grow-nav"
+          class="nav-link hvr-grow-nav avenir"
           :to="{path: '/', hash: 'things-to-do'}"
         >Things to Do</nuxt-link>
       </div>

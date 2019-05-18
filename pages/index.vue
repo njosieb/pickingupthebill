@@ -22,13 +22,13 @@
               <h1 class="polaroid-title f1 mv0">Bill & Kelly are Getting Married!</h1>
             </div>
           </div>
-          <div id="button-div" class="flex justify-center georgia">
+          <div id="button-div" class="flex justify-center">
             <a
               class="hvr-grow"
               href="https://www.zola.com/wedding/pickingupthebill"
               target="_blank"
             >
-              <button class="pa2 shadow-hover dim">
+              <button class="pa2 shadow-hover avenir btn-font">
                 <div class="navy pa2">
                   <i class="far fa-laugh-beam"></i>
                   &nbsp;How We Met
@@ -41,7 +41,7 @@
               href="https://www.zola.com/wedding/pickingupthebill"
               target="_blank"
             >
-              <button class="pa2 shadow-hover dim">
+              <button class="pa2 shadow-hover avenir btn-font">
                 <div class="navy pa2">
                   <i class="far fa-grin-hearts"></i>
                   &nbsp;The Proposal
@@ -93,12 +93,12 @@
                   <button class="shadow-hover pv2 w-40 bg-navy white hvr-grow">Take Me to Church</button>
                 </a>
               </div>
-              <div class="flex justify-around items-center pb3">
-                <i class="pt4 f1 fas fa-heart mid-fa-heart heart"></i>
-                <i class="pt4 f3 fas fa-heart purple"></i>
-                <i class="pt4 f1 fas fa-heart"></i>
-                <i class="pt4 f3 fas fa-heart purple"></i>
-                <i class="pt4 f1 fas fa-heart mid-fa-heart heart"></i>
+              <div class="flex justify-center items-center pb3">
+                <i class="pt4 f3 fas fa-heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f1 fas fa-heart heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div>
                 <h2 class="georgia t2 pt3 pb1 f3">
@@ -122,12 +122,16 @@
                     >More Information</button>
                   </a>
                 </div>
-                <div>
-                  <i class="fas fa-heart f2 heart pt4"></i>
+                <div class="flex justify-center items-center pt3 pb3">
+                  <i class="pt4 f3 fas fa-heart"></i>
+                  <i class="pt4 f2 fas fa-heart bossanova"></i>
+                  <i class="pt4 f1 fas fa-heart heart"></i>
+                  <i class="pt4 f2 fas fa-heart bossanova"></i>
+                  <i class="pt4 f3 fas fa-heart"></i>
                 </div>
                 <div class="flex justify-around flex-wrap center w-50 pt0 ma4">
                   <a
-                    class="bg-navy white pv2 pb1 w-80 f3 pr3 georgia ttc"
+                    class="bg-navy white pt3 pb1 w-80 f2 pr3 sacramento ttc"
                   >&nbsp;&nbsp;&nbsp;Suggest a song!</a>
                   <form class="bg-navy white w-80 pa3">
                     <i class="fas fa-music music-icons f3"></i>
@@ -157,40 +161,63 @@
             </h1>
             <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
               <div>
-                <i class="fas fa-female person pb3"></i>
-                <h2 class="f2">Maid of Honor</h2>
-                <h3 class="georgia pt2">Mo Milford</h3>
-                <h4 class="georgia">Sister of the Bride</h4>
+                <div>
+                  <i class="fas fa-female person pb3"></i>
+                  <h2 class="f2">Maid of Honor</h2>
+                  <h3 class="georgia pt2">Mo Milford</h3>
+                  <h4 class="georgia">Sister of the Bride</h4>
+                </div>
                 <div class="pt4">
                   <i class="fas fa-female person"></i>
                   <i class="fas fa-female person"></i>
                   <i class="fas fa-female person"></i>
                 </div>
-                <h2 class="pt3 f2">Bridesmaids</h2>
-                <h3 class="georgia">Julie Milford</h3>
-                <h4 class="georgia pb3">Sister-In-Law of the Bride</h4>
-                <h3 class="georgia">Mary Kate Milford</h3>
-                <h4 class="georgia pb3">Sister of the Bride</h4>
-                <h3 class="georgia">Eileen Milford</h3>
-                <h4 class="georgia">Sister of the Bride</h4>
+                <div>
+                  <h2 class="pt3 f2">Bridesmaids</h2>
+                  <h3 class="georgia">Julie Milford</h3>
+                  <h4 class="georgia pb3">Sister-In-Law of the Bride</h4>
+                  <h3 class="georgia">Mary Kate Milford</h3>
+                  <h4 class="georgia pb3">Sister of the Bride</h4>
+                  <h3 class="georgia">Eileen Milford</h3>
+                  <h4 class="georgia">Sister of the Bride</h4>
+                </div>
+                <div class="flex justify-center items-center pb3">
+                  <i class="pt4 f3 fas fa-heart"></i>
+                  <i class="pt4 f2 fas fa-heart bossanova"></i>
+                  <i class="pt4 f1 fas fa-heart heart"></i>
+                  <i class="pt4 f2 fas fa-heart bossanova"></i>
+                  <i class="pt4 f3 fas fa-heart"></i>
+                </div>
               </div>
+
               <div>
-                <i class="fas fa-male person pb3"></i>
-                <h2 class="f2">Best Man</h2>
-                <h3 class="georgia pt2">Charlie Harris Jr.</h3>
-                <h4 class="georgia">Cousin of the Groom</h4>
+                <div>
+                  <i class="fas fa-male person pb3"></i>
+                  <h2 class="f2">Best Man</h2>
+                  <h3 class="georgia pt2">Charlie Harris Jr.</h3>
+                  <h4 class="georgia">Cousin of the Groom</h4>
+                </div>
                 <div class="pt4">
                   <i class="fas fa-male person"></i>
                   <i class="fas fa-male person"></i>
                   <i class="fas fa-male person"></i>
                 </div>
-                <h2 class="pt3 f2">Groomsmen</h2>
-                <h3 class="georgia">Franko Vatterott</h3>
-                <h4 class="georgia pb3">Brother of the Groom</h4>
-                <h3 class="georgia">David Michael Jackson</h3>
-                <h4 class="georgia pb3">Brother-In-Law of the Groom</h4>
-                <h3 class="georgia">Eric Crnkovich</h3>
-                <h4 class="georgia">Brother-In-Law of the Groom</h4>
+                <div>
+                  <h2 class="pt3 f2">Groomsmen</h2>
+                  <h3 class="georgia">Franko Vatterott</h3>
+                  <h4 class="georgia pb3">Brother of the Groom</h4>
+                  <h3 class="georgia">David Michael Jackson</h3>
+                  <h4 class="georgia pb3">Brother-In-Law of the Groom</h4>
+                  <h3 class="georgia">Eric Crnkovich</h3>
+                  <h4 class="georgia">Brother-In-Law of the Groom</h4>
+                </div>
+                <div class="flex justify-center items-center pb3">
+                  <i class="pt4 f3 fas fa-heart"></i>
+                  <i class="pt4 f2 fas fa-heart bossanova"></i>
+                  <i class="pt4 f1 fas fa-heart heart"></i>
+                  <i class="pt4 f2 fas fa-heart bossanova"></i>
+                  <i class="pt4 f3 fas fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -218,8 +245,15 @@
             </div>
             <div>
               <a href="https://www.hotels.com" target="_blank">
-                <button class="bg-navy white hvr-grow shadow-hover pv2 w-40 mb4">Book Your Room</button>
+                <button class="bg-navy white hvr-grow shadow-hover pv2 w-40 mb1">Book Your Room</button>
               </a>
+            </div>
+            <div class="flex justify-center items-center pb3">
+              <i class="pt4 f3 fas fa-heart"></i>
+              <i class="pt4 f2 fas fa-heart bossanova"></i>
+              <i class="pt4 f1 fas fa-heart heart"></i>
+              <i class="pt4 f2 fas fa-heart bossanova"></i>
+              <i class="pt4 f3 fas fa-heart"></i>
             </div>
           </div>
         </container>
@@ -241,13 +275,20 @@
             >
               <img class="logos" src="../assets/registry.jpg">
             </a>
+            <div class="navy flex justify-center items-center pt1 pb3">
+              <i class="pt4 f3 fas fa-heart"></i>
+              <i class="pt4 f2 fas fa-heart bossanova"></i>
+              <i class="pt4 f1 fas fa-heart heart"></i>
+              <i class="pt4 f2 fas fa-heart bossanova"></i>
+              <i class="pt4 f3 fas fa-heart"></i>
+            </div>
           </div>
         </container>
       </section>
       <section id="photos" class="section2 pv3 tc borderBottom">
         <container>
           <div class="flex justify-around seashell pv4 ph3 flex-column border-shadow">
-            <h1 class="f2 sectionTitle1">
+            <h1 class="f2 sectionTitle1 mt2">
               <i class="far fa-images sectionIcon1"></i>
               &nbsp;&nbsp;&nbsp;Photos&nbsp;&nbsp;&nbsp;
               <i
@@ -310,11 +351,15 @@
               </div>
               <div>
                 <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                  <button class="bg-navy white shadow-hover w-30 hvr-grow pv2 mb4">More Information</button>
+                  <button class="bg-navy white shadow-hover w-30 hvr-grow pv1 mb4">More Information</button>
                 </a>
               </div>
-              <div>
-                <i class="fas fa-heart f2 heart hvr-grow"></i>
+              <div class="flex justify-center items-center pb3">
+                <i class="pt4 f3 fas fa-heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f1 fas fa-heart heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/steinberg.jpg">
@@ -326,11 +371,15 @@
               </div>
               <div>
                 <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv2 mb4">More Information</button>
+                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
                 </a>
               </div>
-              <div>
-                <i class="fas fa-heart f2 heart hvr-grow"></i>
+              <div class="flex justify-center items-center pb3">
+                <i class="pt4 f3 fas fa-heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f1 fas fa-heart heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/slam.jpg">
@@ -343,11 +392,15 @@
               </div>
               <div>
                 <a href="https://www.slam.org/" target="_blank">
-                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv2 mb4">More Information</button>
+                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
                 </a>
               </div>
-              <div>
-                <i class="fas fa-heart f2 heart hvr-grow"></i>
+              <div class="flex justify-center items-center pb3">
+                <i class="pt4 f3 fas fa-heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f1 fas fa-heart heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/city.jpg">
@@ -418,6 +471,12 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
+.bossanova {
+  color: $bossanova;
+}
+.btn-font {
+  font-weight: 400;
+}
 .music-icons {
   color: $light-red-violet;
 }
@@ -488,6 +547,8 @@ footer {
   height: 245px;
   margin: 3rem auto;
   background-color: white;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 #behind-polaroid {
   position: relative;
@@ -538,10 +599,11 @@ button {
   font-family: helvetica;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: initial;
   padding: 1rem;
   letter-spacing: 0.5px;
 }
+
 #button-div {
   justify-content: space-between;
 }
