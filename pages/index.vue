@@ -90,7 +90,7 @@
               </div>
               <div>
                 <a href="https://www.olpillar.com/" target="_blank">
-                  <button class="shadow-hover pv2 w-40 bg-navy white hvr-grow">Take Me to Church</button>
+                  <button class="shadow-hover pv2 bg-navy white hvr-grow">Take Me to Church</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -117,9 +117,7 @@
                 </div>
                 <div>
                   <a href="https://www.moolah.org/" target="_blank">
-                    <button
-                      class="shadow-hover hvr-grow bg-navy white pt2 pb2 w-40"
-                    >More Information</button>
+                    <button class="shadow-hover hvr-grow bg-navy white pt2 pb2">More Information</button>
                   </a>
                 </div>
                 <div class="flex justify-center items-center pt3 pb3">
@@ -245,7 +243,7 @@
             </div>
             <div>
               <a href="https://www.hotels.com" target="_blank">
-                <button class="bg-navy white hvr-grow shadow-hover pv2 w-40 mb1">Book Your Room</button>
+                <button class="bg-navy white hvr-grow shadow-hover pv2 mb1">Book Your Room</button>
               </a>
             </div>
             <div class="flex justify-center items-center pb3">
@@ -312,7 +310,7 @@
               <h2 class="caption">Being cute in nature!</h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos rotate-90" src="../assets/photo5.jpg">
+              <img class="photos" src="../assets/photo5.jpg">
               <h2 class="caption">Being cute !</h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
@@ -324,7 +322,7 @@
               <h2 class="caption">Being cute !</h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos rotate-90" src="../assets/photo8.jpg">
+              <img class="photos" src="../assets/photo8Edited.jpg">
               <h2 class="caption">Being cute & holding hands!</h2>
             </div>
           </div>
@@ -351,7 +349,7 @@
               </div>
               <div>
                 <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                  <button class="bg-navy white shadow-hover w-30 hvr-grow pv1 mb4">More Information</button>
+                  <button class="bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -371,7 +369,7 @@
               </div>
               <div>
                 <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
+                  <button class="bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -392,7 +390,7 @@
               </div>
               <div>
                 <a href="https://www.slam.org/" target="_blank">
-                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
+                  <button class="bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -413,7 +411,7 @@
               </div>
               <div>
                 <a href="https://www.citymuseum.org/" target="_blank">
-                  <button class="w-30 bg-navy white shadow-hover hvr-grow pv2 mb5">More Information</button>
+                  <button class="bg-navy white shadow-hover hvr-grow pv2 mb5">More Information</button>
                 </a>
               </div>
             </div>
@@ -530,13 +528,23 @@ footer {
     0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
 }
 .polaroid-frame {
+  width: 333px;
+  background-color: white;
   box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
     0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
   padding: 22px;
-  width: 450px;
-  margin: 3rem auto;
-  background-color: white;
   margin-top: 1.75rem;
+  margin: 3rem auto;
+
+  @media (min-width: 1000px) {
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+      0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+    padding: 22px;
+    width: 450px;
+    margin: 3rem auto;
+    background-color: white;
+    margin-top: 1.75rem;
+  }
 }
 
 .registry-frame {
@@ -592,16 +600,25 @@ hr {
   margin: 0 auto;
 }
 button {
-  // background-color: $putty;
-  color: $midnight;
-  background-color: $seashell;
+  width: 70%;
   font-size: x-large;
   font-family: helvetica;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: initial;
-  padding: 1rem;
-  letter-spacing: 0.5px;
+  @media (min-width: 1000px) {
+    // background-color: $putty;
+    color: $midnight;
+    background-color: $seashell;
+    font-size: x-large;
+    font-family: helvetica;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: initial;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    width: 40%;
+  }
 }
 
 #button-div {

@@ -97,13 +97,15 @@ export default {
   border-bottom: 2px solid $red-violet;
 }
 header {
-  background-color: transparent;
-  // padding: 0.75rem 0;
-  position: sticky;
-  top: 0px;
-  z-index: 2;
-  transition: background-color 0.5s ease-in-out;
-  // border-bottom: 7px solid $midnight;
+  display: none;
+  @media (min-width: 1000px) {
+    background-color: transparent;
+    // padding: 0.75rem 0;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    transition: background-color 0.5s ease-in-out;
+  }
 }
 .seashell {
   background-color: $seashell;
