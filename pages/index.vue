@@ -577,10 +577,10 @@ footer {
 .wedding-party {
   background-color: $seashell;
 }
-.wedding-party-box {
-  width: 36%;
-  background-color: white;
-}
+// .wedding-party-box {
+//   width: 36%;
+//   background-color: white;
+// }
 .activity {
   position: relative;
   &:after {
