@@ -5,7 +5,7 @@
     :style="{backgroundColor: showBackground?'seashell':'transparent'}"
   >
     <container>
-      <div class="flex justify-around items-center pt1 georgia">
+      <div id="desktop-menu" class="flex justify-around items-center pt1 georgia">
         <nuxt-link class="nav-link hvr-grow-nav avenir" :to="{path: '/', hash: 'schedule'}">Schedule</nuxt-link>
         <nuxt-link
           class="nav-link hvr-grow-nav avenir"
@@ -26,6 +26,15 @@
           class="nav-link hvr-grow-nav avenir"
           :to="{path: '/', hash: 'things-to-do'}"
         >Things to Do</nuxt-link>
+      </div>
+    </container>
+    <container>
+      <div id="mobile-menu">
+        <i class="fas fa-bars"></i>
+        <nuxt-link
+          class="flex-grow-1 mobile-title hvr-grow pv2"
+          :to="{path: '/', hash: 'behind-polaroid'}"
+        >#PickingUpTheBill</nuxt-link>
       </div>
     </container>
   </header>
@@ -67,6 +76,24 @@ export default {
 <style lang='scss'>
 @import '~assets/styles/variables';
 
+#mobile-menu {
+  background-color: $seashell;
+  position: relative;
+  z-index: 1;
+  padding-left: 0;
+  padding-right: 0;
+  @media (min-width: 1000px) {
+    display: none;
+  }
+}
+
+#desktop-menu {
+  display: none;
+  @media (min-width: 1000px) {
+    background-color: pink;
+  }
+}
+
 .nav-link {
   color: $dark-red-violet;
   padding: 0 8px;
@@ -77,6 +104,10 @@ export default {
   font-weight: bold;
   font-size: 1.5rem;
   color: $midnight;
+}
+.mobile-title {
+  display: flex;
+  align-content: right;
 }
 /* Grow */
 .hvr-grow-nav {
@@ -97,7 +128,7 @@ export default {
   border-bottom: 2px solid $red-violet;
 }
 header {
-  display: none;
+  // display: none;
   @media (min-width: 1000px) {
     background-color: transparent;
     // padding: 0.75rem 0;
