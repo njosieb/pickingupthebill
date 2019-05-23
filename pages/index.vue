@@ -90,7 +90,7 @@
               </div>
               <div>
                 <a href="https://www.olpillar.com/" target="_blank">
-                  <button class="shadow-hover pv2 bg-navy white hvr-grow">Take Me to Church</button>
+                  <button class="shadow-hover pv2 bg-navy white hvr-grow button">Take Me to Church</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -117,7 +117,9 @@
                 </div>
                 <div>
                   <a href="https://www.moolah.org/" target="_blank">
-                    <button class="shadow-hover hvr-grow bg-navy white pt2 pb2">More Information</button>
+                    <button
+                      class="shadow-hover hvr-grow bg-navy white pt2 pb2 button"
+                    >More Information</button>
                   </a>
                 </div>
                 <div class="flex justify-center items-center pt3 pb3">
@@ -243,7 +245,7 @@
             </div>
             <div>
               <a href="https://www.hotels.com" target="_blank">
-                <button class="bg-navy white hvr-grow shadow-hover pv2 mb1">Book Your Room</button>
+                <button class="bg-navy white hvr-grow shadow-hover pv2 mb1 button">Book Your Room</button>
               </a>
             </div>
             <div class="flex justify-center items-center pb3">
@@ -349,7 +351,9 @@
               </div>
               <div>
                 <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank">
-                  <button class="bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
+                  <button
+                    class="bg-navy white shadow-hover hvr-grow pv1 mb4 button"
+                  >More Information</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -369,7 +373,9 @@
               </div>
               <div>
                 <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank">
-                  <button class="bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
+                  <button
+                    class="bg-navy white shadow-hover hvr-grow pv1 mb4 button"
+                  >More Information</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -390,7 +396,9 @@
               </div>
               <div>
                 <a href="https://www.slam.org/" target="_blank">
-                  <button class="bg-navy white shadow-hover hvr-grow pv1 mb4">More Information</button>
+                  <button
+                    class="bg-navy white shadow-hover hvr-grow pv1 mb4 button"
+                  >More Information</button>
                 </a>
               </div>
               <div class="flex justify-center items-center pb3">
@@ -411,7 +419,9 @@
               </div>
               <div>
                 <a href="https://www.citymuseum.org/" target="_blank">
-                  <button class="bg-navy white shadow-hover hvr-grow pv2 mb5">More Information</button>
+                  <button
+                    class="bg-navy white shadow-hover hvr-grow pv2 mb5 button"
+                  >More Information</button>
                 </a>
               </div>
             </div>
@@ -599,7 +609,7 @@ hr {
   width: 80%;
   margin: 0 auto;
 }
-button {
+.button {
   width: 70%;
   font-size: x-large;
   font-family: helvetica;

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="pv2"
+    class
     :class="{'header-show-border': showBorder}"
     :style="{backgroundColor: showBackground?'seashell':'transparent'}"
   >
@@ -28,15 +28,37 @@
         >Things to Do</nuxt-link>
       </div>
     </container>
-    <container>
-      <div id="mobile-menu">
-        <i class="fas fa-bars"></i>
-        <nuxt-link
-          class="flex-grow-1 mobile-title hvr-grow pv2"
+    <div class="dropdown w-100">
+      <div id="mobile-nav" class="flex pv2 f3">
+        <button class="bar-btn">
+          <i class="fas fa-bars pl3 pointer"></i>
+        </button>
+        <div
+          class="flex-grow-1 tr pr3 i georgia"
           :to="{path: '/', hash: 'behind-polaroid'}"
-        >#PickingUpTheBill</nuxt-link>
+        >#PickingUpTheBill</div>
       </div>
-    </container>
+      <div class="dropdown-content">
+        <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'schedule'}">
+          <i class="fas fa-place-of-worship menu-icons"/> Schedule
+        </nuxt-link>
+        <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'wedding-party'}">
+          <i class="fas fa-users menu-icons"/> Wedding Party
+        </nuxt-link>
+        <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'hotels'}">
+          <i class="fas fa-hotel menu-icons"/> Hotels
+        </nuxt-link>
+        <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'registry'}">
+          <i class="fas fa-gift menu-icons"/> Registry
+        </nuxt-link>
+        <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'photos'}">
+          <i class="fas fa-images menu-icons"/> Photos
+        </nuxt-link>
+        <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'things-to-do'}">
+          <i class="fas fa-calendar-check menu-icons"/> Things To Do
+        </nuxt-link>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -76,12 +98,18 @@ export default {
 <style lang='scss'>
 @import '~assets/styles/variables';
 
-#mobile-menu {
+.bar-btn {
+  background-color: transparent;
+  border: 0;
+}
+
+#mobile-nav {
   background-color: $seashell;
   position: relative;
   z-index: 1;
   padding-left: 0;
   padding-right: 0;
+  border-bottom: 5px solid $midnight;
   @media (min-width: 1000px) {
     display: none;
   }
@@ -105,10 +133,10 @@ export default {
   font-size: 1.5rem;
   color: $midnight;
 }
-.mobile-title {
-  display: flex;
-  align-content: right;
-}
+// .mobile-title {
+//   display: flex;
+//   align-content: right;
+// }
 /* Grow */
 .hvr-grow-nav {
   display: inline-block;
@@ -146,5 +174,45 @@ header {
 }
 .header-show-border {
   border-bottom: 5px solid $midnight;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: $seashell;
+  min-width: 90px;
+  min-height: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $midnight;
+  padding: 12px 16px;
+  text-decoration: bold;
+  display: block;
+  z-index: 2;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: $lightest-red-violet;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: $seashell;
+}
+.menu-icons {
+  color: $light-red-violet;
 }
 </style>
