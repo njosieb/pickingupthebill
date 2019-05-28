@@ -19,7 +19,7 @@
               <img src="~assets/header.jpg">
             </div>
             <div id="title-box" class="tc">
-              <h1 class="polaroid-title f1 mv0">Bill & Kelly are Getting Married!</h1>
+              <h1 class="polaroid-title f1 mv0 header-pol-font">Bill & Kelly are Getting Married!</h1>
             </div>
           </div>
           <div id="button-div" class="flex justify-center">
@@ -28,7 +28,7 @@
               href="https://www.zola.com/wedding/pickingupthebill"
               target="_blank"
             >
-              <button class="pa2 shadow-hover avenir btn-font">
+              <button class="pa2 shadow-hover avenir hdr-btn">
                 <div class="navy pa2">
                   <i class="far fa-laugh-beam"></i>
                   &nbsp;How We Met
@@ -41,7 +41,7 @@
               href="https://www.zola.com/wedding/pickingupthebill"
               target="_blank"
             >
-              <button class="pa2 shadow-hover avenir btn-font">
+              <button class="pa2 shadow-hover avenir hdr-btn">
                 <div class="navy pa2">
                   <i class="far fa-grin-hearts"></i>
                   &nbsp;The Proposal
@@ -154,12 +154,10 @@
           <div class="border-shadow wedding-party pt2">
             <h1 class="f2 sectionTitle2">
               <i class="fas fa-users sectionIcon2"></i>
-              &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
-              <i
-                class="fas fa-users sectionIcon2"
-              ></i>
+              &nbsp; Wedding Party &nbsp;
+              <i class="fas fa-users sectionIcon2"></i>
             </h1>
-            <div class="flex justify-around wedding-party pv3 ph4 navy bg-white">
+            <div class="flex justify-around wedding-party pv3 ph4 navy bg-white wedding-party-text">
               <div>
                 <div>
                   <i class="fas fa-female person pb3"></i>
@@ -192,7 +190,7 @@
 
               <div>
                 <div>
-                  <i class="fas fa-male person pb3"></i>
+                  <i class="fas fa-male person pb3 wedding-pt"></i>
                   <h2 class="f2">Best Man</h2>
                   <h3 class="georgia pt2">Charlie Harris Jr.</h3>
                   <h4 class="georgia">Cousin of the Groom</h4>
@@ -343,7 +341,7 @@
               </h1>
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/zoo.jpg">
-                <h2 class="pt2 pb2 sacramento f2">Wild Lights at The Zoo</h2>
+                <h2 class="pt2 pb2 sacramento f2 td-fs">Wild Lights at The Zoo</h2>
                 <h5>
                   Government Drive | St. Louis, MO 63110
                   <br>(314) 781-0900
@@ -365,7 +363,7 @@
               </div>
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/steinberg.jpg">
-                <h2 class="pt2 pb2 sacramento f2">Steinberg Skating Rink</h2>
+                <h2 class="pt2 pb2 sacramento f2 td-fs">Steinberg Skating Rink</h2>
                 <h5>
                   400 Jefferson Drive | St. Louis, MO 63110
                   <br>(314) 367-7465
@@ -387,7 +385,7 @@
               </div>
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/slam.jpg">
-                <h2 class="pt2 sacramento f2">St. Louis Art Museum</h2>
+                <h2 class="pt2 sacramento f2 td-fs">St. Louis Art Museum</h2>
 
                 <h5>
                   1 Fine Arts Drive | St. Louis, MO 63110
@@ -411,7 +409,7 @@
               <div class="polaroid-frame">
                 <img class="photos" src="../assets/city.jpg">
                 <!-- <div> -->
-                <h2 class="pt2 pb1 sacramento f2">City Museum St. Louis</h2>
+                <h2 class="pt2 pb1 sacramento f2 td-fs">City Museum St. Louis</h2>
                 <h5>
                   750 North 16th Street | St. Louis, MO 63103
                   <br>(314) 231-2489
@@ -479,12 +477,13 @@ export default {
 
 <style lang="scss">
 @import '~assets/styles/variables';
+
 .bossanova {
   color: $bossanova;
 }
-.btn-font {
-  font-weight: 400;
-}
+// .btn-font {
+//   font-weight: 400;
+// }
 .music-icons {
   color: $light-red-violet;
 }
@@ -497,10 +496,14 @@ export default {
 }
 
 .caption {
-  color: $midnight;
-  // padding: 0 auto;
-  font-size: 35px;
+  font-weight: 500;
   padding-top: 1rem;
+  @media (min-width: 1000px) {
+    color: $midnight;
+    // padding: 0 auto;
+    font-size: 35px;
+    padding-top: 1rem;
+  }
 }
 
 .mid-fa-heart {
@@ -587,10 +590,16 @@ footer {
 .wedding-party {
   background-color: $seashell;
 }
-// .wedding-party-box {
-//   width: 36%;
-//   background-color: white;
-// }
+.wedding-party-text {
+  @media (max-width: 570px) {
+    flex-wrap: wrap;
+  }
+}
+.wedding-pt {
+  @media (max-width: 570px) {
+    padding-top: 1rem;
+  }
+}
 .activity {
   position: relative;
   &:after {
@@ -610,16 +619,21 @@ hr {
   margin: 0 auto;
 }
 .button {
-  width: 70%;
+  width: 40%;
   font-size: x-large;
   font-family: helvetica;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: initial;
+  background-color: $midnight;
+  color: white;
+  @media (min-width: 375px) {
+    width: 70%;
+  }
   @media (min-width: 1000px) {
     // background-color: $putty;
-    color: $midnight;
-    background-color: $seashell;
+    background-color: $midnight;
+    color: white;
     font-size: x-large;
     font-family: helvetica;
     text-transform: uppercase;
@@ -634,6 +648,11 @@ hr {
 #button-div {
   justify-content: space-between;
 }
+.hdr-btn {
+  background-color: $seashell;
+  border: 0;
+  font-weight: 450;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -643,14 +662,22 @@ img {
   margin: 0 auto;
 }
 .sectionTitle1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: $light-red-violet;
-  margin-bottom: 0;
+  @media (min-width: 1000px) {
+    font-size: 3rem;
+    color: $light-red-violet;
+    margin-bottom: 0;
+  }
 }
 .sectionTitle2 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: $midnight;
-  margin-bottom: 0px;
+  @media (min-width: 1000px) {
+    font-size: 3rem;
+    color: $midnight;
+    margin-bottom: 0px;
+  }
 }
 .sectionIcon1 {
   font-size: 2.75rem;
@@ -713,11 +740,16 @@ img {
   background-size: cover !important;
 }
 #title-box {
-  color: $midnight;
-  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 500;
   padding-top: 22px;
-  font-size: 28px;
-  line-height: 1.5;
+  @media (min-width: 1000px) {
+    font-size: 28px;
+    line-height: 1.5;
+    padding-top: 22px;
+    color: $midnight;
+    margin: 0 auto;
+  }
 }
 .polaroid-title {
   font-size: 28px;
@@ -733,6 +765,12 @@ img {
 }
 .borderBottom {
   border-bottom: 5px solid $midnight;
+}
+
+.td-fs {
+  @media (max-width: 1000px) {
+    font-size: 31px;
+  }
 }
 // #schedule {
 //   border-top: 6px solid $bossanova;
