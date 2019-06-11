@@ -117,16 +117,18 @@
                   <a
                     class="bg-navy white pt3 pb1 w-80 f2 pr3 sacramento ttc"
                   >&nbsp;&nbsp;&nbsp;Suggest a song!</a>
-                  <form class="bg-navy white w-80 pa3">
+                  <div class="bg-navy white w-80 pa3">
                     <i class="fas fa-music music-icons f3"></i>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <input
+                      v-model="suggestedSong"
                       class="helvetica"
                       type="text"
                     >&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fas fa-music music-icons f3"></i>
-                    <button class="hvr-grow pointer bg-white pv1 mt3">Submit</button>
-                  </form>
+                    <button class="hvr-grow pointer bg-white pv1 mt3" @click="onSuggest">Submit</button>
+                    <div v-if="submissionSuccess">Thank you for suggesting a song!</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -277,17 +279,18 @@
                 class="far fa-images sectionIcon1"
               ></i>
             </h1>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo1.jpg">
-              <h2 class="caption">Being cute at some fun event!</h2>
+
+            <div v-for="(picture, i) in pictures" :key="i" class="polaroid-frame">
+              <img class="photos" :src="require(`~/assets/${picture.photo}.jpg`)">
+              <h2 class="caption">{{ picture.caption }}</h2>
             </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
+            <!-- <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo2.jpg">
               <h2 class="caption">Being cute at the Blues Festival!</h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo3.jpg">
-              <h2 class="caption">Being cute in the cold!</h2>
+              <h2 class="caption"></h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo4.jpg">
@@ -308,7 +311,7 @@
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo8Edited.jpg">
               <h2 class="caption">Being cute & holding hands!</h2>
-            </div>
+            </div>-->
           </div>
         </container>
       </section>
@@ -438,14 +441,17 @@ import Container from '../components/Container'
 import Footer from '../components/Footer'
 import LoginModal from '../components/LoginModal'
 import { mapState } from 'vuex'
-
+import VueSwing from 'vue-swing'
+import { fireDb } from '~/plugins/firebase'
+import { setTimeout } from 'timers'
 export default {
   components: {
     Dot,
     Navbar,
     Container,
     Footer,
-    LoginModal
+    LoginModal,
+    VueSwing
   },
   data: function() {
     return {
@@ -456,7 +462,14 @@ export default {
 
 Although Kelly only granted Bill the honor of a pre-date first, to see if he lived up to the Guidrys' glowing description, less than a week later, they had their first official date, at Broadway Oyster Bar.  After a long hike and an event at the History Museum, they decided to make it official and Bill took Kelly to the top of Art Hill and asked her to be his girlfriend.  (He claims this was because I was leaving for Vienna the following morning and wanted to "lock it down."  I still think he's just a good, old-fashioned romantic.)`,
         `Bill enlisted the help of many people, but primarily Kelly's sister and maid-of-honor, Maureen (Mo) and her partner, Jason, to give Kelly the surprise of a lifetime.  While Kelly was busy entertaining (and navigating a huge snowstorm!) the out-of-towners, Bill was supposed to be away at a silent retreat.  Instead, he stowed away at his parents' house until the pièce de résistance, when he sneakily appeared behind Kelly at Art Hill and got down on one knee to pop the question.`
-      ]
+      ],
+      pictures: [
+        { photo: 'photo1', caption: 'Being cute at some fun event!' },
+        { photo: 'photo2', caption: 'Being cute at the Blues Festival!' },
+        { photo: 'photo3', caption: 'Being cute in the cold!' }
+      ],
+      suggestedSong: '',
+      submissionSuccess: false
     }
   },
   computed: {
@@ -465,6 +478,15 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
   methods: {
     tabToggle(tabClicked) {
       this.activeTab = tabClicked
+    },
+    async onSuggest() {
+      const suggestedSong = { entry: this.suggestedSong }
+      await fireDb.collection('suggestedSongs').add(suggestedSong)
+      this.submissionSuccess = true
+      this.suggestedSong = ''
+      setTimeout(() => {
+        this.submissionSuccess = false
+      }, 5000)
     }
   }
 }

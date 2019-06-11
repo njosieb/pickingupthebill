@@ -1,8 +1,7 @@
 const pkg = require('./package')
-const path = require('path')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
   env: {
     openSesame: 'love'
   },
@@ -51,7 +50,10 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/vue-swing', ssr: false },
+    { src: '~/plugins/firebase.js' }
+  ],
 
   router: {
     scrollBehavior(to, from, savedPosition) {
