@@ -126,6 +126,7 @@ export default {
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
+    display: flex;
   }
 }
 
