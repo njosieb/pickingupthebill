@@ -53,14 +53,6 @@
       </section>
 
       <section class="tc section2 borderBottom">
-        <div class="bg-navy">
-          <h2>
-            <nuxt-link
-              class="fas fa-angle-down pv2 hvr-grow shadow-hover arrow"
-              :to="{path: '/', hash: 'schedule'}"
-            ></nuxt-link>
-          </h2>
-        </div>
         <container>
           <div id="schedule" class="pv3">
             <div class="seashell pv1 border-shadow">

@@ -1,6 +1,6 @@
 <template>
   <header
-    class
+    class="sticky-header"
     :class="{'header-show-border': showBorder}"
     :style="{backgroundColor: showBackground?'seashell':'transparent'}"
   >
@@ -97,6 +97,11 @@ export default {
 
 <style lang='scss'>
 @import '~assets/styles/variables';
+.sticky-header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
 
 .bar-btn {
   background-color: transparent;
@@ -118,7 +123,9 @@ export default {
 #desktop-menu {
   display: none;
   @media (min-width: 1000px) {
-    background-color: pink;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
