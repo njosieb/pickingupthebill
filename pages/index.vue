@@ -28,7 +28,7 @@
         <container>
           <h1 class="f2 white tc">Our Story</h1>
           <div class="tab-container">
-            <div class="tabs flex justify-around">
+            <div class="avenir pb3 tabs flex justify-around">
               <div class="tab" @click="tabToggle(0)">
                 <i class="far fa-laugh-beam"></i>
                 &nbsp;How We Met
@@ -39,7 +39,9 @@
               </div>
             </div>
             <div class="story">
-              <p>{{ stories[activeTab] }}</p>
+              <p
+                class="avenir pb5 measure-wide-l lh-copy ph0-ns ph4 center"
+              >{{ stories[activeTab] }}</p>
             </div>
           </div>
         </container>
