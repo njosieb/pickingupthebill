@@ -22,36 +22,28 @@
               <h1 class="polaroid-title f1 mv0 header-pol-font">Bill & Kelly are Getting Married!</h1>
             </div>
           </div>
-          <div id="button-div" class="flex justify-center">
-            <a
-              class="hvr-grow"
-              href="https://www.zola.com/wedding/pickingupthebill"
-              target="_blank"
-            >
-              <button class="pa2 shadow-hover avenir hdr-btn">
-                <div class="navy pa2">
-                  <i class="far fa-laugh-beam"></i>
-                  &nbsp;How We Met
-                </div>
-              </button>
-            </a>
-
-            <a
-              class="hvr-grow"
-              href="https://www.zola.com/wedding/pickingupthebill"
-              target="_blank"
-            >
-              <button class="pa2 shadow-hover avenir hdr-btn">
-                <div class="navy pa2">
-                  <i class="far fa-grin-hearts"></i>
-                  &nbsp;The Proposal
-                </div>
-              </button>
-            </a>
+        </container>
+      </section>
+      <section class="bg-navy overflow-auto white">
+        <container>
+          <h1 class="f2 white tc">Our Story</h1>
+          <div class="tab-container">
+            <div class="tabs flex justify-around">
+              <div class="tab" @click="tabToggle(0)">
+                <i class="far fa-laugh-beam"></i>
+                &nbsp;How We Met
+              </div>
+              <div class="tab" @click="tabToggle(1)">
+                <i class="far fa-grin-hearts"></i>
+                &nbsp;The Proposal
+              </div>
+            </div>
+            <div class="story">
+              <p>{{ stories[activeTab] }}</p>
+            </div>
           </div>
         </container>
       </section>
-
       <section class="tc section2 borderBottom">
         <container>
           <div id="schedule" class="pv3">
@@ -457,11 +449,23 @@ export default {
   },
   data: function() {
     return {
-      dots
+      dots,
+      activeTab: 0,
+      stories: [
+        `We were set up by our mutual friends, Todd and Carolyn Guidry, who realized quickly that 'firecracker' (Todd's words, not mine) Kelly needed someone equally dynamic, who could keep up with her quick wit and fiesty personality.  Enter Bill, pun-master and impromptu adventurer.  
+
+Although Kelly only granted Bill the honor of a pre-date first, to see if he lived up to the Guidrys' glowing description, less than a week later, they had their first official date, at Broadway Oyster Bar.  After a long hike and an event at the History Museum, they decided to make it official and Bill took Kelly to the top of Art Hill and asked her to be his girlfriend.  (He claims this was because I was leaving for Vienna the following morning and wanted to "lock it down."  I still think he's just a good, old-fashioned romantic.)`,
+        `Bill enlisted the help of many people, but primarily Kelly's sister and maid-of-honor, Maureen (Mo) and her partner, Jason, to give Kelly the surprise of a lifetime.  While Kelly was busy entertaining (and navigating a huge snowstorm!) the out-of-towners, Bill was supposed to be away at a silent retreat.  Instead, he stowed away at his parents' house until the pièce de résistance, when he sneakily appeared behind Kelly at Art Hill and got down on one knee to pop the question.`
+      ]
     }
   },
   computed: {
     ...mapState(['loggedIn'])
+  },
+  methods: {
+    tabToggle(tabClicked) {
+      this.activeTab = tabClicked
+    }
   }
 }
 </script>
