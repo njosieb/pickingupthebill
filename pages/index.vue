@@ -113,11 +113,11 @@
                   <i class="pt4 f2 fas fa-heart bossanova"></i>
                   <i class="pt4 f3 fas fa-heart"></i>
                 </div>
-                <div class="flex justify-around flex-wrap center w-50 pt0 ma4">
-                  <a
-                    class="bg-navy white pt3 pb1 w-80 f2 pr3 sacramento ttc"
-                  >&nbsp;&nbsp;&nbsp;Suggest a song!</a>
-                  <div class="bg-navy white w-80 pa3">
+                <div class="center w-50-l pt0">
+                  <h3
+                    class="bg-navy white pt3 pb1 f2 pr3 sacramento ttc"
+                  >&nbsp;&nbsp;&nbsp;Suggest a song!</h3>
+                  <div class="bg-navy white pa3">
                     <i class="fas fa-music music-icons f3"></i>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <input
@@ -126,8 +126,10 @@
                       type="text"
                     >&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fas fa-music music-icons f3"></i>
-                    <button class="hvr-grow pointer bg-white pv1 mt3" @click="onSuggest">Submit</button>
-                    <div v-if="submissionSuccess">Thank you for suggesting a song!</div>
+                    <div>
+                      <button class="hvr-grow pointer bg-white pv1 mt3" @click="onSuggest">Submit</button>
+                      <div v-if="submissionSuccess">Thank you for suggesting a song!</div>
+                    </div>
                   </div>
                 </div>
               </div>
