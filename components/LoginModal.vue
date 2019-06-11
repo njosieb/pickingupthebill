@@ -1,7 +1,7 @@
 <template>
-  <div class="modal modal-background">
+  <div class="min-vh-100 modal modal-background">
     <form class="pa4 container justify-center wedding-party">
-      <div class="measure-narrow flex flex-column">
+      <div class="measure-narrow-l flex flex-column">
         <h1 class="tc f2 welcome">
           Welcome to
           <br>Bill & Kelly's Wedding Website!
