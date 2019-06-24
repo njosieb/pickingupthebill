@@ -16,7 +16,7 @@
         <container class="relative z-1">
           <div class="polaroid-frame">
             <div id="header-picture" class="cover bg-left bg-center-l z-2">
-              <img src="~assets/header.jpg">
+              <img src="~assets/header.jpg" class="rotate-90">
             </div>
             <div id="title-box" class="tc">
               <h1 class="polaroid-title f1 mv0 header-pol-font">Bill & Kelly are Getting Married!</h1>
@@ -26,14 +26,17 @@
       </section>
       <section class="bg-navy overflow-auto white">
         <container>
-          <h1 class="f2 white tc">Our Story</h1>
+          <h1 class="f2 white tc pt3">
+            <i class="fas fa-book-open light-red-violet"></i>&nbsp;&nbsp;&nbsp;Our Story&nbsp;&nbsp;
+            <i class="fas fa-book-open light-red-violet"></i>
+          </h1>
           <div class="tab-container">
-            <div class="avenir pb3 tabs flex justify-around">
-              <div class="tab" @click="tabToggle(0)">
+            <div class="avenir pb3 tabs flex justify-around measure-wide-l center">
+              <div class="tab shadow-hover" @click="tabToggle(0)">
                 <i class="far fa-laugh-beam"></i>
                 &nbsp;How We Met
               </div>
-              <div class="tab" @click="tabToggle(1)">
+              <div class="tab shadow-hover" @click="tabToggle(1)">
                 <i class="far fa-grin-hearts"></i>
                 &nbsp;The Proposal
               </div>
@@ -224,15 +227,18 @@
             </h1>
             <div class="polaroid-frame">
               <img id="hotel" src="../assets/hotel.jpg" class="photos">
-              <h1 class="pv0 mv2">Hotel St. Louis</h1>
+              <h1 class="pv0 mv2">Drury Inn & Suites</h1>
 
               <h5 class="georgia pb1">
-                12345 Not Sure Lane | St. Louis, MO 63110
-                <br>(314) 555-2255
+                11980 Olive Blvd | Creve Coeur, MO 63141
+                <br>(314) 989-1100
               </h5>
             </div>
             <div>
-              <a href="https://www.hotels.com" target="_blank">
+              <a
+                href="https://www.druryhotels.com/bookandstay/newreservation/?groupno=2382251"
+                target="_blank"
+              >
                 <button class="bg-navy white hvr-grow shadow-hover pv2 mb1 button">Book Your Room</button>
               </a>
             </div>
@@ -290,7 +296,7 @@
             </div>
             <!-- <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo2.jpg">
-              <h2 class="caption">Being cute at the Blues Festival!</h2>
+              <h2 class="caption"></h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo3.jpg">
@@ -298,11 +304,11 @@
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo4.jpg">
-              <h2 class="caption">Being cute in nature!</h2>
+              <h2 class="caption"></h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo5.jpg">
-              <h2 class="caption">Being cute !</h2>
+              <h2 class="caption"></h2>
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo6.jpg">
@@ -314,7 +320,7 @@
             </div>
             <div class="polaroid-frame hvr-grow shadow-hover">
               <img class="photos" src="../assets/photo8Edited.jpg">
-              <h2 class="caption">Being cute & holding hands!</h2>
+              <h2 class="caption">x</h2>
             </div>-->
           </div>
         </container>
@@ -413,6 +419,29 @@
                   >More Information</button>
                 </a>
               </div>
+              <div class="flex justify-center items-center pb3">
+                <i class="pt4 f3 fas fa-heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f1 fas fa-heart heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f3 fas fa-heart"></i>
+              </div>
+              <div class="polaroid-frame">
+                <img class="photos" src="../assets/arch.jpg">
+                <!-- <div> -->
+                <h2 class="pt2 pb1 sacramento f2 td-fs">The Gateway Arch</h2>
+                <h5>
+                  11 N 4th St | St. Louis, MO 63102
+                  <br>(314) 655-1600
+                </h5>
+              </div>
+              <div>
+                <a href="https://www.gatewayarch.com/" target="_blank">
+                  <button
+                    class="bg-navy white shadow-hover hvr-grow pv2 mb5 button"
+                  >More Information</button>
+                </a>
+              </div>
             </div>
           </div>
         </container>
@@ -470,7 +499,12 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       pictures: [
         { photo: 'photo1', caption: 'Being cute at some fun event!' },
         { photo: 'photo2', caption: 'Being cute at the Blues Festival!' },
-        { photo: 'photo3', caption: 'Being cute in the cold!' }
+        { photo: 'photo3', caption: 'Being cute in the cold!' },
+        { photo: 'photo4', caption: 'Being cute in nature!' },
+        { photo: 'photo5', caption: 'Being cute !' },
+        { photo: 'photo6', caption: 'Being cute !' },
+        { photo: 'photo7', caption: 'Being cute !' },
+        { photo: 'photo8Edited', caption: 'Being cute and holding hands!' }
       ],
       suggestedSong: '',
       submissionSuccess: false
@@ -499,6 +533,10 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
 
 <style lang="scss">
 @import '~assets/styles/variables';
+
+.light-red-violet {
+  color: $light-red-violet;
+}
 
 .bossanova {
   color: $bossanova;
