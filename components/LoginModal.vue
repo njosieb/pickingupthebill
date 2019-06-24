@@ -1,6 +1,6 @@
 <template>
   <div class="min-vh-100 modal modal-background">
-    <form class="pa4 container justify-center wedding-party">
+    <form class="pa4 container flex justify-center wedding-party">
       <div class="measure-narrow-l flex flex-column">
         <h1 class="tc f2 welcome">
           Welcome to
