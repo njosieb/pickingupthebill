@@ -16,7 +16,7 @@
         <container class="relative z-1">
           <div class="polaroid-frame">
             <div id="header-picture" class="cover bg-left bg-center-l z-2">
-              <img src="~assets/header1.jpg" class="rotate-90">
+              <img src="~assets/header1.jpg">
             </div>
             <div id="title-box" class="tc">
               <h1 class="polaroid-title f1 mv0 header-pol-font">Bill & Kelly are Getting Married!</h1>
