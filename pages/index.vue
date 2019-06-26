@@ -220,7 +220,7 @@
           <div class="seashell pv2 border-shadow">
             <h1 class="f2 sectionTitle1">
               <i class="fas fa-hotel sectionIcon1"></i>
-              &nbsp;&nbsp;&nbsp;Hotels&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Hotel&nbsp;&nbsp;&nbsp;
               <i
                 class="fas fa-hotel sectionIcon1"
               ></i>
@@ -442,6 +442,30 @@
                   >More Information</button>
                 </a>
               </div>
+              <div class="flex justify-center items-center pb3">
+                <i class="pt4 f3 fas fa-heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f1 fas fa-heart heart"></i>
+                <i class="pt4 f2 fas fa-heart bossanova"></i>
+                <i class="pt4 f3 fas fa-heart"></i>
+              </div>
+              <div class="polaroid-frame">
+                <img class="photos" src="../assets/activity.jpg">
+                <!-- <div> -->
+                <h2 class="pt2 pb1 sacramento f2 td-fs">101 Things To Do</h2>
+                <h5>
+                  Guide to St. Louis' Most Memorable Experiences
+                  <br>from St. Louis Magazine
+                </h5>
+              </div>
+              <div>
+                <a
+                  href="http://projects.stlmag.com/101-things-every-st-louisan-must-do"
+                  target="_blank"
+                >
+                  <button class="bg-navy white shadow-hover hvr-grow pv2 mb5 button">Read Article</button>
+                </a>
+              </div>
             </div>
           </div>
         </container>
@@ -497,14 +521,14 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
         `Bill enlisted the help of many people, but primarily Kelly's sister and maid-of-honor, Maureen (Mo) and her partner, Jason, to give Kelly the surprise of a lifetime.  While Kelly was busy entertaining (and navigating a huge snowstorm!) the out-of-towners, Bill was supposed to be away at a silent retreat.  Instead, he stowed away at his parents' house until the pièce de résistance, when he sneakily appeared behind Kelly at Art Hill and got down on one knee to pop the question.`
       ],
       pictures: [
-        { photo: 'photo1', caption: 'Being cute at some fun event!' },
+        { photo: 'photo1', caption: 'Being cute at the I-55 Raceway!' },
         { photo: 'photo2', caption: 'Being cute at the Blues Festival!' },
         { photo: 'photo3', caption: 'Being cute in the cold!' },
-        { photo: 'photo4', caption: 'Being cute in nature!' },
-        { photo: 'photo5', caption: 'Being cute !' },
-        { photo: 'photo6', caption: 'Being cute !' },
-        { photo: 'photo7', caption: 'Being cute !' },
-        { photo: 'photo8Edited', caption: 'Being cute and holding hands!' }
+        { photo: 'photo4', caption: 'Being cute at Crater Lake!' },
+        { photo: 'photo5', caption: 'Being cute at Mount Hood!' },
+        { photo: 'photo6', caption: 'Being cute!' },
+        { photo: 'photo7', caption: 'Being cute in shades!' },
+        { photo: 'photo8Edited', caption: 'Being cute & holding hands!' }
       ],
       suggestedSong: '',
       submissionSuccess: false
@@ -561,7 +585,7 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
   @media (min-width: 1000px) {
     color: $midnight;
     // padding: 0 auto;
-    font-size: 35px;
+    font-size: 34px;
     padding-top: 1rem;
   }
 }
@@ -866,47 +890,4 @@ img {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
-/* #circle1 {
-  top: 94%;
-  left: 3%;
-  height: 35px;
-  width: 35px;
-  @media (min-width: 900px) {
-    top: 60%;
-    left: -7%;
-    height: 35px;
-    width: 35px;
-  }
-}
-#circle2 {
-  top: 92%;
-  left: 92%;
-  height: 40px;
-  width: 40px;
-}
-#circle3 {
-  top: 87%;
-  left: 14%;
-  height: 45px;
-  width: 45px;
-  @media (min-width: 900px) {
-    top: 2%;
-    left: 50%;
-    height: 50px;
-    width: 50px;
-  }
-}
-#circle4 {
-  top: 87%;
-  left: 77%;
-  height: 30px;
-  width: 30px;
-  @media (min-width: 900px) {
-    top: 16%;
-    left: 115%;
-    height: 60px;
-    width: 60px;
-  }
-} */
 </style>
