@@ -1,6 +1,6 @@
 <template>
   <div class="min-vh-100 modal modal-background">
-    <form class="pa4 container flex justify-center wedding-party">
+    <form class="pa4 container flex justify-center wedding-party" @submit.prevent="tryToLogin">
       <div class="measure-narrow-l flex flex-column">
         <h1 class="tc f2 welcome">
           Welcome to
@@ -9,20 +9,21 @@
         <label for="password" class="f4 db mb2 tc pb3">Please Enter Password from the Save the Date!</label>
         <input
           class="input-reset ba b--black-20 pa2 mb2 db w-100 outline-none tc"
-          type="text"
           id="password"
-          aria-describedby="password-desc"
+          type="text"
           v-model="openSesame"
-          @keyup.enter="tryToLogin"
+          aria-describedby="password-desc"
           v-bind:class="{ error: isWrong }"
+          @keyup.enter="tryToLogin"
           placeholder="Enter Password Here!"
         >
         <!-- <input type="text" v-model="openSesame"> -->
         <button
           type="submit"
-          @click="tryToLogin"
           class="justify-center login-button center shadow-hover"
-        >Go to Website!</button>
+        >
+Go to Website!
+</button>
         <small id="password-desc" class="f3 pt4 lh-copy db mb2 tc">#PickingUpTheBill</small>
       </div>
     </form>
