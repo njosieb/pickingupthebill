@@ -15,6 +15,13 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
+    noscript: [
+      {
+        hid: 'noscript',
+        innerHTML:
+          '<h2 style="text-align: center; padding-top: 5rem;">Sorry, this website requires JavaScript.</h2>'
+      }
+    ],
     script: [
       {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
@@ -34,7 +41,10 @@ module.exports = {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Sacramento'
       }
-    ]
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      noscript: ['innerHTML']
+    }
   },
 
   /*
@@ -52,7 +62,7 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/vue-swing', ssr: false },
-    { src: '~/plugins/firebase.js' }
+    { src: '~/plugins/firebase.js', ssr: false }
   ],
 
   router: {
