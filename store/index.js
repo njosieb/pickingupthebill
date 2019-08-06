@@ -9,8 +9,8 @@ export const mutations = {
 }
 
 export const actions = {
-  enteredCorrectPassword: ({ commit }) => {
+  async enteredCorrectPassword({ commit }) {
+    await this.$firebase.auth().signInAnonymously()
     commit('setLoggedIn', true)
-    localStorage.setItem('loggedIn', JSON.stringify(true))
   }
 }

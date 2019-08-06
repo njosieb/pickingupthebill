@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
@@ -27,8 +27,7 @@ export default {
     }
   },
   mounted() {
-    const isLoggedIn = JSON.parse(localStorage.getItem('loggedIn'))
-    this.setLoggedIn(isLoggedIn)
+    this.$firebase.auth().onAuthStateChanged(user => this.setLoggedIn(!!user))
   },
   methods: {
     ...mapMutations(['setLoggedIn'])
