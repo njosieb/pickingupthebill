@@ -2,21 +2,13 @@
   <div>
     <login-modal v-if="!loggedIn"></login-modal>
     <div v-if="loggedIn" class="sacramento">
-      <!-- <dot
-              v-for="(dot, index) in dots"
-              :key="index"
-              :size="dot.size"
-              :top="dot.top"
-              :left="dot.left"
-              :dot-id="index"
-      />-->
       <navbar></navbar>
 
       <section id="behind-polaroid" class="pv4">
         <container class="relative z-1">
           <div class="polaroid-frame">
             <div id="header-picture" class="cover bg-left bg-center-l z-2">
-              <img src="~assets/header1.jpg">
+              <img src="~assets/header1.jpg" />
             </div>
             <div id="title-box" class="tc">
               <h1 class="polaroid-title f1 mv0 header-pol-font">Bill & Kelly are Getting Married!</h1>
@@ -54,27 +46,26 @@
           <div id="schedule" class="pv3">
             <div class="seashell pv1 border-shadow">
               <h1 class="f2 sectionTitle1">
-                <!-- <i class="fas fa-clipboard-list sectionIcon1"></i> -->
                 <i class="fas fa-place-of-worship sectionIcon1"></i>
+
                 &nbsp;&nbsp;Schedule&nbsp;&nbsp;
-                <!-- <i
-                class="fas fa-clipboard-list sectionIcon1"
-                ></i>-->
-                <i class="fas fa-place-of-worship sectionIcon1"></i>
+                <i
+                  class="fas fa-place-of-worship sectionIcon1"
+                ></i>
               </h1>
               <h2 class="georgia f3 pt3">
                 Wedding Mass
-                <br>Friday, December 27, 2019
-                <br>at 6:30 PM
+                <br />Friday, December 27, 2019
+                <br />at 6:30 PM
               </h2>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/pillar.jpg">
+                <img class="photos" src="../assets/pillar.jpg" />
                 <!-- <h2 class="f2">Ceremony</h2> -->
 
                 <h2 class="pt1 pb2 f2">Our Lady of the Pillar</h2>
                 <h5 class="georgia pb1">
                   401 S. Lindbergh Blvd. | St. Louis, MO 63131
-                  <br>(314) 993-2280
+                  <br />(314) 993-2280
                 </h5>
               </div>
               <div>
@@ -93,15 +84,15 @@
                 <h2 class="georgia t2 pt3 pb1 f3">
                   Wine & Dessert
                   Reception
-                  <br>at 8pm
+                  <br />at 8pm
                 </h2>
                 <div class="polaroid-frame">
-                  <img class="photos" src="../assets/reception.jpg">
+                  <img class="photos" src="../assets/reception.jpg" />
 
                   <h2 class="pt1 f2">Moolah Shrine Center</h2>
                   <h5 class="georgia pb1">
                     12545 Fee Fee Road | St. Louis, MO 63146
-                    <br>(314) 878-6301
+                    <br />(314) 878-6301
                   </h5>
                 </div>
                 <div>
@@ -129,7 +120,7 @@
                       v-model="suggestedSong"
                       class="helvetica"
                       type="text"
-                    >&nbsp;&nbsp;&nbsp;&nbsp;
+                    />&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fas fa-music music-icons f3"></i>
                     <div>
                       <button class="hvr-grow pointer bg-white pv1 mt3" @click="onSuggest">Submit</button>
@@ -226,12 +217,12 @@
               ></i>
             </h1>
             <div class="polaroid-frame">
-              <img id="hotel" src="../assets/hotel.jpg" class="photos">
+              <img id="hotel" src="../assets/hotel.jpg" class="photos" />
               <h1 class="pv0 mv2">Drury Inn & Suites</h1>
 
               <h5 class="georgia pb1">
                 11980 Olive Blvd | Creve Coeur, MO 63141
-                <br>(314) 989-1100
+                <br />(314) 989-1100
               </h5>
             </div>
             <div>
@@ -267,7 +258,7 @@
               href="https://www.zola.com/registry/pickingupthebill"
               target="_blank"
             >
-              <img class="logos" src="../assets/registry.jpg">
+              <img class="logos" src="../assets/registry.jpg" />
             </a>
             <div class="navy flex justify-center items-center pt1 pb3">
               <i class="pt4 f3 fas fa-heart"></i>
@@ -291,37 +282,9 @@
             </h1>
 
             <div v-for="(picture, i) in pictures" :key="i" class="polaroid-frame">
-              <img class="photos" :src="require(`~/assets/${picture.photo}.jpg`)">
+              <img class="photos" :src="require(`~/assets/${picture.photo}.jpg`)" />
               <h2 class="caption">{{ picture.caption }}</h2>
             </div>
-            <!-- <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo2.jpg">
-              <h2 class="caption"></h2>
-            </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo3.jpg">
-              <h2 class="caption"></h2>
-            </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo4.jpg">
-              <h2 class="caption"></h2>
-            </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo5.jpg">
-              <h2 class="caption"></h2>
-            </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo6.jpg">
-              <h2 class="caption">Being cute !</h2>
-            </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo7.jpg">
-              <h2 class="caption">Being cute !</h2>
-            </div>
-            <div class="polaroid-frame hvr-grow shadow-hover">
-              <img class="photos" src="../assets/photo8Edited.jpg">
-              <h2 class="caption">x</h2>
-            </div>-->
           </div>
         </container>
       </section>
@@ -337,11 +300,11 @@
                 ></i>
               </h1>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/zoo.jpg">
+                <img class="photos" src="../assets/zoo.jpg" />
                 <h2 class="pt2 pb2 sacramento f2 td-fs">Wild Lights at The Zoo</h2>
                 <h5>
                   Government Drive | St. Louis, MO 63110
-                  <br>(314) 781-0900
+                  <br />(314) 781-0900
                 </h5>
               </div>
               <div>
@@ -359,11 +322,11 @@
                 <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/steinberg.jpg">
+                <img class="photos" src="../assets/steinberg.jpg" />
                 <h2 class="pt2 pb2 sacramento f2 td-fs">Steinberg Skating Rink</h2>
                 <h5>
                   400 Jefferson Drive | St. Louis, MO 63110
-                  <br>(314) 367-7465
+                  <br />(314) 367-7465
                 </h5>
               </div>
               <div>
@@ -381,12 +344,12 @@
                 <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/slam.jpg">
+                <img class="photos" src="../assets/slam.jpg" />
                 <h2 class="pt2 sacramento f2 td-fs">St. Louis Art Museum</h2>
 
                 <h5>
                   1 Fine Arts Drive | St. Louis, MO 63110
-                  <br>(314) 721-0072
+                  <br />(314) 721-0072
                 </h5>
               </div>
               <div>
@@ -404,12 +367,12 @@
                 <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/city.jpg">
+                <img class="photos" src="../assets/city.jpg" />
                 <!-- <div> -->
                 <h2 class="pt2 pb1 sacramento f2 td-fs">City Museum St. Louis</h2>
                 <h5>
                   750 North 16th Street | St. Louis, MO 63103
-                  <br>(314) 231-2489
+                  <br />(314) 231-2489
                 </h5>
               </div>
               <div>
@@ -427,12 +390,12 @@
                 <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/arch.jpg">
+                <img class="photos" src="../assets/arch.jpg" />
                 <!-- <div> -->
                 <h2 class="pt2 pb1 sacramento f2 td-fs">The Gateway Arch</h2>
                 <h5>
                   11 N 4th St | St. Louis, MO 63102
-                  <br>(314) 655-1600
+                  <br />(314) 655-1600
                 </h5>
               </div>
               <div>
@@ -450,12 +413,12 @@
                 <i class="pt4 f3 fas fa-heart"></i>
               </div>
               <div class="polaroid-frame">
-                <img class="photos" src="../assets/activity.jpg">
+                <img class="photos" src="../assets/activity.jpg" />
                 <!-- <div> -->
                 <h2 class="pt2 pb1 sacramento f2 td-fs">101 Things To Do</h2>
                 <h5>
                   Guide to St. Louis' Most Memorable Experiences
-                  <br>from St. Louis Magazine
+                  <br />from St. Louis Magazine
                 </h5>
               </div>
               <div>
@@ -531,8 +494,19 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
         { photo: 'photo8Edited', caption: 'Being cute & holding hands!' }
       ],
       suggestedSong: '',
-      submissionSuccess: false
+      submissionSuccess: false,
+      songList: []
     }
+  },
+  mounted: async function() {
+    // Gets the collection of suggestedSongs
+    const suggestedSongs = await fireDb.collection('suggestedSongs').get()
+    // Loop through songs and get their entry
+    suggestedSongs.forEach(doc => {
+      const entry = doc.data().entry
+      // Push song in an array to use later
+      this.songList.push(entry)
+    })
   },
   computed: {
     ...mapState(['loggedIn'])
@@ -542,10 +516,15 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       this.activeTab = tabClicked
     },
     async onSuggest() {
+      // Creates new suggested song to save into the database
       const suggestedSong = { entry: this.suggestedSong }
+      // Wait for song to be saved in database
       await fireDb.collection('suggestedSongs').add(suggestedSong)
+      // Show the success message
       this.submissionSuccess = true
+      // Reset our form
       this.suggestedSong = ''
+      // After 5 seconds hide success message
       setTimeout(() => {
         this.submissionSuccess = false
       }, 5000)
