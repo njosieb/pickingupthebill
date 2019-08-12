@@ -123,7 +123,7 @@
                     <i class="fas fa-music music-icons f3"></i>
                     <div>
                       <button
-                        class="hvr-grow pointer bg-white mv3 helvetica ttu"
+                        class="hvr-grow pointer mv3 light-red-violet-bg white song-btn pv2"
                         @click="onSuggest"
                       >Submit</button>
                       <div v-if="submissionSuccess">Thank you for suggesting a song!</div>
@@ -131,9 +131,9 @@
                     <div class="pv2">
                       <h1>Already Suggested Songs</h1>
                       <button
-                        class="btn btn-lg btn-primary helvetica ttu hvr-grow pointer mb3"
+                        class="light-red-violet-bg white hvr-grow pointer mb3 song-btn pv2"
                         v-on:click="seen = !seen"
-                      >Show</button>
+                      >{{ seen ? "Hide list" : "Show list" }}</button>
                       <ul class="pl0" v-if="seen">
                         <li class="center avenir i list" v-for="doc in songList">{{ doc }}</li>
                       </ul>
@@ -508,7 +508,7 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       suggestedSong: '',
       submissionSuccess: false,
       songList: [],
-      seen: true
+      seen: false
     }
   },
   mounted: async function() {
@@ -554,7 +554,9 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
 .light-red-violet {
   color: $light-red-violet;
 }
-
+.light-red-violet-bg {
+  background-color: $light-red-violet;
+}
 .bossanova {
   color: $bossanova;
 }
@@ -707,6 +709,14 @@ hr {
     letter-spacing: 0.5px;
     width: 40%;
   }
+}
+.song-btn {
+  width: 40%;
+  font-size: x-large;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: initial;
 }
 
 #button-div {
