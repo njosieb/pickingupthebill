@@ -44,10 +44,9 @@
       <section class="tc section2 borderBottom">
         <container>
           <div id="schedule" class="pv3">
-            <div class="seashell pv1 border-shadow">
+            <div class="seashell pv4 border-shadow">
               <h1 class="f2 sectionTitle1">
                 <i class="fas fa-place-of-worship sectionIcon1"></i>
-
                 &nbsp;&nbsp;Schedule&nbsp;&nbsp;
                 <i
                   class="fas fa-place-of-worship sectionIcon1"
@@ -123,8 +122,21 @@
                     />&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fas fa-music music-icons f3"></i>
                     <div>
-                      <button class="hvr-grow pointer bg-white pv1 mt3" @click="onSuggest">Submit</button>
+                      <button
+                        class="hvr-grow pointer bg-white mv3 helvetica ttu"
+                        @click="onSuggest"
+                      >Submit</button>
                       <div v-if="submissionSuccess">Thank you for suggesting a song!</div>
+                    </div>
+                    <div class="pv2">
+                      <h1>Already Suggested Songs</h1>
+                      <button
+                        class="btn btn-lg btn-primary helvetica ttu hvr-grow pointer mb3"
+                        v-on:click="seen = !seen"
+                      >Show</button>
+                      <ul class="pl0" v-if="seen">
+                        <li class="center avenir i list" v-for="doc in songList">{{ doc }}</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -495,7 +507,8 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       ],
       suggestedSong: '',
       submissionSuccess: false,
-      songList: []
+      songList: [],
+      seen: true
     }
   },
   mounted: async function() {
@@ -508,6 +521,7 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       this.songList.push(entry)
     })
   },
+
   computed: {
     ...mapState(['loggedIn'])
   },
@@ -663,20 +677,7 @@ footer {
     padding-top: 1rem;
   }
 }
-.activity {
-  position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(~assets/bricks.jpg);
-    background-size: cover;
-    filter: blur(2px);
-  }
-}
+
 hr {
   width: 80%;
   margin: 0 auto;
@@ -835,35 +836,16 @@ img {
     font-size: 31px;
   }
 }
-// #schedule {
-//   border-top: 6px solid $bossanova;
-// }
-// .churchPic {
-//   height: 330px;
-//   width: 325px;
-//   border: 2px solid $midnight;
-// }
-// .receptionPic {
-//   height: 275px;
-//   width: 380px;
-//   border: 2px solid $midnight;
-// }
+
 .photos {
   height: 400px;
   width: 400px;
-  // padding-top: 15px;
-  // padding-bottom: 10px;
+
   object-fit: cover;
-  /* padding-left: 30px;
-  padding-right: 30px; */
 }
 .logos {
   height: 180px;
   width: 330px;
-  /* border: 2px solid #001b44; */
-  /* margin-bottom: 3rem; */
-  /* padding-left: 30px;
-  padding-right: 30px; */
 }
 .pv3 {
   padding-top: 3rem;
