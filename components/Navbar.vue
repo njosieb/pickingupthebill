@@ -4,7 +4,7 @@
     :class="{'header-show-border': showBorder}"
     :style="{backgroundColor: showBackground?'seashell':'transparent'}"
   >
-    <container>
+    <container class="pv2">
       <div id="desktop-menu" class="flex justify-around items-center pt1 georgia">
         <nuxt-link class="nav-link hvr-grow-nav avenir" :to="{path: '/', hash: 'schedule'}">Schedule</nuxt-link>
         <nuxt-link
@@ -40,22 +40,22 @@
       </div>
       <div class="dropdown-content">
         <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'schedule'}">
-          <i class="fas fa-place-of-worship menu-icons"/> Schedule
+          <i class="fas fa-place-of-worship menu-icons" /> Schedule
         </nuxt-link>
         <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'wedding-party'}">
-          <i class="fas fa-users menu-icons"/> Wedding Party
+          <i class="fas fa-users menu-icons" /> Wedding Party
         </nuxt-link>
         <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'hotels'}">
-          <i class="fas fa-hotel menu-icons"/> Hotels
+          <i class="fas fa-hotel menu-icons" /> Hotels
         </nuxt-link>
         <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'registry'}">
-          <i class="fas fa-gift menu-icons"/> Registry
+          <i class="fas fa-gift menu-icons" /> Registry
         </nuxt-link>
         <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'photos'}">
-          <i class="fas fa-images menu-icons"/> Photos
+          <i class="fas fa-images menu-icons" /> Photos
         </nuxt-link>
         <nuxt-link class="link white f3 nowrap dib" :to="{path: '/', hash: 'things-to-do'}">
-          <i class="fas fa-calendar-check menu-icons"/> Things To Do
+          <i class="fas fa-calendar-check menu-icons" /> Things To Do
         </nuxt-link>
       </div>
     </div>
@@ -196,6 +196,9 @@ header {
 .dropdown {
   position: relative;
   display: inline-block;
+  @media (min-width: 1000px) {
+    display: none;
+  }
 }
 /* Links inside the dropdown */
 .dropdown-content a {
