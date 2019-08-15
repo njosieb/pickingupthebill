@@ -132,7 +132,7 @@
                       <h1>Already Suggested Songs</h1>
                       <button
                         class="light-red-violet-bg white hvr-grow pointer mb3 song-btn pv2"
-                        v-on:click="seen = !seen"
+                        @click="seen = !seen"
                       >{{ seen ? "Hide list" : "Show list" }}</button>
                       <ul class="pl0" v-if="seen">
                         <li class="center avenir i list" v-for="doc in songList">{{ doc }}</li>
@@ -536,6 +536,8 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       await fireDb.collection('suggestedSongs').add(suggestedSong)
       // Show the success message
       this.submissionSuccess = true
+      // Add to songList array
+      this.songList = [...this.songList, this.suggestedSong]
       // Reset our form
       this.suggestedSong = ''
       // After 5 seconds hide success message
