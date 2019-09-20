@@ -513,12 +513,15 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
   },
   mounted: async function() {
     // Gets the collection of suggestedSongs
-    const suggestedSongs = await fireDb.collection('suggestedSongs').get()
-    // Loop through songs and get their entry
-    suggestedSongs.forEach(doc => {
-      const entry = doc.data().entry
-      // Push song in an array to use later
-      this.songList.push(entry)
+    // const suggestedSongs = await
+    fireDb.collection('suggestedSongs').onSnapshot(songSnapshot => {
+      this.songList = []
+      // Loop through songs and get their entry
+      songSnapshot.forEach(doc => {
+        const entry = doc.data().entry
+        // Push song in an array to use later
+        this.songList.push(entry)
+      })
     })
   },
 
@@ -536,8 +539,6 @@ Although Kelly only granted Bill the honor of a pre-date first, to see if he liv
       await fireDb.collection('suggestedSongs').add(suggestedSong)
       // Show the success message
       this.submissionSuccess = true
-      // Add to songList array
-      this.songList = [...this.songList, this.suggestedSong]
       // Reset our form
       this.suggestedSong = ''
       // After 5 seconds hide success message
