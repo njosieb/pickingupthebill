@@ -108,6 +108,7 @@
                   <i class="pt4 f2 fas fa-heart bossanova"></i>
                   <i class="pt4 f3 fas fa-heart"></i>
                 </div>
+                <!--                 
                 <div class="center w-50-l pt0">
                   <h3
                     class="bg-navy white pt3 pb1 f2 pr3 sacramento ttc"
@@ -139,7 +140,7 @@
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>

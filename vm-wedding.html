@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:3000/#registry -->
+<html data-n-head=""><head data-n-head=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title data-n-head="true">vm-wedding</title><meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="true" data-hid="description" name="description" content="My prime Nuxt.js project"><link data-n-head="true" rel="icon" type="image/x-icon" href="http://localhost:3000/favicon.ico"><link data-n-head="true" rel="stylesheet" href="./vm-wedding_files/tachyons.min.css"><link data-n-head="true" rel="stylesheet" href="./vm-wedding_files/all.css"><link data-n-head="true" rel="stylesheet" href="./vm-wedding_files/css"><script data-n-head="true" src="./vm-wedding_files/jquery.min.js"></script><link rel="preload" href="./vm-wedding_files/runtime.js" as="script"><link rel="preload" href="./vm-wedding_files/commons.app.js" as="script"><link rel="preload" href="./vm-wedding_files/vendors.app.js" as="script"><link rel="preload" href="./vm-wedding_files/app.js" as="script"><link rel="preload" href="./vm-wedding_files/index(1).js" as="script"><link rel="preload" href="./vm-wedding_files/index.5e08d9fb6b60737752be.hot-update.js" as="script">
+  <style type="text/css">
+.__nuxt-error-page {
+  padding: 1rem;
+  background: #F7F8FB;
+  color: #47494E;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: 100 !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.__nuxt-error-page .error {
+  max-width: 450px;
+}
+.__nuxt-error-page .title {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #47494E;
+  margin-bottom: 8px;
+}
+.__nuxt-error-page .description {
+  color: #7F828B;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+.__nuxt-error-page a {
+  color: #7F828B !important;
+  text-decoration: none;
+}
+.__nuxt-error-page .logo {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+}
+
+/*# sourceURL=/Users/ninaharris/Sites/vm-wedding/.nuxt/components/nuxt-error.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uaW5haGFycmlzL1NpdGVzL3ZtLXdlZGRpbmcvLm51eHQvY29tcG9uZW50cy9udXh0LWVycm9yLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBcURBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsMkJBQTJCO0VBQzNCLDBCQUEwQjtFQUMxQiw4QkFBOEI7RUFDOUIsbUNBQW1DO0VBQ25DLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sT0FBTztFQUNQLFFBQVE7RUFDUixTQUFTO0FBQ1g7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZUFBZTtFQUNmLFVBQVU7RUFDVixZQUFZO0FBQ2QiLCJmaWxlIjoibnV4dC1lcnJvci52dWU/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZsYW5nPWNzcyYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLl9fbnV4dC1lcnJvci1wYWdlIHtcbiAgcGFkZGluZzogMXJlbTtcbiAgYmFja2dyb3VuZDogI0Y3RjhGQjtcbiAgY29sb3I6ICM0NzQ5NEU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogMTAwICFpbXBvcnRhbnQ7XG4gIC1tcy10ZXh0LXNpemUtYWRqdXN0OiAxMDAlO1xuICAtd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbn1cbi5fX251eHQtZXJyb3ItcGFnZSAuZXJyb3Ige1xuICBtYXgtd2lkdGg6IDQ1MHB4O1xufVxuLl9fbnV4dC1lcnJvci1wYWdlIC50aXRsZSB7XG4gIGZvbnQtc2l6ZTogMS41cmVtO1xuICBtYXJnaW4tdG9wOiAxNXB4O1xuICBjb2xvcjogIzQ3NDk0RTtcbiAgbWFyZ2luLWJvdHRvbTogOHB4O1xufVxuLl9fbnV4dC1lcnJvci1wYWdlIC5kZXNjcmlwdGlvbiB7XG4gIGNvbG9yOiAjN0Y4MjhCO1xuICBsaW5lLWhlaWdodDogMjFweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cbi5fX251eHQtZXJyb3ItcGFnZSBhIHtcbiAgY29sb3I6ICM3RjgyOEIgIWltcG9ydGFudDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLl9fbnV4dC1lcnJvci1wYWdlIC5sb2dvIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiAxMnB4O1xuICBib3R0b206IDEycHg7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style type="text/css">
+.nuxt-progress {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 2px;
+  width: 0%;
+  opacity: 1;
+  transition: width 0.1s, opacity 0.4s;
+  background-color: #fff;
+  z-index: 999999;
+}
+.nuxt-progress.nuxt-progress-notransition {
+  transition: none;
+}
+.nuxt-progress-failed {
+  background-color: red;
+}
+
+/*# sourceURL=/Users/ninaharris/Sites/vm-wedding/.nuxt/components/nuxt-loading.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uaW5haGFycmlzL1NpdGVzL3ZtLXdlZGRpbmcvLm51eHQvY29tcG9uZW50cy9udXh0LWxvYWRpbmcudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUE0SkE7RUFDRSxlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLFNBQVM7RUFDVCxVQUFVO0VBQ1Ysb0NBQW9DO0VBQ3BDLHNCQUFzQjtFQUN0QixlQUFlO0FBQ2pCO0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7QUFFQTtFQUNFLHFCQUFxQjtBQUN2QiIsImZpbGUiOiJudXh0LWxvYWRpbmcudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmbGFuZz1jc3MmIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLm51eHQtcHJvZ3Jlc3Mge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIHJpZ2h0OiAwcHg7XG4gIGhlaWdodDogMnB4O1xuICB3aWR0aDogMCU7XG4gIG9wYWNpdHk6IDE7XG4gIHRyYW5zaXRpb246IHdpZHRoIDAuMXMsIG9wYWNpdHkgMC40cztcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgei1pbmRleDogOTk5OTk5O1xufVxuXG4ubnV4dC1wcm9ncmVzcy5udXh0LXByb2dyZXNzLW5vdHJhbnNpdGlvbiB7XG4gIHRyYW5zaXRpb246IG5vbmU7XG59XG5cbi5udXh0LXByb2dyZXNzLWZhaWxlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style type="text/css">
+/*# sourceURL=undefined */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ2YXJpYWJsZXMuc2NzcyIsInNvdXJjZVJvb3QiOiIifQ== */</style><style type="text/css">
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+}
+
+/*# sourceURL=/Users/ninaharris/Sites/vm-wedding/layouts/default.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uaW5haGFycmlzL1NpdGVzL3ZtLXdlZGRpbmcvbGF5b3V0cy9kZWZhdWx0LnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBT0E7RUFDRTsrQ0FDNkM7RUFDN0MsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQiwwQkFBMEI7RUFDMUIsOEJBQThCO0VBQzlCLGtDQUFrQztFQUNsQyxtQ0FBbUM7RUFDbkMsc0JBQXNCO0FBQ3hCO0FBRUE7OztFQUdFLHNCQUFzQjtFQUN0QixTQUFTO0FBQ1g7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0FBQzNCO0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2QscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixpQkFBaUI7QUFDbkI7QUFFQTtFQUNFLFdBQVc7RUFDWCx5QkFBeUI7QUFDM0IiLCJmaWxlIjoiZGVmYXVsdC52dWU/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZsYW5nPWNzcyYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cbmh0bWwge1xuICBmb250LWZhbWlseTogJ1NvdXJjZSBTYW5zIFBybycsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJyxcbiAgICBSb2JvdG8sICdIZWx2ZXRpY2EgTmV1ZScsIEFyaWFsLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDE2cHg7XG4gIHdvcmQtc3BhY2luZzogMXB4O1xuICAtbXMtdGV4dC1zaXplLWFkanVzdDogMTAwJTtcbiAgLXdlYmtpdC10ZXh0LXNpemUtYWRqdXN0OiAxMDAlO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuKixcbio6YmVmb3JlLFxuKjphZnRlciB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIG1hcmdpbjogMDtcbn1cblxuLmJ1dHRvbi0tZ3JlZW4ge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgYm9yZGVyOiAxcHggc29saWQgIzNiODA3MDtcbiAgY29sb3I6ICMzYjgwNzA7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgcGFkZGluZzogMTBweCAzMHB4O1xufVxuXG4uYnV0dG9uLS1ncmVlbjpob3ZlciB7XG4gIGNvbG9yOiAjZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjM2I4MDcwO1xufVxuXG4uYnV0dG9uLS1ncmV5IHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkICMzNTQ5NWU7XG4gIGNvbG9yOiAjMzU0OTVlO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIHBhZGRpbmc6IDEwcHggMzBweDtcbiAgbWFyZ2luLWxlZnQ6IDE1cHg7XG59XG5cbi5idXR0b24tLWdyZXk6aG92ZXIge1xuICBjb2xvcjogI2ZmZjtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzM1NDk1ZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><script charset="utf-8" src="./vm-wedding_files/index.js"></script><style type="text/css">
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #d6158a;
+}
+
+/*# sourceURL=/Users/ninaharris/Sites/vm-wedding/components/Dot.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uaW5haGFycmlzL1NpdGVzL3ZtLXdlZGRpbmcvY29tcG9uZW50cy9Eb3QudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFtQkE7RUFDRSxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVix5QkFBeUI7QUFDM0IiLCJmaWxlIjoiRG90LnZ1ZT92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmxhbmc9Y3NzJiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLmNpcmNsZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB6LWluZGV4OiAxO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZDYxNThhO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style type="text/css">.nav-link {
+  color: #c85c9c;
+  padding: 0 8px;
+}
+.nav-title {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e4be65;
+}
+
+/* Grow */
+.hvr-grow-nav {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.hvr-grow-nav:hover,
+.hvr-grow-nav:focus,
+.hvr-grow-nav:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-bottom: 2px solid #d6158a;
+}
+header {
+  background-color: transparent;
+  padding: 0.75rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  transition: background-color 0.5s ease-in-out;
+}
+.seashell {
+  background-color: #fff5ee;
+}
+.lightest-red-violet {
+  background-color: #f1c5e0;
+}
+
+/*# sourceURL=/Users/ninaharris/Sites/vm-wedding/components/Navbar.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uaW5haGFycmlzL1NpdGVzL3ZtLXdlZGRpbmcvY29tcG9uZW50cy9OYXZiYXIudnVlIiwiL1VzZXJzL25pbmFoYXJyaXMvU2l0ZXMvdm0td2VkZGluZy9hc3NldHMvc3R5bGVzL3ZhcmlhYmxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThEQTtFQUNFLGNDcER3QjtFRHFEeEIsY0FBYztBQUFBO0FBR2hCO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsY0N0RGtCO0FBQUE7O0FEd0RwQixTQUFBO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLGdDQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsb0NBQW9DO0VBQ3BDLG1DQUEyQjtVQUEzQiwyQkFBMkI7RUFDM0Isa0NBQWtDO0VBQ2xDLHlCQUF5QjtFQUN6QixzQ0FBOEI7RUFBOUIsOEJBQThCO0VBQTlCLGlEQUE4QjtBQUFBO0FBR2hDOzs7RUFHRSw2QkFBcUI7VUFBckIscUJBQXFCO0VBQ3JCLGdDQzdFa0I7QUFBQTtBRCtFcEI7RUFDRSw2QkFBNkI7RUFDN0Isa0JBQWtCO0VBQ2xCLHdCQUFnQjtFQUFoQixnQkFBZ0I7RUFDaEIsUUFBUTtFQUNSLFVBQVU7RUFDViw2Q0FBNkM7QUFBQTtBQUUvQztFQUNFLHlCQ2hHZ0I7QUFBQTtBRGtHbEI7RUFDRSx5QkM3RjJCO0FBQUEiLCJmaWxlIjoiTmF2YmFyLnZ1ZT92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmxhbmc9c2NzcyYiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5AaW1wb3J0ICd+YXNzZXRzL3N0eWxlcy92YXJpYWJsZXMnO1xuXG4ubmF2LWxpbmsge1xuICBjb2xvcjogJGxpZ2h0LXJlZC12aW9sZXQ7XG4gIHBhZGRpbmc6IDAgOHB4O1xufVxuXG4ubmF2LXRpdGxlIHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxLjVyZW07XG4gIGNvbG9yOiAkZGFyay1wdXR0eTtcbn1cbi8qIEdyb3cgKi9cbi5odnItZ3Jvdy1uYXYge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWigwKTtcbiAgYm94LXNoYWRvdzogMCAwIDFweCByZ2JhKDAsIDAsIDAsIDApO1xuICBiYWNrZmFjZS12aXNpYmlsaXR5OiBoaWRkZW47XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IDAuM3M7XG4gIHRyYW5zaXRpb24tcHJvcGVydHk6IHRyYW5zZm9ybTtcbn1cblxuLmh2ci1ncm93LW5hdjpob3Zlcixcbi5odnItZ3Jvdy1uYXY6Zm9jdXMsXG4uaHZyLWdyb3ctbmF2OmFjdGl2ZSB7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS4xKTtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICRyZWQtdmlvbGV0O1xufVxuaGVhZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIHBhZGRpbmc6IDAuNzVyZW0gMDtcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgdG9wOiAwcHg7XG4gIHotaW5kZXg6IDI7XG4gIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMC41cyBlYXNlLWluLW91dDtcbn1cbi5zZWFzaGVsbCB7XG4gIGJhY2tncm91bmQtY29sb3I6ICRzZWFzaGVsbDtcbn1cbi5saWdodGVzdC1yZWQtdmlvbGV0IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogJGxpZ2h0ZXN0LXJlZC12aW9sZXQ7XG59XG4iLCIkcHV0dHk6ICNlYWQzOWM7XG4kYm9zc2Fub3ZhOiAjNDMyNjUwO1xuJG1pZG5pZ2h0OiBoc2woMjE2LCAxMDAlLCAxMyUpO1xuJHJlZC12aW9sZXQ6ICNkNjE1OGE7XG4kc2Vhc2hlbGw6ICNmZmY1ZWU7XG5cbiRwcmltYXJ5LWxpZ2h0OiBoc2woMjE2LCA1OCUsIDU1JSk7XG4kcHJpbWFyeS1jb2xvcjogJG1pZG5pZ2h0O1xuJHByaW1hcnktZGFyazogaHNsKDIxNiwgMjMlLCAxMyUpO1xuXG4kbGlnaHRlc3QtcmVkLXZpb2xldDogI2YxYzVlMDtcbiRsaWdodC1yZWQtdmlvbGV0OiAjYzg1YzljO1xuJHJlZC12aW9sZXQ6ICNkNjE1OGE7XG4kZGFyay1yZWQtdmlvbGV0OiAjOGEwZTU4O1xuXG4kbGlnaHQtcHV0dHk6ICNlYmRjYmE7XG4kcHV0dHk6ICNlYWQzOWM7XG4kZGFyay1wdXR0eTogI2U0YmU2NTtcblxuJGJvc3Nhbm92YTogIzQzMjY1MDtcbiRsaWdodC1ib3NzYW5vdmE6ICM1ZTJmNzQ7XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style type="text/css">.music-icons {
+  color: #c85c9c;
+}
+.photo-border {
+  border: 2px solid #432650;
+}
+.arrow {
+  color: #ead39c;
+}
+.caption {
+  color: #001b42;
+  font-size: 35px;
+  padding-top: 1rem;
+}
+.mid-fa-heart {
+  color: #d6158a;
+}
+a {
+  text-decoration: none;
+  color: #001b42;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer {
+  height: 80px;
+  background-color: #ead39c;
+  text-align: left;
+}
+.border-shadow {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.polaroid-frame {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+  padding: 22px;
+  width: 450px;
+  margin: 3rem auto;
+  background-color: white;
+  margin-top: 1.75rem;
+}
+.registry-frame {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+  padding: 22px;
+  width: 280px;
+  height: 245px;
+  margin: 3rem auto;
+  background-color: white;
+}
+#behind-polaroid {
+  position: relative;
+  margin-top: -53px;
+  padding-top: 53px;
+}
+#behind-polaroid:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/_nuxt/assets/lights.jpg);
+    background-size: cover;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}
+.wedding-party {
+  background-color: #fff5ee;
+}
+.wedding-party-box {
+  width: 36%;
+  background-color: white;
+}
+.activity {
+  position: relative;
+}
+.activity:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/_nuxt/assets/bricks.jpg);
+    background-size: cover;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+button {
+  color: #001b42;
+  background-color: #fff5ee;
+  font-size: x-large;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1rem;
+  letter-spacing: 0.5px;
+}
+#button-div {
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+.sectionTitle1 {
+  font-size: 3rem;
+  color: #c85c9c;
+  margin-bottom: 0;
+}
+.sectionTitle2 {
+  font-size: 3rem;
+  color: #001b42;
+  margin-bottom: 0px;
+}
+.sectionIcon1 {
+  font-size: 2.75rem;
+  color: #001b42;
+}
+.sectionIcon2 {
+  font-size: 2.75rem;
+  color: #c85c9c;
+}
+.sacramento {
+  font-family: 'Sacramento';
+}
+.seashell {
+  background-color: #fff5ee;
+}
+#hotel {
+  max-width: 70%;
+}
+.border-showcase {
+  border: 1px solid #001b42;
+}
+.arrow {
+  font-size: 15px;
+}
+.person {
+  font-size: 50px;
+}
+.heart {
+  color: #d6158a;
+}
+.w2-d {
+  width: 30rem;
+}
+#nav {
+  display: flex;
+  justify-content: center;
+  border-top: 8px solid #001b42;
+  border-bottom: 3px solid #ead39c;
+  padding-top: 15px;
+}
+#nav-text {
+  color: #ead39c;
+  font-size: 24px;
+}
+.menu-text {
+  color: #ead39c;
+}
+#header-picture {
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#header-picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.cover {
+  background-size: cover !important;
+}
+#title-box {
+  color: #001b42;
+  margin: 0 auto;
+  padding-top: 22px;
+  font-size: 28px;
+  line-height: 1.5;
+}
+.polaroid-title {
+  font-size: 28px;
+  line-height: 1.5;
+}
+.section1 {
+  background-color: #432650;
+  color: #ead39c;
+}
+.section2 {
+  background-color: #ead39c;
+  color: #001b42;
+}
+.borderBottom {
+  border-bottom: 5px solid #001b42;
+}
+#schedule {
+  border-top: 6px solid #432650;
+}
+.churchPic {
+  height: 330px;
+  width: 325px;
+  border: 2px solid #001b42;
+}
+.receptionPic {
+  height: 275px;
+  width: 380px;
+  border: 2px solid #001b42;
+}
+.photos {
+  height: 400px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+.logos {
+  height: 180px;
+  width: 330px;
+  /* border: 2px solid #001b44; */
+  /* margin-bottom: 3rem; */
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+.pv3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* #circle1 {
+  top: 94%;
+  left: 3%;
+  height: 35px;
+  width: 35px;
+  @media (min-width: 900px) {
+    top: 60%;
+    left: -7%;
+    height: 35px;
+    width: 35px;
+  }
+}
+#circle2 {
+  top: 92%;
+  left: 92%;
+  height: 40px;
+  width: 40px;
+}
+#circle3 {
+  top: 87%;
+  left: 14%;
+  height: 45px;
+  width: 45px;
+  @media (min-width: 900px) {
+    top: 2%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+  }
+}
+#circle4 {
+  top: 87%;
+  left: 77%;
+  height: 30px;
+  width: 30px;
+  @media (min-width: 900px) {
+    top: 16%;
+    left: 115%;
+    height: 60px;
+    width: 60px;
+  }
+} */
+
+/*# sourceURL=/Users/ninaharris/Sites/vm-wedding/pages/index.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uaW5haGFycmlzL1NpdGVzL3ZtLXdlZGRpbmcvcGFnZXMvaW5kZXgudnVlIiwiL1VzZXJzL25pbmFoYXJyaXMvU2l0ZXMvdm0td2VkZGluZy9hc3NldHMvc3R5bGVzL3ZhcmlhYmxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTRYQTtFQUNFLGNDbFh3QjtBQUFBO0FEb1gxQjtFQUNFLHlCQzdXaUI7QUFBQTtBRCtXbkI7RUFDRSxjQ25YYTtBQUFBO0FEcVhmO0VBQ0UsY0NwWTRCO0VEc1k1QixlQUFlO0VBQ2YsaUJBQWlCO0FBQUE7QUFHbkI7RUFDRSxjQ2pZa0I7QUFBQTtBRG1ZcEI7RUFDRSxxQkFBcUI7RUFDckIsY0MvWTRCO0FBQUE7O0FEaVo5QixTQUFBO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLGdDQUF3QjtVQUF4Qix3QkFBd0I7RUFDeEIsb0NBQW9DO0VBQ3BDLG1DQUEyQjtVQUEzQiwyQkFBMkI7RUFDM0Isa0NBQWtDO0VBQ2xDLHlCQUF5QjtFQUN6QixzQ0FBOEI7RUFBOUIsOEJBQThCO0VBQTlCLGlEQUE4QjtBQUFBO0FBR2hDOzs7RUFHRSw2QkFBcUI7VUFBckIscUJBQXFCO0FBQUE7QUFFdkI7RUFDRSxZQUFZO0VBQ1oseUJDdFphO0VEdVpiLGdCQUFnQjtBQUFBO0FBR2xCO0VBQ0Usc0hBQ3lFO0FBQUE7QUFFM0U7RUFDRSxzSEFDeUU7RUFDekUsYUFBYTtFQUNiLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUFBO0FBR3JCO0VBQ0Usc0hBQ3lFO0VBQ3pFLGFBQWE7RUFDYixZQUFZO0VBQ1osYUFBYTtFQUNiLGlCQUFpQjtFQUNqQix1QkFBdUI7QUFBQTtBQUV6QjtFQUNFLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsaUJBQWlCO0FBQUE7QUFIbkI7SUFLSSxXQUFXO0lBQ1gsa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsWUFBWTtJQUNaLFdBQVc7SUFDWCwrQ0FBeUM7SUFDekMsc0JBQXNCO0lBQ3RCLHlCQUFpQjtZQUFqQixpQkFBaUI7QUFBQTtBQUdyQjtFQUNFLHlCQzljZ0I7QUFBQTtBRGdkbEI7RUFDRSxVQUFVO0VBQ1YsdUJBQXVCO0FBQUE7QUFFekI7RUFDRSxrQkFBa0I7QUFBQTtBQURwQjtJQUdJLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87SUFDUCxZQUFZO0lBQ1osV0FBVztJQUNYLCtDQUF5QztJQUN6QyxzQkFBc0I7SUFDdEIseUJBQWlCO1lBQWpCLGlCQUFpQjtBQUFBO0FBR3JCO0VBQ0UsVUFBVTtFQUNWLGNBQWM7QUFBQTtBQUVoQjtFQUVFLGNDMWU0QjtFRDJlNUIseUJDemVnQjtFRDBlaEIsa0JBQWtCO0VBQ2xCLHNCQUFzQjtFQUN0Qix5QkFBeUI7RUFDekIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IscUJBQXFCO0FBQUE7QUFFdkI7RUFDRSw4QkFBOEI7QUFBQTtBQUVoQztFQUNFLGVBQWU7RUFDZixZQUFZO0FBQUE7QUFFZDtFQUNFLGdCQUFnQjtFQUNoQixjQUFjO0FBQUE7QUFFaEI7RUFDRSxlQUFlO0VBQ2YsY0N4ZndCO0VEeWZ4QixnQkFBZ0I7QUFBQTtBQUVsQjtFQUNFLGVBQWU7RUFDZixjQ3RnQjRCO0VEdWdCNUIsa0JBQWtCO0FBQUE7QUFFcEI7RUFDRSxrQkFBa0I7RUFDbEIsY0MzZ0I0QjtBQUFBO0FENmdCOUI7RUFDRSxrQkFBa0I7RUFDbEIsY0N0Z0J3QjtBQUFBO0FEd2dCMUI7RUFDRSx5QkFBeUI7QUFBQTtBQUUzQjtFQUNFLHlCQ25oQmdCO0FBQUE7QURxaEJsQjtFQUNFLGNBQWM7QUFBQTtBQUVoQjtFQUNFLHlCQzNoQjRCO0FBQUE7QUQ2aEI5QjtFQUNFLGVBQWU7QUFBQTtBQUVqQjtFQUNFLGVBQWU7QUFBQTtBQUVqQjtFQUNFLGNDMWhCa0I7QUFBQTtBRDRoQnBCO0VBQ0UsWUFBWTtBQUFBO0FBRWQ7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLDZCQzVpQjRCO0VENmlCNUIsZ0NDL2hCYTtFRGdpQmIsaUJBQWlCO0FBQUE7QUFFbkI7RUFDRSxjQ25pQmE7RURvaUJiLGVBQWU7QUFBQTtBQUVqQjtFQUNFLGNDdmlCYTtBQUFBO0FEeWlCZjtFQUNFLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsY0FBYztBQUFBO0FBSGhCO0lBS0ksb0JBQWlCO09BQWpCLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsWUFBWTtBQUFBO0FBR2hCO0VBQ0Usc0JBQXNCO0FBQUE7QUFFeEI7RUFDRSxpQ0FBaUM7QUFBQTtBQUVuQztFQUNFLGNDeGtCNEI7RUR5a0I1QixjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixnQkFBZ0I7QUFBQTtBQUVsQjtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUFBQTtBQUVsQjtFQUNFLHlCQ2xrQmlCO0VEbWtCakIsY0N0a0JhO0FBQUE7QUR3a0JmO0VBQ0UseUJDemtCYTtFRDBrQmIsY0N4bEI0QjtBQUFBO0FEMGxCOUI7RUFDRSxnQ0MzbEI0QjtBQUFBO0FENmxCOUI7RUFDRSw2QkM3a0JpQjtBQUFBO0FEK2tCbkI7RUFDRSxhQUFhO0VBQ2IsWUFBWTtFQUNaLHlCQ25tQjRCO0FBQUE7QURxbUI5QjtFQUNFLGFBQWE7RUFDYixZQUFZO0VBQ1oseUJDeG1CNEI7QUFBQTtBRDBtQjlCO0VBQ0UsYUFBYTtFQUNiLFlBQVk7RUFHWixvQkFBaUI7S0FBakIsaUJBQWlCO0VBQ2pCO3dCQXpZc0I7QUEwWUM7QUFFekI7RUFDRSxhQUFhO0VBQ2IsWUFBWTtFQUNaLCtCQUFBO0VBQ0EseUJBQUE7RUFDQTt3QkF6WXNCO0FBMFlDO0FBRXpCO0VBQ0UsaUJBQWlCO0VBQ2pCLG9CQUFvQjtBQUFBOztBQUd0Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FsV0ciLCJmaWxlIjoiaW5kZXgudnVlP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmbGFuZz1zY3NzJiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuQGltcG9ydCAnfmFzc2V0cy9zdHlsZXMvdmFyaWFibGVzJztcbi5tdXNpYy1pY29ucyB7XG4gIGNvbG9yOiAkbGlnaHQtcmVkLXZpb2xldDtcbn1cbi5waG90by1ib3JkZXIge1xuICBib3JkZXI6IDJweCBzb2xpZCAkYm9zc2Fub3ZhO1xufVxuLmFycm93IHtcbiAgY29sb3I6ICRwdXR0eTtcbn1cbi5jYXB0aW9uIHtcbiAgY29sb3I6ICRtaWRuaWdodDtcbiAgLy8gcGFkZGluZzogMCBhdXRvO1xuICBmb250LXNpemU6IDM1cHg7XG4gIHBhZGRpbmctdG9wOiAxcmVtO1xufVxuXG4ubWlkLWZhLWhlYXJ0IHtcbiAgY29sb3I6ICRyZWQtdmlvbGV0O1xufVxuYSB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6ICRtaWRuaWdodDtcbn1cbi8qIEdyb3cgKi9cbi5odnItZ3JvdyB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVaKDApO1xuICBib3gtc2hhZG93OiAwIDAgMXB4IHJnYmEoMCwgMCwgMCwgMCk7XG4gIGJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogMC4zcztcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogdHJhbnNmb3JtO1xufVxuXG4uaHZyLWdyb3c6aG92ZXIsXG4uaHZyLWdyb3c6Zm9jdXMsXG4uaHZyLWdyb3c6YWN0aXZlIHtcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjEpO1xufVxuZm9vdGVyIHtcbiAgaGVpZ2h0OiA4MHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkcHV0dHk7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG59XG5cbi5ib3JkZXItc2hhZG93IHtcbiAgYm94LXNoYWRvdzogMCA3cHggOHB4IC00cHggcmdiYSgwLCAwLCAwLCAwLjIpLFxuICAgIDAgMTJweCAxN3B4IDJweCByZ2JhKDAsIDAsIDAsIDAuMTQpLCAwIDVweCAyMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xufVxuLnBvbGFyb2lkLWZyYW1lIHtcbiAgYm94LXNoYWRvdzogMCA3cHggOHB4IC00cHggcmdiYSgwLCAwLCAwLCAwLjIpLFxuICAgIDAgMTJweCAxN3B4IDJweCByZ2JhKDAsIDAsIDAsIDAuMTQpLCAwIDVweCAyMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xuICBwYWRkaW5nOiAyMnB4O1xuICB3aWR0aDogNDUwcHg7XG4gIG1hcmdpbjogM3JlbSBhdXRvO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgbWFyZ2luLXRvcDogMS43NXJlbTtcbn1cblxuLnJlZ2lzdHJ5LWZyYW1lIHtcbiAgYm94LXNoYWRvdzogMCA3cHggOHB4IC00cHggcmdiYSgwLCAwLCAwLCAwLjIpLFxuICAgIDAgMTJweCAxN3B4IDJweCByZ2JhKDAsIDAsIDAsIDAuMTQpLCAwIDVweCAyMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xuICBwYWRkaW5nOiAyMnB4O1xuICB3aWR0aDogMjgwcHg7XG4gIGhlaWdodDogMjQ1cHg7XG4gIG1hcmdpbjogM3JlbSBhdXRvO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbiNiZWhpbmQtcG9sYXJvaWQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIG1hcmdpbi10b3A6IC01M3B4O1xuICBwYWRkaW5nLXRvcDogNTNweDtcbiAgJjphZnRlciB7XG4gICAgY29udGVudDogJyc7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwofmFzc2V0cy9saWdodHMuanBnKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGZpbHRlcjogYmx1cigycHgpO1xuICB9XG59XG4ud2VkZGluZy1wYXJ0eSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICRzZWFzaGVsbDtcbn1cbi53ZWRkaW5nLXBhcnR5LWJveCB7XG4gIHdpZHRoOiAzNiU7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuLmFjdGl2aXR5IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAmOmFmdGVyIHtcbiAgICBjb250ZW50OiAnJztcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCh+YXNzZXRzL2JyaWNrcy5qcGcpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgZmlsdGVyOiBibHVyKDJweCk7XG4gIH1cbn1cbmhyIHtcbiAgd2lkdGg6IDgwJTtcbiAgbWFyZ2luOiAwIGF1dG87XG59XG5idXR0b24ge1xuICAvLyBiYWNrZ3JvdW5kLWNvbG9yOiAkcHV0dHk7XG4gIGNvbG9yOiAkbWlkbmlnaHQ7XG4gIGJhY2tncm91bmQtY29sb3I6ICRzZWFzaGVsbDtcbiAgZm9udC1zaXplOiB4LWxhcmdlO1xuICBmb250LWZhbWlseTogaGVsdmV0aWNhO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICBmb250LXNpemU6IDIwcHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIHBhZGRpbmc6IDFyZW07XG4gIGxldHRlci1zcGFjaW5nOiAwLjVweDtcbn1cbiNidXR0b24tZGl2IHtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuaW1nIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG59XG4uY29udGFpbmVyIHtcbiAgbWF4LXdpZHRoOiAzNHJlbTtcbiAgbWFyZ2luOiAwIGF1dG87XG59XG4uc2VjdGlvblRpdGxlMSB7XG4gIGZvbnQtc2l6ZTogM3JlbTtcbiAgY29sb3I6ICRsaWdodC1yZWQtdmlvbGV0O1xuICBtYXJnaW4tYm90dG9tOiAwO1xufVxuLnNlY3Rpb25UaXRsZTIge1xuICBmb250LXNpemU6IDNyZW07XG4gIGNvbG9yOiAkbWlkbmlnaHQ7XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbn1cbi5zZWN0aW9uSWNvbjEge1xuICBmb250LXNpemU6IDIuNzVyZW07XG4gIGNvbG9yOiAkbWlkbmlnaHQ7XG59XG4uc2VjdGlvbkljb24yIHtcbiAgZm9udC1zaXplOiAyLjc1cmVtO1xuICBjb2xvcjogJGxpZ2h0LXJlZC12aW9sZXQ7XG59XG4uc2FjcmFtZW50byB7XG4gIGZvbnQtZmFtaWx5OiAnU2FjcmFtZW50byc7XG59XG4uc2Vhc2hlbGwge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkc2Vhc2hlbGw7XG59XG4jaG90ZWwge1xuICBtYXgtd2lkdGg6IDcwJTtcbn1cbi5ib3JkZXItc2hvd2Nhc2Uge1xuICBib3JkZXI6IDFweCBzb2xpZCAkbWlkbmlnaHQ7XG59XG4uYXJyb3cge1xuICBmb250LXNpemU6IDE1cHg7XG59XG4ucGVyc29uIHtcbiAgZm9udC1zaXplOiA1MHB4O1xufVxuLmhlYXJ0IHtcbiAgY29sb3I6ICRyZWQtdmlvbGV0O1xufVxuLncyLWQge1xuICB3aWR0aDogMzByZW07XG59XG4jbmF2IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJvcmRlci10b3A6IDhweCBzb2xpZCAkbWlkbmlnaHQ7XG4gIGJvcmRlci1ib3R0b206IDNweCBzb2xpZCAkcHV0dHk7XG4gIHBhZGRpbmctdG9wOiAxNXB4O1xufVxuI25hdi10ZXh0IHtcbiAgY29sb3I6ICRwdXR0eTtcbiAgZm9udC1zaXplOiAyNHB4O1xufVxuLm1lbnUtdGV4dCB7XG4gIGNvbG9yOiAkcHV0dHk7XG59XG4jaGVhZGVyLXBpY3R1cmUge1xuICBoZWlnaHQ6IDQwMHB4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtYXJnaW46IDAgYXV0bztcbiAgaW1nIHtcbiAgICBvYmplY3QtZml0OiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gIH1cbn1cbi5ib3JkZXItYm94IHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cbi5jb3ZlciB7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXIgIWltcG9ydGFudDtcbn1cbiN0aXRsZS1ib3gge1xuICBjb2xvcjogJG1pZG5pZ2h0O1xuICBtYXJnaW46IDAgYXV0bztcbiAgcGFkZGluZy10b3A6IDIycHg7XG4gIGZvbnQtc2l6ZTogMjhweDtcbiAgbGluZS1oZWlnaHQ6IDEuNTtcbn1cbi5wb2xhcm9pZC10aXRsZSB7XG4gIGZvbnQtc2l6ZTogMjhweDtcbiAgbGluZS1oZWlnaHQ6IDEuNTtcbn1cbi5zZWN0aW9uMSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICRib3NzYW5vdmE7XG4gIGNvbG9yOiAkcHV0dHk7XG59XG4uc2VjdGlvbjIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkcHV0dHk7XG4gIGNvbG9yOiAkbWlkbmlnaHQ7XG59XG4uYm9yZGVyQm90dG9tIHtcbiAgYm9yZGVyLWJvdHRvbTogNXB4IHNvbGlkICRtaWRuaWdodDtcbn1cbiNzY2hlZHVsZSB7XG4gIGJvcmRlci10b3A6IDZweCBzb2xpZCAkYm9zc2Fub3ZhO1xufVxuLmNodXJjaFBpYyB7XG4gIGhlaWdodDogMzMwcHg7XG4gIHdpZHRoOiAzMjVweDtcbiAgYm9yZGVyOiAycHggc29saWQgJG1pZG5pZ2h0O1xufVxuLnJlY2VwdGlvblBpYyB7XG4gIGhlaWdodDogMjc1cHg7XG4gIHdpZHRoOiAzODBweDtcbiAgYm9yZGVyOiAycHggc29saWQgJG1pZG5pZ2h0O1xufVxuLnBob3RvcyB7XG4gIGhlaWdodDogNDAwcHg7XG4gIHdpZHRoOiA0MDBweDtcbiAgLy8gcGFkZGluZy10b3A6IDE1cHg7XG4gIC8vIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICBvYmplY3QtZml0OiBjb3ZlcjtcbiAgLyogcGFkZGluZy1sZWZ0OiAzMHB4O1xuICBwYWRkaW5nLXJpZ2h0OiAzMHB4OyAqL1xufVxuLmxvZ29zIHtcbiAgaGVpZ2h0OiAxODBweDtcbiAgd2lkdGg6IDMzMHB4O1xuICAvKiBib3JkZXI6IDJweCBzb2xpZCAjMDAxYjQ0OyAqL1xuICAvKiBtYXJnaW4tYm90dG9tOiAzcmVtOyAqL1xuICAvKiBwYWRkaW5nLWxlZnQ6IDMwcHg7XG4gIHBhZGRpbmctcmlnaHQ6IDMwcHg7ICovXG59XG4ucHYzIHtcbiAgcGFkZGluZy10b3A6IDNyZW07XG4gIHBhZGRpbmctYm90dG9tOiAzcmVtO1xufVxuXG4vKiAjY2lyY2xlMSB7XG4gIHRvcDogOTQlO1xuICBsZWZ0OiAzJTtcbiAgaGVpZ2h0OiAzNXB4O1xuICB3aWR0aDogMzVweDtcbiAgQG1lZGlhIChtaW4td2lkdGg6IDkwMHB4KSB7XG4gICAgdG9wOiA2MCU7XG4gICAgbGVmdDogLTclO1xuICAgIGhlaWdodDogMzVweDtcbiAgICB3aWR0aDogMzVweDtcbiAgfVxufVxuI2NpcmNsZTIge1xuICB0b3A6IDkyJTtcbiAgbGVmdDogOTIlO1xuICBoZWlnaHQ6IDQwcHg7XG4gIHdpZHRoOiA0MHB4O1xufVxuI2NpcmNsZTMge1xuICB0b3A6IDg3JTtcbiAgbGVmdDogMTQlO1xuICBoZWlnaHQ6IDQ1cHg7XG4gIHdpZHRoOiA0NXB4O1xuICBAbWVkaWEgKG1pbi13aWR0aDogOTAwcHgpIHtcbiAgICB0b3A6IDIlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICBoZWlnaHQ6IDUwcHg7XG4gICAgd2lkdGg6IDUwcHg7XG4gIH1cbn1cbiNjaXJjbGU0IHtcbiAgdG9wOiA4NyU7XG4gIGxlZnQ6IDc3JTtcbiAgaGVpZ2h0OiAzMHB4O1xuICB3aWR0aDogMzBweDtcbiAgQG1lZGlhIChtaW4td2lkdGg6IDkwMHB4KSB7XG4gICAgdG9wOiAxNiU7XG4gICAgbGVmdDogMTE1JTtcbiAgICBoZWlnaHQ6IDYwcHg7XG4gICAgd2lkdGg6IDYwcHg7XG4gIH1cbn0gKi9cbiIsIiRwdXR0eTogI2VhZDM5YztcbiRib3NzYW5vdmE6ICM0MzI2NTA7XG4kbWlkbmlnaHQ6IGhzbCgyMTYsIDEwMCUsIDEzJSk7XG4kcmVkLXZpb2xldDogI2Q2MTU4YTtcbiRzZWFzaGVsbDogI2ZmZjVlZTtcblxuJHByaW1hcnktbGlnaHQ6IGhzbCgyMTYsIDU4JSwgNTUlKTtcbiRwcmltYXJ5LWNvbG9yOiAkbWlkbmlnaHQ7XG4kcHJpbWFyeS1kYXJrOiBoc2woMjE2LCAyMyUsIDEzJSk7XG5cbiRsaWdodGVzdC1yZWQtdmlvbGV0OiAjZjFjNWUwO1xuJGxpZ2h0LXJlZC12aW9sZXQ6ICNjODVjOWM7XG4kcmVkLXZpb2xldDogI2Q2MTU4YTtcbiRkYXJrLXJlZC12aW9sZXQ6ICM4YTBlNTg7XG5cbiRsaWdodC1wdXR0eTogI2ViZGNiYTtcbiRwdXR0eTogI2VhZDM5YztcbiRkYXJrLXB1dHR5OiAjZTRiZTY1O1xuXG4kYm9zc2Fub3ZhOiAjNDMyNjUwO1xuJGxpZ2h0LWJvc3Nhbm92YTogIzVlMmY3NDtcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><script charset="utf-8" src="./vm-wedding_files/index.91973e808c50e8ea5de7.hot-update.js"></script><script charset="utf-8" src="./vm-wedding_files/index.2d2c5dbcf218e35275db.hot-update.js"></script><script charset="utf-8" src="./vm-wedding_files/index.5c06a63b32ef5f4950e7.hot-update.js"></script></head>
+  <body data-n-head="">
+    <div id="__nuxt"><!----><div id="__layout"><div><div class="sacramento"><header style="background-color: white;"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="flex justify-around items-center pt1 georgia"><a href="http://localhost:3000/#schedule" class="nav-link hvr-grow-nav">Schedule</a> <a href="http://localhost:3000/#wedding-party" class="nav-link hvr-grow-nav">Wedding Party</a> <a href="http://localhost:3000/#hotels" class="nav-link hvr-grow-nav">Hotels</a> <a href="http://localhost:3000/#behind-polaroid" class="flex-grow-1 tc nav-title hvr-grow">#PickingUpTheBill</a> <a href="http://localhost:3000/#registry" class="nav-link hvr-grow-nav nuxt-link-exact-active nuxt-link-active">Registry</a> <a href="http://localhost:3000/#photos" class="nav-link hvr-grow-nav">Photos</a> <a href="http://localhost:3000/#things-to-do" class="nav-link hvr-grow-nav">Things to Do</a></div></div></header> <section id="behind-polaroid" class="pv4"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l relative z-1"><div class="polaroid-frame"><div id="header-picture" class="cover bg-left bg-center-l z-2"><img src="./vm-wedding_files/header.jpg"></div> <div id="title-box" class="tc"><h1 class="polaroid-title f1 mv0">Bill &amp; Kelly are Getting Married!</h1></div></div> <div id="button-div" class="flex justify-center georgia"><a href="https://www.zola.com/wedding/pickingupthebill" target="_blank" class="hvr-grow"><button class="pa2 border-showcase shadow-hover"><div class="navy pa2"><i class="far fa-laugh-beam"></i>
+              &nbsp;How We Met
+            </div></button></a> <a href="https://www.zola.com/wedding/pickingupthebill" target="_blank" class="hvr-grow"><button class="pa2 border-showcase shadow-hover"><div class="navy pa2"><i class="far fa-grin-hearts"></i>
+              &nbsp;The Proposal
+            </div></button></a></div></div></section> <section id="schedule" class="tc section2 borderBottom"><div class="bg-navy arrow"><h2><i to="[object Object]" class="fas fa-angle-down f1 pv2 hvr-grow shadow-hover"></i></h2></div> <div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="pv3"><div class="seashell pv1 border-shadow"><h1 class="f2 sectionTitle1"><i class="fas fa-clipboard-list sectionIcon1"></i>
+            &nbsp;&nbsp;Schedule&nbsp;&nbsp;
+            <i class="fas fa-clipboard-list sectionIcon1"></i></h1> <h2 class="georgia f3 pb3 pt3">
+            Wedding Mass
+            <br>Friday, December 27, 2019
+            <br>at 6:30 PM
+          </h2> <div class="polaroid-frame"><img src="./vm-wedding_files/church.jpg" class="churchPic"> <h2 class="pt3 pb3 f1 purple">Our Lady of the Pillar</h2> <h4 class="georgia pb3">
+              401 South Lindbergh Blvd.
+              <br>St. Louis, MO 63131
+              <br>(314) 993-2280
+            </h4> <a href="https://www.olpillar.com/" target="_blank"><button class="shadow-hover pt2 pb1 w-80 bg-navy white hvr-grow">Take Me to Church</button></a></div> <div class="flex justify-around items-center pb3"><i class="pt4 f1 fas fa-heart mid-fa-heart"></i> <i class="pt4 f3 fas fa-heart purple"></i> <i class="pt4 f1 fas fa-heart"></i> <i class="pt4 f3 fas fa-heart purple"></i> <i class="pt4 f1 fas fa-heart mid-fa-heart"></i></div> <div><div class="polaroid-frame"><h2 class="georgia t2 pb3 f3">
+                Wine &amp; Dessert Reception
+                <br>at 8pm
+              </h2> <img src="./vm-wedding_files/reception.jpg" class="receptionPic"> <h2 class="pt3 pb2 f1 purple">Moolah Shrine Center</h2> <h4 class="georgia pb3">
+                12545 Fee Fee Road
+                <br>St. Louis, MO 63146
+                <br>(314) 878-6301
+              </h4> <a href="https://www.moolah.org/" target="_blank"><button class="shadow-hover hvr-grow bg-navy white pt2 pb1 w-80 mb3">More Information</button></a> <div class="flex justify-around flex-wrap"><a class="bg-navy white pt2 pb1 w-80 f3 ttc">&nbsp;&nbsp;&nbsp;Suggest a song</a> <form class="bg-navy white w-80 pa3"><i class="fas fa-music music-icons f3"></i>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" class="helvetica">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fas fa-music music-icons f3"></i> <button class="hvr-grow pointer bg-white pv1 mt3">Submit</button></form></div></div></div></div></div></div></section> <section id="wedding-party" class="section1 tc pv3 borderBottom"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="border-shadow wedding-party pt2"><h1 class="f2 sectionTitle2"><i class="fas fa-users sectionIcon2"></i>
+          &nbsp; &nbsp; Wedding Party &nbsp;&nbsp;
+          <i class="fas fa-users sectionIcon2"></i></h1> <div class="flex justify-around wedding-party pv3 ph4 navy bg-white"><div class="pa3 border-shadow wedding-party-box"><i class="fas fa-female person pb3"></i> <h2 class="f2 purple">Maid of Honor</h2> <h3 class="georgia pt2">Mo Milford</h3> <h4 class="georgia">Sister of the Bride</h4> <div class="pt4"><i class="fas fa-female person"></i> <i class="fas fa-female person"></i> <i class="fas fa-female person"></i></div> <h2 class="pt3 f2 purple">Bridesmaids</h2> <h3 class="georgia">Julie Milford</h3> <h4 class="georgia pb3">Sister-In-Law of the Bride</h4> <h3 class="georgia">Mary Kate Milford</h3> <h4 class="georgia pb3">Sister of the Bride</h4> <h3 class="georgia">Eileen Milford</h3> <h4 class="georgia">Sister of the Bride</h4></div> <div class="pa3 border-shadow wedding-party-box"><i class="fas fa-male person pb3"></i> <h2 class="f2 purple">Best Man</h2> <h3 class="georgia pt2">Charlie Harris Jr.</h3> <h4 class="georgia">Cousin of the Groom</h4> <div class="pt4"><i class="fas fa-male person"></i> <i class="fas fa-male person"></i> <i class="fas fa-male person"></i></div> <h2 class="pt3 f2 purple">Groomsmen</h2> <h3 class="georgia">Franko Vatterott</h3> <h4 class="georgia pb3">Brother of the Groom</h4> <h3 class="georgia">David Michael Jackson</h3> <h4 class="georgia pb3">Brother-In-Law of the Groom</h4> <h3 class="georgia">Eric Crnkovich</h3> <h4 class="georgia">Brother-In-Law of the Groom</h4></div></div></div></div></section> <section id="hotels" class="section2 pv3 tc borderBottom"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="seashell pv2 border-shadow"><h1 class="f2 sectionTitle1"><i class="fas fa-hotel sectionIcon1"></i>
+          &nbsp;&nbsp;&nbsp;Travel &amp; Accomodations&nbsp;&nbsp;&nbsp;
+          <i class="fas fa-hotel sectionIcon1"></i></h1> <div class="polaroid-frame"><img id="hotel" src="./vm-wedding_files/hotel.jpg" class="border-showcase"> <h1 class="purple">Hotel St. Louis</h1> <h3 class="georgia pt0 pb4">
+            12345 Not Sure Lane
+            <br>St. Louis, MO 63110
+            <br>(314) 555-2255
+          </h3> <a href="https://www.hotels.com/" target="_blank"><button class="bg-navy white hvr-grow shadow-hover pv2 w-90">Book Your Room</button></a></div></div></div></section> <section id="registry" class="section1 tc pv3 borderBottom"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="seashell pv2 border-shadow flex-wrap"><h1 class="f2 sectionTitle2"><i class="fas fa-gift sectionIcon2"></i>
+          &nbsp;&nbsp;&nbsp;Registry&nbsp;&nbsp;&nbsp;
+          <i class="fas fa-gift sectionIcon2"></i></h1> <a href="https://www.zola.com/registry/pickingupthebill" target="_blank" class="flex justify-around registry-frame hvr-grow"><img src="./vm-wedding_files/registry.jpg" class="logos"></a></div></div></section> <section id="photos" class="section2 pv3 tc borderBottom"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="flex justify-around seashell pv4 ph3 flex-column border-shadow"><h1 class="f2 sectionTitle1"><i class="far fa-images sectionIcon1"></i>
+          &nbsp;&nbsp;&nbsp;Photos&nbsp;&nbsp;&nbsp;
+          <i class="far fa-images sectionIcon1"></i></h1> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo1.jpg" class="photos photo-border"> <h2 class="caption">Being cute at some fun event!</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo2.jpg" class="photos photo-border"> <h2 class="caption">Being cute at the Blues Festival!</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo3.jpg" class="photos photo-border"> <h2 class="caption">Being cute in the cold!</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo4.jpg" class="photos photo-border"> <h2 class="caption">Being cute in nature!</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo5.jpg" class="photos photo-border rotate-90"> <h2 class="caption">Being cute !</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo6.jpg" class="photos photo-border"> <h2 class="caption">Being cute !</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo7.jpg" class="photos photo-border"> <h2 class="caption">Being cute !</h2></div> <div class="polaroid-frame hvr-grow shadow-hover"><img src="./vm-wedding_files/photo8.jpg" class="photos photo-border rotate-90"> <h2 class="caption">Being cute &amp; holding hands!</h2></div></div></div></section> <section id="things-to-do" class="section1 pv3 tc borderBottom justify-around"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div><div class="flex justify-around seashell navy flex-column georgia border-shadow"><h1 class="f2 sectionTitle2 sacramento"><i class="far fa-calendar-check sectionIcon2"></i>
+            &nbsp;&nbsp;&nbsp;Things to Do in the Lou&nbsp;&nbsp;&nbsp;
+            <i class="far fa-calendar-check sectionIcon2"></i></h1> <div class="polaroid-frame"><img src="./vm-wedding_files/zoo.jpg" class="photos"> <h2 class="pt4 pb2 purple sacramento f2">Wild Lights at The Zoo</h2> <h3 class="pb4 pt2">
+              Government Drive
+              <br>St. Louis, MO 63110
+              <br>(314) 781-0900
+            </h3> <a href="https://www.stlzoo.org/events/calendarofevents" target="_blank"><button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button></a></div> <div class="polaroid-frame"><img src="./vm-wedding_files/steinberg.jpg" class="photos"> <h2 class="pt4 pb2 purple sacramento f2">Steinberg Skating Rink</h2> <h3 class="pb4 pt2">
+              400 Jefferson Drive
+              <br>St. Louis, MO 63110
+              <br>(314) 367-7465
+            </h3> <a href="http://www.steinbergskatingrink.com/iceskating/" target="_blank"><button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button></a></div> <div class="polaroid-frame"><img src="./vm-wedding_files/slam.jpg" class="photos"> <h2 class="pt4 pb2 purple sacramento f2">St. Louis Art Museum</h2> <h3 class="pb4 pt2">
+              1 Fine Arts Drive
+              <br>St. Louis, MO 63110
+              <br>(314) 721-0072
+            </h3> <a href="https://www.slam.org/" target="_blank"><button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button></a></div> <div class="polaroid-frame"><img src="./vm-wedding_files/city.jpg" class="photos"> <h2 class="pt4 pb2 purple sacramento f2">City Museum St. Louis</h2> <h3 class="pb4 pt2">
+              750 North 16th Street
+              <br>St. Louis, MO 63103
+              <br>(314) 231-2489
+            </h3> <a href="https://www.citymuseum.org/" target="_blank"><button class="w-90 bg-navy white shadow-hover hvr-grow">More Information</button></a></div></div></div></div></section> <footer class="flex items-center"><div class="mw6 mw7-ns mw8-l center ph2 ph3-ns ph4-l"><div class="footer"><div class="f3 flex items-center">
+          Made with
+          <i class="fas fa-heart f2 heart"></i>
+          &nbsp;by&nbsp;
+          <a href="https://sahmtothedom.com/" target="_blank" class="hvr-grow">&nbsp;NJH Designs&nbsp;</a></div></div></div></footer></div></div></div></div><script>window.__NUXT__={layout:"default",data:[{}],error:null,serverRendered:true};</script><script src="./vm-wedding_files/runtime.js" defer=""></script><script src="./vm-wedding_files/index(1).js" defer=""></script><script src="./vm-wedding_files/index.5e08d9fb6b60737752be.hot-update.js" defer=""></script><script src="./vm-wedding_files/commons.app.js" defer=""></script><script src="./vm-wedding_files/vendors.app.js" defer=""></script><script src="./vm-wedding_files/app.js" defer=""></script>
+  
+
+</body></html>
